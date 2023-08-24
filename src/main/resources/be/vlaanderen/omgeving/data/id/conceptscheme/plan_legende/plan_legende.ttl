@@ -1,0 +1,49 @@
+@prefix cs:    <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix ct:    <https://data.omgeving.vlaanderen.be/id/concept/plan_legende/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix colt:  <https://data.omgeving.vlaanderen.be/id/collection/plan_legende/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix xkos:  <http://rdf-vocabulary.ddialliance.org/xkos#> .
+
+colt:test_collectie  a  skos:Collection ;
+        dc:identifier   "test_collectie" ;
+        skos:inScheme   cs:plan_legende ;
+        skos:member     ct:test_concept , ct:test_concept2 , ct:test_topconcept ;
+        skos:prefLabel  "PrefLabel van test_collectie"@nl .
+
+cs:plan_legende  a          skos:ConceptScheme ;
+        dc:identifier       "plan_legende" ;
+        skos:hasTopConcept  ct:test_topconcept ;
+        skos:prefLabel      "PrefLabel van plan_legende"@nl .
+
+ct:test_concept  a      skos:Concept ;
+        dc:identifier   "test_concept" ;
+        skos:broader    ct:test_topconcept ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "code (mnemonic) van test_concept" ;
+        skos:prefLabel  "PrefLabel van test_concept"@nl .
+
+colt:test_collectie2  a  skos:Collection ;
+        dc:identifier   "test_collectie2" ;
+        skos:inScheme   cs:plan_legende ;
+        skos:member     ct:test_concept2 ;
+        skos:prefLabel  "PrefLabel van test_collectie"@nl .
+
+ct:test_topconcept  a      skos:Concept ;
+        dc:identifier      "test_topconcept" ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:test_concept , ct:test_concept2 ;
+        skos:notation      "code (mnemonic) van test_topconcept" ;
+        skos:prefLabel     "PrefLabel van test_topconcept"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:test_concept2  a     skos:Concept ;
+        dc:identifier   "test_concept2" ;
+        skos:altLabel   "blablabla"@nl ;
+        skos:broader    ct:test_topconcept ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "code (mnemonic) van test_concept 2" ;
+        skos:prefLabel  "PrefLabel van test_concept 2"@nl .

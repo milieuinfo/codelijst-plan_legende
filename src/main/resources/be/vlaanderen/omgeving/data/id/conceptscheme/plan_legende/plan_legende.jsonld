@@ -1,0 +1,117 @@
+{
+  "@graph" : [ {
+    "@id" : "colt:test_collectie",
+    "@type" : "skos:Collection",
+    "identifier" : "test_collectie",
+    "inScheme" : "cs:plan_legende",
+    "member" : [ "ct:test_topconcept", "ct:test_concept2", "ct:test_concept" ],
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van test_collectie"
+    }
+  }, {
+    "@id" : "colt:test_collectie2",
+    "@type" : "skos:Collection",
+    "identifier" : "test_collectie2",
+    "inScheme" : "cs:plan_legende",
+    "member" : "ct:test_concept2",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van test_collectie"
+    }
+  }, {
+    "@id" : "ct:test_concept",
+    "@type" : "skos:Concept",
+    "identifier" : "test_concept",
+    "broader" : "ct:test_topconcept",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "code (mnemonic) van test_concept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van test_concept"
+    }
+  }, {
+    "@id" : "ct:test_concept2",
+    "@type" : "skos:Concept",
+    "identifier" : "test_concept2",
+    "altLabel" : {
+      "@language" : "nl",
+      "@value" : "blablabla"
+    },
+    "broader" : "ct:test_topconcept",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "code (mnemonic) van test_concept 2",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van test_concept 2"
+    }
+  }, {
+    "@id" : "ct:test_topconcept",
+    "@type" : "skos:Concept",
+    "identifier" : "test_topconcept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:test_concept2", "ct:test_concept" ],
+    "notation" : "code (mnemonic) van test_topconcept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van test_topconcept"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "cs:plan_legende",
+    "@type" : "skos:ConceptScheme",
+    "identifier" : "plan_legende",
+    "hasTopConcept" : "ct:test_topconcept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "PrefLabel van plan_legende"
+    }
+  } ],
+  "@context" : {
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+      "@type" : "@id"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type" : "@id"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "cs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+    "ct" : "https://data.omgeving.vlaanderen.be/id/concept/plan_legende/",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "colt" : "https://data.omgeving.vlaanderen.be/id/collection/plan_legende/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#"
+  }
+}
