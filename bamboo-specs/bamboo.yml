@@ -2,7 +2,7 @@
 version: 2
 plan:
   project-key: CODELIJST
-  key: PLAN_LEGENDE
+  key: PLANLEGENDE
   name: codelijst-plan_legende
 
 triggers:
@@ -69,7 +69,7 @@ Release:
 ---
 version: 2
 plan:
-  key: CODELIJST-PLAN_LEGENDE
+  key: CODELIJST-PLANLEGENDE
 
 plan-permissions:
   - groups:
