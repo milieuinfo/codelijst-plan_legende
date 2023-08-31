@@ -1,7 +1,561 @@
-type,uri,dc.id,collection,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf
-skos:Concept,ct:test_topconcept,test_topconcept,colt:test_collectie,code (mnemonic) van test_topconcept,PrefLabel van test_topconcept,,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende
-skos:Concept,ct:test_concept2,test_concept2,colt:test_collectie|colt:test_collectie2,code (mnemonic) van test_concept 2,PrefLabel van test_concept 2,blablabla,ct:test_topconcept,,,,,,,,,,,cs:plan_legende,,,,,,,
-skos:Concept,ct:test_concept,test_concept,colt:test_collectie,code (mnemonic) van test_concept,PrefLabel van test_concept,,ct:test_topconcept,,,,,,,,,,,cs:plan_legende,,,,,,,
-skos:Collection,colt:test_collectie2,test_collectie2,,,PrefLabel van test_collectie,,,,,,,,,,,,,cs:plan_legende,,,,,,,
-skos:Collection,colt:test_collectie,test_collectie,,,PrefLabel van test_collectie,,,,,,,,,,,,,cs:plan_legende,,,,,,,
-skos:ConceptScheme,cs:plan_legende,plan_legende,,,PrefLabel van plan_legende,,,,,,,,,,,,,,,,,,,,
+type,uri,dc.id,collection,notation,"prefLabel",altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf,type_status,layer,typevoorschrift,typevoorschriften.uitdovend
+skos:Collection,colt:voorschrift_subcategorie,voorschrift_subcategorie,,,"Voorschrift subcategorie",,,,,,,,,,,,,,,,,,,,,,,,
+skos:Collection,colt:voorschrift_categorie,voorschrift_categorie,,,"Voorschrift categorie",,,,,,,,,,,,,,,,,,,,,,,,
+skos:ConceptScheme,cs:plan_legende,plan_legende,,,"Legendecodes",,,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:00000_00,,,00000_00,"onzichtbare afbakeningslijn (voor identificeerbaarheid)",,ct:000,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00000_01,,,00000_01,"onzichtbare afbakeningslijn (voor identificeerbaarheid)",,ct:000,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:00100_00,,,00100_00,"wijziging afbakeningslijnen",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:00101_00,,,00101_00,"grenslijn Vlaams stedelijk gebied rond Brussel",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00102_00,,,00102_00,"opheffing afbakening stedelijk gebied",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00103_01,,,00103_01,"grenslijn grootstedelijk gebied",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,WAAR,ONWAAR
+skos:Concept,ct:00103_00,,,00103_00,"grenslijn grootstedelijk gebied",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,WAAR,ONWAAR
+skos:Concept,ct:00105_01,,,00105_01,"grenslijn regionaalstedelijk gebied",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00105_00,,,00105_00,"grenslijn regionaalstedelijk gebied",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00106_00,,,00106_00,"inkrimping afbakeningslijn",,ct:001,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00201_02,,,00201_02,"grenslijn zeehavengebied",,ct:002,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00201_01,,,00201_01,"grenslijn zeehavengebied",,ct:002,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00201_00,,,00201_00,"grenslijn zeehavengebied",,ct:002,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00202_00,,,00202_00,"opheffing grenslijn zeehavengebied",,ct:002,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00203_00,,,00203_00,"grens luchthaven (niet poort)",,ct:002,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:00301_00,,,00301_00,"grote eenheid natuur",,ct:003,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00302_00,,,00302_00,"grote eenheid natuur in ontwikkeling",,ct:003,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,WAAR,ONWAAR
+skos:Concept,ct:00303_02,,,00303_02,"natuurverwevingsgebied",,ct:003,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00303_00,,,00303_00,"natuurverwevingsgebied",,ct:003,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:00304_00,,,00304_00,"natuurverbindingsgebied",,ct:003,,,,,,,,,,,cs:plan_legende,,,,,,,,L,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00401_00,,,00401_00,"erfgoedlandschap",,ct:004,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00402_00,,,00402_00,"site met belangrijke erfgoedwaarde",,ct:004,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00402_01,,,00402_01,"site met belangrijke erfgoedwaarde",,ct:004,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00403_00,,,00403_00,"karakteristieke landschapselementen van gemeentelijk niveau (landschappelijk waardevol gebied)",,ct:004,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:00601_00,,,00601_00,"projectgebied (in overdruk)",,ct:006,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:00603_00,,,00603_00,"groenpool",,ct:006,,,,,,,,,,,cs:plan_legende,,,,,,,,L,ov,ONWAAR,ONWAAR
+skos:Concept,ct:01101_05,,,01101_05,"woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01101_02,,,01101_02,"woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01101_00,,,01101_00,"woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01101_06,,,01101_06,"woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:01101_03,,,01101_03,"woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01102_00,,,01102_00,"stationsomgeving",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01102_01,,,01102_01,"stationsomgeving",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01103_00,,,01103_00,"gebied voor gemengde stedelijke aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01103_01,,,01103_01,"gebied voor gemengde stedelijke aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:01104_00,,,01104_00,"cultuurhistorisch woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:X1,,,X1,"terrein voor doortrekkers",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:01106_01,,,01106_01,"reservegebied voor wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01106_00,,,01106_00,"reservegebied voor wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01107_00,,,01107_00,"strategisch woonproject",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01108_02,,,01108_02,"gebied voor wonen en landbouw",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,WAAR
+skos:Concept,ct:01108_00,,,01108_00,"gebied voor wonen en landbouw",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,WAAR
+skos:Concept,ct:01108_01,,,01108_01,"gebied voor wonen en landbouw",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,WAAR
+skos:Concept,ct:01109_00,,,01109_00,"Landelijk woongebied met culturele, historische en/of esthetische waarde",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01109_01,,,01109_01,"Landelijk woongebied met culturele, historische en/of esthetische waarde",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01110_01,,,01110_01,"randstedelijk wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,L,ov,ONWAAR,ONWAAR
+skos:Concept,ct:01110_02,,,01110_02,"randstedelijk wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:X2,,,X2,"bestaande woningen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,/,,ONWAAR,ONWAAR
+skos:Concept,ct:01112_00,,,01112_00,"stationsplein",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:01113_00,,,01113_00,"woonwagenpark",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:01114_00,,,01114_00,"bouwvrij wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:01115_00,,,01115_00,"gemengde aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:X3,,,X3,"zone voor wonen en park",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:01117_00,,,01117_00,"sociaal objectief",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:02101_00,,,02101_00,"randstedelijk groengebied met dagrecreatieve infrastructuur",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02101_01,,,02101_01,"randstedelijk groengebied met dagrecreatieve infrastructuur",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02102_00,,,02102_00,"recreatiegebied",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,WAAR,ONWAAR
+skos:Concept,ct:02102_01,,,02102_01,"recreatiegebied",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,WAAR,ONWAAR
+skos:Concept,ct:02102_03,,,02102_03,"recreatiegebied",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,WAAR,ONWAAR
+skos:Concept,ct:02102_02,,,02102_02,"recreatiegebied",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,WAAR,ONWAAR
+skos:Concept,ct:02103_01,,,02103_01,"gebied voor dagrecreatie",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02103_00,,,02103_00,"gebied voor dagrecreatie",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02104_00,,,02104_00,"gebied voor recreatie vliegen",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02105_00,,,02105_00,"gebied voor golfterrein",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,WAAR,ONWAAR
+skos:Concept,ct:02106_00,,,02106_00,"watergebonden recreatie [131_1]",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02106_01,,,02106_01,"watergebonden recreatie [131_1]",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:X4,,,X4,"gebied voor motocross",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:02108_00,,,02108_00,"recreatieve bebouwing",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:02109_00,,,02109_00,"verblijfsrecreatie in groepen",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02110_00,,,02110_00,"verblijfsrecreatie",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:02111_00,,,02111_00,"recreatiebuffer",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:03102_04,,,03102_04,"natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:03102_02,,,03102_02,"natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:03102_00,,,03102_00,"natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:03102_01,,,03102_01,"natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:03102_03,,,03102_03,"natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:03103_05,,,03103_05,"overstromings- en natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,na,ONWAAR,ONWAAR
+skos:Concept,ct:03103_02,,,03103_02,"overstromings- en natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:03103_00,,,03103_00,"overstromings- en natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:03103_01,,,03103_01,"overstromings- en natuurgebied",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:03104_01,,,03104_01,"ecologische infrastructuur",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:03104_00,,,03104_00,"ecologische infrastructuur",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:03104_02,,,03104_02,"ecologische infrastructuur",,ct:031,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04101_00,,,04101_00,"randstedelijk groengebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04102_04,,,04102_04,"gemengd openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04102_00,,,04102_00,"gemengd openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04102_02,,,04102_02,"gemengd openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04102_01,,,04102_01,"gemengd openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04102_03,,,04102_03,"gemengd openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04105_00,,,04105_00,"structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04105_01,,,04105_01,"structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04105_03,,,04105_03,"structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04105_02,,,04105_02,"structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04106_01,,,04106_01,"gemengd openruimte met cultuurhistorische waarde",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04106_00,,,04106_00,"gemengd openruimte met cultuurhistorische waarde",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04107_00,,,04107_00,"watergevoelig openruimtegebied",,ct:041,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04201_01,,,04201_01,"bosbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04201_00,,,04201_00,"bosbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04201_02,,,04201_02,"bosbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04202_03,,,04202_03,"buffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:04202_01,,,04202_01,"buffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:04202_02,,,04202_02,"buffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:04202_00,,,04202_00,"buffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:04202_04,,,04202_04,"buffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:04203_00,,,04203_00,"natuurbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04203_01,,,04203_01,"natuurbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04203_02,,,04203_02,"natuurbuffer",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04204_00,,,04204_00,"gemengd buffergebied",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04205_00,,,04205_00,"koppelingsgebied",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04205_01,,,04205_01,"koppelingsgebied",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04207_00,,,04207_00,"overige buffergebieden (vb dijk)",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04207_01,,,04207_01,"overige buffergebieden (vb dijk)",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,/,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04208_00,,,04208_00,"buffer overgangsgebieden",,ct:042,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:04301_03,,,04301_03,"park",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04301_01,,,04301_01,"park",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04301_00,,,04301_00,"park",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04301_02,,,04301_02,"park",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:04302_01,,,04302_01,"zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:04302_00,,,04302_00,"zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]",,ct:043,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:05101_06,,,05101_06,"bosgebied",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:05101_05,,,05101_05,"bosgebied",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:05101_04,,,05101_04,"bosgebied",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:05101_00,,,05101_00,"bosgebied",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:05101_01,,,05101_01,"bosgebied",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,na,WAAR,ONWAAR
+skos:Concept,ct:05103_00,,,05103_00,"nabestemming bosgebied [zie rup 10_1 turnhout, art. 16,2]",,ct:051,,,,,,,,,,,cs:plan_legende,,,,,,,,d,na,ONWAAR,ONWAAR
+skos:Concept,ct:06101_00,,,06101_00,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06101_01,,,06101_01,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06101_06,,,06101_06,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06101_05,,,06101_05,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06101_02,,,06101_02,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:06101_03,,,06101_03,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06101_04,,,06101_04,"agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06102_01,,,06102_01,"bouwvrij agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06102_02,,,06102_02,"bouwvrij agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06102_03,,,06102_03,"bouwvrij agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:06102_00,,,06102_00,"bouwvrij agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:X5,,,X5,"gemengd agrarisch gebied",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,d,,ONWAAR,ONWAAR
+skos:Concept,ct:06104_00,,,06104_00,"agrarische bedrijvenzone",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,WAAR,ONWAAR
+skos:Concept,ct:06105_00,,,06105_00,"perimeter voor glastuinbouwbedrijven",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:06106_00,,,06106_00,"agrarisch gebied met landschappelijke kenmerken",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:06107_00,,,06107_00,"agrarisch gebied met ecologisch belang",,ct:061,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07101_01,,,07101_01,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07101_00,,,07101_00,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07101_02,,,07101_02,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07101_03,,,07101_03,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:07101_05,,,07101_05,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07101_04,,,07101_04,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,na,WAAR,ONWAAR
+skos:Concept,ct:07101_06,,,07101_06,"gemengd regionaal bedrijventerrein",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07102_01,,,07102_01,"specifiek regionaal bedrijventerrein voor transport, distributie en logistiek",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07102_00,,,07102_00,"specifiek regionaal bedrijventerrein voor transport, distributie en logistiek",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07102_02,,,07102_02,"specifiek regionaal bedrijventerrein voor transport, distributie en logistiek",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07103_02,,,07103_02,"specifiek regionaal bedrijventerrein voor kantoren",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:07103_03,,,07103_03,"specifiek regionaal bedrijventerrein voor kantoren",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07103_04,,,07103_04,"specifiek regionaal bedrijventerrein voor kantoren",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07103_00,,,07103_00,"specifiek regionaal bedrijventerrein voor kantoren",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07103_01,,,07103_01,"specifiek regionaal bedrijventerrein voor kantoren",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07104_01,,,07104_01,"specifiek regionaal bedrijventerrein voor kleinhandel",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07104_02,,,07104_02,"specifiek regionaal bedrijventerrein voor kleinhandel",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07104_00,,,07104_00,"specifiek regionaal bedrijventerrein voor kleinhandel",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07105_00,,,07105_00,"specifiek regionaal bedrijventerrein voor luchthavengebonden bedrijven",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07106_01,,,07106_01,"specifiek regionaal bedrijventerrein met watergebonden karakter",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07106_03,,,07106_03,"specifiek regionaal bedrijventerrein met watergebonden karakter",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07106_04,,,07106_04,"specifiek regionaal bedrijventerrein met watergebonden karakter",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07106_02,,,07106_02,"specifiek regionaal bedrijventerrein met watergebonden karakter",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:07106_00,,,07106_00,"specifiek regionaal bedrijventerrein met watergebonden karakter",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07107_00,,,07107_00,"specifiek regionaal bedrijventerrein voor wetenschapspark",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07107_01,,,07107_01,"specifiek regionaal bedrijventerrein voor wetenschapspark",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,na,WAAR,ONWAAR
+skos:Concept,ct:07107_02,,,07107_02,"specifiek regionaal bedrijventerrein voor wetenschapspark",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07108_01,,,07108_01,"specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07108_00,,,07108_00,"specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07109_00,,,07109_00,"regionaal bedrijventerrein voor agro-industrie",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:07110_00,,,07110_00,"specifiek regionaal bedrijventerrein voor spoorweggebonden bedrijven",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07111_00,,,07111_00,"bedrijventerrein voor bestaand regionaal bedrijf",,ct:071,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07204_06,,,07204_06,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_02,,,07204_02,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:07204_09,,,07204_09,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_08,,,07204_08,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_04,,,07204_04,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_01,,,07204_01,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_03,,,07204_03,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_00,,,07204_00,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_07,,,07204_07,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07204_05,,,07204_05,"gebied voor zeehaven- en watergebonden bedrijven",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07205_01,,,07205_01,"zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:07205_00,,,07205_00,"zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07206_01,,,07206_01,"zone voor bestaande productiebedrijvigheid in zeehavengebied",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07206_00,,,07206_00,"zone voor bestaande productiebedrijvigheid in zeehavengebied",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07207_00,,,07207_00,"zone voor zeehavengebonden opslag- en verpakkingsactiviteit [131_1]",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07209_00,,,07209_00,"zone voor zeehavenondersteunende regionale bedrijvigheid [131_1]",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07210_00,,,07210_00,"gebied voor energie",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07210_01,,,07210_01,"gebied voor energie",,ct:072,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07401_00,,,07401_00,"bedrijventerrein voor historisch gegroeid bedrijf",,ct:074,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07401_01,,,07401_01,"bedrijventerrein voor historisch gegroeid bedrijf",,ct:074,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07401_02,,,07401_02,"bedrijventerrein voor historisch gegroeid bedrijf",,ct:074,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:07402_00,,,07402_00,"bedrijventerrein voor historisch gegroeid bedrijf met voorbestemming woongebied",,ct:074,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07501_00,,,07501_00,"lokaal bedrijventerrein",,ct:075,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07501_01,,,07501_01,"lokaal bedrijventerrein",,ct:075,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07502_00,,,07502_00,"bestaand industriegebied",,ct:075,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07601_00,,,07601_00,"zone voor commerciële aktiviteiten",,ct:076,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07602_00,,,07602_00,"bedrijventerrein voor kantoren en katoorachtigen en lokale bedrijvigheid",,ct:076,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:07604_00,,,07604_00,"grootschalige kleinhandel en/of lokaal bedrijventerrein",,ct:076,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08101_00,,,08101_00,"gebied voor hernieuwbare energie",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:08102_03,,,08102_03,"gebied voor gemeenschaps- en openbare nutsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08102_04,,,08102_04,"gebied voor gemeenschaps- en openbare nutsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08102_01,,,08102_01,"gebied voor gemeenschaps- en openbare nutsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08102_00,,,08102_00,"gebied voor gemeenschaps- en openbare nutsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08103_01,,,08103_01,"gebied voor publiek wegenonderhoud en beheer",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:08103_00,,,08103_00,"gebied voor publiek wegenonderhoud en beheer",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08105_01,,,08105_01,"gebied van openbaar nut en recreatie",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:08105_00,,,08105_00,"gebied van openbaar nut en recreatie",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08106_00,,,08106_00,"havenondersteunende gemeenschapsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08106_02,,,08106_02,"havenondersteunende gemeenschapsvoorzieningen",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08107_01,,,08107_01,"gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:08107_03,,,08107_03,"gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:08107_02,,,08107_02,"gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08107_00,,,08107_00,"gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08108_00,,,08108_00,"zone voor transformatorpark",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08109_00,,,08109_00,"gebied voor infrastructuur voor duurzame watervoorziening",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,WAAR,ONWAAR
+skos:Concept,ct:08110_00,,,08110_00,"gebied voor telecommunicatie-infrastructuur",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08111_00,,,08111_00,"Gebied voor zorginfrastructuur",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08112_01,,,08112_01,"Infrastructuurlandschap",,ct:081,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08201_00,,,08201_00,"militair domein",,ct:082,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08302_00,,,08302_00,"waterbeheersgebieden",,ct:083,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08302_01,,,08302_01,"waterbeheersgebieden",,ct:083,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:08401_00,,,08401_00,"waterwinningsgebied",,ct:084,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:08401_01,,,08401_01,"waterwinningsgebied",,ct:084,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:08402_00,,,08402_00,"waterberging",,ct:084,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:08501_00,,,08501_00,"gebied voor de winning van oppervlaktedelfstoffen",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08501_03,,,08501_03,"gebied voor de winning van oppervlaktedelfstoffen",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08501_02,,,08501_02,"gebied voor de winning van oppervlaktedelfstoffen",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,d,voor,WAAR,ONWAAR
+skos:Concept,ct:08502_00,,,08502_00,"gebied voor verwerking van oppervlaktedelfstoffen",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:08503_00,,,08503_00,"gebied voor recuperatie of recyclage",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08504_00,,,08504_00,"gebied voor projectgrindwinning",,ct:085,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08601_01,,,08601_01,"stortgebied",,ct:086,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,ONWAAR,ONWAAR
+skos:Concept,ct:08601_00,,,08601_00,"stortgebied",,ct:086,,,,,,,,,,,cs:plan_legende,,,,,,,,/,detail,ONWAAR,ONWAAR
+skos:Concept,ct:08602_00,,,08602_00,"gebied voor specieberging",,ct:086,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,ONWAAR,ONWAAR
+skos:Concept,ct:08712_00,,,08712_00,"CODE NIET MEER VAN TOEPASSING (vista)",,ct:087,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ov,ONWAAR,WAAR
+skos:Concept,ct:08801_01,,,08801_01,"CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))",,ct:088,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:08801_00,,,08801_00,"CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))",,ct:088,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:08805_00,,,08805_00,"CODE NIET MEER VAN TOEPASSING (gemengd reservatiegebied (in overdruk))",,ct:088,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,WAAR
+skos:Concept,ct:09101_00,,,09101_00,"reservatiegebied voor hoofdweg",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09101_01,,,09101_01,"reservatiegebied voor hoofdweg",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09102_00,,,09102_00,"gebied voor aanleg, beheer en exploitatie van wegeninfrastructuur",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:09109_00,,,09109_00,"reservatiegebied voor aan te leggen weg (categorie niet bepaald)",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09109_00,,,09109_00,"reservatiegebied voor aan te leggen weg (categorie niet bepaald)",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,ONWAAR,WAAR
+skos:Concept,ct:09110_00,,,09110_00,"aslijn wegenis",,ct:091,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:09201_00,,,09201_00,"op te heffen reservatiestrook",,ct:092,,,,,,,,,,,cs:plan_legende,,,,,,,,d,over,WAAR,ONWAAR
+skos:Concept,ct:09201_01,,,09201_01,"op te heffen reservatiestrook",,ct:092,,,,,,,,,,,cs:plan_legende,,,,,,,,d,over,WAAR,ONWAAR
+skos:Concept,ct:09205_00,,,09205_00,"op te heffen wegenis",,ct:092,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,ONWAAR,ONWAAR
+skos:Concept,ct:09205_01,,,09205_01,"op te heffen wegenis",,ct:092,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,ONWAAR,ONWAAR
+skos:Concept,ct:09301_02,,,09301_02,"UITDOVEND hoofdweg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09301_03,,,09301_03,"UITDOVEND hoofdweg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09301_00,,,09301_00,"UITDOVEND hoofdweg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09302_01,,,09302_01,"UITDOVEND primaire weg I",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09302_00,,,09302_00,"UITDOVEND primaire weg I",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09303_02,,,09303_02,"UITDOVEND secundaire weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09303_01,,,09303_01,"UITDOVEND secundaire weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09303_03,,,09303_03,"UITDOVEND secundaire weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09303_00,,,09303_00,"UITDOVEND secundaire weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09304_03,,,09304_03,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09304_02,,,09304_02,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09304_01,,,09304_01,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09304_00,,,09304_00,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:X6,,,X6,"gebied voor diensten bij wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:09309_00,,,09309_00,"wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:09309_01,,,09309_01,"wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
+skos:Concept,ct:09312_00,,,09312_00,"zone voor primaire weg II [131_1]",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09313_01,,,09313_01,"zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09313_00,,,09313_00,"zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
+skos:Concept,ct:09401_00,,,09401_00,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,WAAR
+skos:Concept,ct:09401_01,,,09401_01,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09402_01,,,09402_01,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09402_00,,,09402_00,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,WAAR
+skos:Concept,ct:09404_00,,,09404_00,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs lokale weg)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,L,detail,ONWAAR,WAAR
+skos:Concept,ct:09405_00,,,09405_00,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg (in overdruk)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:09406_00,,,09406_00,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,WAAR
+skos:Concept,ct:09406_01,,,09406_01,"CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)",,ct:094,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,WAAR
+skos:Concept,ct:10101_00,,,10101_00,"UITDOVEND : reservatiegebied voor aan te leggen hoofdspoorweg (in overdruk) (rup: 2_1)",,ct:101,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,WAAR
+skos:Concept,ct:10301_00,,,10301_00,"zone voor hoofdspoorweg type 1",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:10301_01,,,10301_01,"zone voor hoofdspoorweg type 1",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:10301_00,,,10301_00,"zone voor hoofdspoorweg type 1",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,ONWAAR,ONWAAR
+skos:Concept,ct:10306_00,,,10306_00,"spoorinfrastructuur",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:10307_00,,,10307_00,"gebied voor diensten bij spoorweginfrastructuur en aanhorigheden",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:10307_01,,,10307_01,"gebied voor diensten bij spoorweginfrastructuur en aanhorigheden",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
+skos:Concept,ct:10308_01,,,10308_01,"gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:10308_00,,,10308_00,"gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur",,ct:103,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:11102_00,,,11102_00,"gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur",,ct:111,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:11102_03,,,11102_03,"gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur",,ct:111,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:11102_02,,,11102_02,"gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur",,ct:111,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:11102_01,,,11102_01,"gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur",,ct:111,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:11201_00,,,11201_00,"op te heffen reservatiegebied voor waterweg (in overdruk) (rup: 2_1)",,ct:112,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:11202_00,,,11202_00,"op te heffen alternatief reservatiegebied (in overdruk) (rup: 2_1)",,ct:112,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,ONWAAR,ONWAAR
+skos:Concept,ct:11301_00,,,11301_00,"bestaande waterweg",,ct:113,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,ONWAAR,ONWAAR
+skos:Concept,ct:11301_00,,,11301_00,"bestaande waterweg",,ct:113,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
+skos:Concept,ct:11302_00,,,11302_00,"waterinfrastructuur",,ct:113,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:11303_00,,,11303_00,"gebied voor diensten bij waterinfrasructuur",,ct:113,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,WAAR,ONWAAR
+skos:Concept,ct:12201_00,,,12201_00,"te schrappen reservatiegebied voor aan te leggen leiding",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12202_03,,,12202_03,"op te heffen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12202_00,,,12202_00,"op te heffen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12202_01,,,12202_01,"op te heffen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12202_02,,,12202_02,"op te heffen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,/,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12203_00,,,12203_00,"op te heffen hoogspanningsleiding",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12204_00,,,12204_00,"reservatiegebied voor hoogspanningsleiding",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:12205_00,,,12205_00,"op te heffen enkelvoudige leiding",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12207_00,,,12207_00,"reservatiegebied voor aan te leggen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:12207_00,,,12207_00,"reservatiegebied voor aan te leggen leidingstraat",,ct:122,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln,ONWAAR,ONWAAR
+skos:Concept,ct:12301_02,,,12301_02,"leidingstraat",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12301_00,,,12301_00,"leidingstraat",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12302_00,,,12302_00,"enkelvoudige leiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12302_02,,,12302_02,"enkelvoudige leiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12302_01,,,12302_01,"enkelvoudige leiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12303_04,,,12303_04,"hoogspanningsleiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12303_02,,,12303_02,"hoogspanningsleiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12303_00,,,12303_00,"hoogspanningsleiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12303_01,,,12303_01,"hoogspanningsleiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12303_03,,,12303_03,"hoogspanningsleiding",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ln,WAAR,ONWAAR
+skos:Concept,ct:12304_01,,,12304_01,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_00,,,12304_00,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_05,,,12304_05,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_07,,,12304_07,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_02,,,12304_02,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_03,,,12304_03,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_06,,,12304_06,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:12304_04,,,12304_04,"leidingstrook",,ct:123,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:13101_02,,,13101_02,"gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:13101_01,,,13101_01,"gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:13102_01,,,13102_01,"verkeers- of vervoersinfrastructuur",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13102_00,,,13102_00,"verkeers- of vervoersinfrastructuur",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13102_02,,,13102_02,"verkeers- of vervoersinfrastructuur",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13103_00,,,13103_00,"bouwvrije strook",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,WAAR,ONWAAR
+skos:Concept,ct:13104_01,,,13104_01,"reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:13104_00,,,13104_00,"reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur",,ct:131,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:13201_02,,,13201_02,"gebied voor overstap (bv. treinstopplaats)",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13201_05,,,13201_05,"gebied voor overstap (bv. treinstopplaats)",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13201_01,,,13201_01,"gebied voor overstap (bv. treinstopplaats)",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13201_04,,,13201_04,"gebied voor overstap (bv. treinstopplaats)",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13201_03,,,13201_03,"gebied voor overstap (bv. treinstopplaats)",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
+skos:Concept,ct:13202_00,,,13202_00,"gebied voor overslag",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,WAAR,ONWAAR
+skos:Concept,ct:13202_01,,,13202_01,"gebied voor overslag",,ct:132,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,WAAR,ONWAAR
+skos:Concept,ct:14101_04,,,14101_04,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:14101_03,,,14101_03,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:14101_02,,,14101_02,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:14101_06,,,14101_06,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,ov,WAAR,ONWAAR
+skos:Concept,ct:14101_01,,,14101_01,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:14101_00,,,14101_00,"fasering eerste fase ( in tweede fase dubbele schuine arcering)",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,WAAR,ONWAAR
+skos:Concept,ct:14103_00,,,14103_00,"werfzone",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:14103_02,,,14103_02,"werfzone",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:14103_01,,,14103_01,"werfzone",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:14105_00,,,14105_00,"tijdelijke aanleg",,ct:141,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15101_01,,,15101_01,"gebied voor personeelsparking",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15101_02,,,15101_02,"gebied voor personeelsparking",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15101_00,,,15101_00,"gebied voor personeelsparking",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15102_00,,,15102_00,"bouwvrije zone ifv inrichting",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,WAAR
+skos:Concept,ct:15102_01,,,15102_01,"bouwvrije zone ifv inrichting",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,WAAR
+skos:Concept,ct:15103_00,,,15103_00,"op te heffen verkavelingen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15103_01,,,15103_01,"op te heffen verkavelingen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15104_00,,,15104_00,"landschappelijke inpassing",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15105_00,,,15105_00,"beperkte bouwmogelijkheden",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15105_01,,,15105_01,"beperkte bouwmogelijkheden",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15106_00,,,15106_00,"toegelaten gebouwen voor gemeenschaps- en openbare nutsvoorzieningen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15107_00,,,15107_00,"zone voor opslag",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15107_01,,,15107_01,"zone voor opslag",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15108_02,,,15108_02,"zone voor niet-hinderlijke activiteiten",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15108_00,,,15108_00,"zone voor niet-hinderlijke activiteiten",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15108_04,,,15108_04,"zone voor niet-hinderlijke activiteiten",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15108_01,,,15108_01,"zone voor niet-hinderlijke activiteiten",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15109_00,,,15109_00,"zone voor specifieke gebouwen en constructies",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,WAAR,ONWAAR
+skos:Concept,ct:15109_01,,,15109_01,"zone voor specifieke gebouwen en constructies",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,WAAR,ONWAAR
+skos:Concept,ct:15109_03,,,15109_03,"zone voor specifieke gebouwen en constructies",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,WAAR,ONWAAR
+skos:Concept,ct:15109_02,,,15109_02,"zone voor specifieke gebouwen en constructies",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,WAAR,ONWAAR
+skos:Concept,ct:15110_00,,,15110_00,"portaal",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15111_00,,,15111_00,"vista",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15112_01,,,15112_01,"tuinen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15112_00,,,15112_00,"tuinen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15113_02,,,15113_02,"zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15113_00,,,15113_00,"zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15113_01,,,15113_01,"zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15114_02,,,15114_02,"zone voor toelaatbare bebouwing en infrastructuur",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15114_00,,,15114_00,"zone voor toelaatbare bebouwing en infrastructuur",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15114_01,,,15114_01,"zone voor toelaatbare bebouwing en infrastructuur",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15115_00,,,15115_00,"zone voor nucleaire sanering",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15116_00,,,15116_00,"veiligheidszone nucleaire activiteit",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
+skos:Concept,ct:15117_00,,,15117_00,"speelvrije zone",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15118_00,,,15118_00,"Erfdienstbaarheidsgebied",,ct:151,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15201_00,,,15201_00,"uitdoofbeleid voor zonevreemde activiteiten",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15202_00,,,15202_00,"recht van voorkoop",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15203_00,,,15203_00,"cultuurhistorische waarde, historische relicten, landschapsbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:15203_01,,,15203_01,"cultuurhistorische waarde, historische relicten, landschapsbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:X7,,,X7,"vloeiweiden",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:15206_00,,,15206_00,"waterbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:20101_02,,,20101_02,"gebouw",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20101_01,,,20101_01,"gebouw",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20101_00,,,20101_00,"gebouw",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20102_00,,,20102_00,"toren",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20201_00,,,20201_00,"HC (hollands complex)",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20202_00,,,20202_00,"ov_kn2 (openbaar vervoer knooppunt)",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20203_00,,,20203_00,"brug",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20204_00,,,20204_00,"busstation",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20205_00,,,20205_00,"toegang voor hulpdiensten",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20206_00,,,20206_00,"stadsdistributie",,ct:202,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20301_00,,,20301_00,"heuvel",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20302_00,,,20302_00,"puntpijl",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20303_00,,,20303_00,"meerpalen, pompgemaal",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20304_00,,,20304_00,"hoekbomen",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20305_00,,,20305_00,"gebouw",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20306_00,,,20306_00,"bestaand bouwkundig erfgoed primair",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20307_00,,,20307_00,"bestaand bouwkundig erfgoed tweede rangorde",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20308_00,,,20308_00,"zichtrelatie",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20309_00,,,20309_00,"ondergronds historisch monument",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt,ONWAAR,ONWAAR
+skos:Concept,ct:20310_00,,,20310_00,"openbaar nut",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:20311_00,,,20311_00,"infrastructuur",,ct:203,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_06,,,21101_06,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_02,,,21101_02,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_00,,,21101_00,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_07,,,21101_07,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_05,,,21101_05,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_03,,,21101_03,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_04,,,21101_04,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_01,,,21101_01,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21101_08,,,21101_08,"ontsluiting",,ct:211,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_05,,,21201_05,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_03,,,21201_03,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_02,,,21201_02,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_01,,,21201_01,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_06,,,21201_06,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_00,,,21201_00,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21201_04,,,21201_04,"langzaam verkeer",,ct:212,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21301_01,,,21301_01,"buffer",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21301_02,,,21301_02,"buffer",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21301_04,,,21301_04,"buffer",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21301_03,,,21301_03,"buffer",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21301_00,,,21301_00,"buffer",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21302_00,,,21302_00,"geluidscherm",,ct:213,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21401_00,,,21401_00,"maatbepaling",,ct:214,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21402_00,,,21402_00,"bouwlijnen",,ct:214,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21501_02,,,21501_02,"wegenis",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21501_03,,,21501_03,"wegenis",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21501_01,,,21501_01,"wegenis",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21501_04,,,21501_04,"wegenis",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21501_00,,,21501_00,"wegenis",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21502_01,,,21502_01,"dreef",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21502_03,,,21502_03,"dreef",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21502_02,,,21502_02,"dreef",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21502_00,,,21502_00,"dreef",,ct:215,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21601_00,,,21601_00,"waterweg",,ct:216,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21601_01,,,21601_01,"waterweg",,ct:216,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21602_02,,,21602_02,"indicatieve waterweg",,ct:216,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21602_00,,,21602_00,"indicatieve waterweg",,ct:216,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21602_01,,,21602_01,"indicatieve waterweg",,ct:216,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21701_01,,,21701_01,"spoorinfrastructuur",,ct:217,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21701_00,,,21701_00,"spoorinfrastructuur",,ct:217,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21801_00,,,21801_00,"herstellen historische verbinding",,ct:218,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21801_02,,,21801_02,"herstellen historische verbinding",,ct:218,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21901_01,,,21901_01,"natuurcorridors",,ct:219,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:21901_00,,,21901_00,"natuurcorridors",,ct:219,,,,,,,,,,,cs:plan_legende,,,,,,,,,ln_ia,ONWAAR,ONWAAR
+skos:Concept,ct:22101_00,,,22101_00,"zone voor landschappelijke inpassing",,ct:221,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov_ia,ONWAAR,ONWAAR
+skos:Concept,ct:22101_05,,,22101_05,"zone voor landschappelijke inpassing",,ct:221,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:22101_03,,,22101_03,"zone voor landschappelijke inpassing",,ct:221,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:22101_04,,,22101_04,"zone voor landschappelijke inpassing",,ct:221,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
+skos:Concept,ct:22201_00,,,22201_00,"zone voor landschappelijke inpassing",,ct:222,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov_ia,ONWAAR,ONWAAR
+skos:Concept,ct:99999_13,,,99999_13,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_16,,,99999_16,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_18,,,99999_18,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_15,,,99999_15,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_00,,,99999_00,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_17,,,99999_17,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_01,,,99999_01,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_02,,,99999_02,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_03,,,99999_03,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_05,,,99999_05,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_07,,,99999_07,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_08,,,99999_08,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_09,,,99999_09,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_10,,,99999_10,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_12,,,99999_12,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_14,,,99999_14,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_04,,,99999_04,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_06,,,99999_06,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:99999_11,,,99999_11,"annotatie",,ct:999,,,,,,,,,,,cs:plan_legende,,,,,,,,,annotatie,ONWAAR,ONWAAR
+skos:Concept,ct:00,,colt:voorschrift_categorie,00,"afbakeningen in overdruk, geen onderliggende bestemming",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:01,,colt:voorschrift_categorie,01,"woongebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:02,,colt:voorschrift_categorie,02,"recreatiegebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:03,,colt:voorschrift_categorie,03,"natuur- en reservaatgebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:04,,colt:voorschrift_categorie,04,"overige groengebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:05,,colt:voorschrift_categorie,05,"bosgebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:06,,colt:voorschrift_categorie,06,"landbouwgebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:07,,colt:voorschrift_categorie,07,"industriegebieden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:08,,colt:voorschrift_categorie,08,"gemeenschapsvoorzieningen en nutsvoorzieningen",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:09,,colt:voorschrift_categorie,09,"lijninfrastructuren - autowegen",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:10,,colt:voorschrift_categorie,10,"lijninfrastructuren - spoorwegen",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:11,,colt:voorschrift_categorie,11,"lijninfrastructuren - waterwegen",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:12,,colt:voorschrift_categorie,12,"lijninfrastructuren - leidingen",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:13,,colt:voorschrift_categorie,13,"gebundelde lijninfrastructuur en/of aanhorigheden",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:14,,colt:voorschrift_categorie,14,"tijdsgebonden aspecten",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:15,,colt:voorschrift_categorie,15,"inrichting en beheersaspecten",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:20,,colt:voorschrift_categorie,20,"punten indicatieve aanduiding",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:21,,colt:voorschrift_categorie,21,"lijnen indicatieve aanduiding",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:22,,colt:voorschrift_categorie,22,"vlakken indicatieve aanduiding",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:99,,colt:voorschrift_categorie,99,"annotatie",,,,,,,,,,,,,cs:plan_legende,,,,,,,cs:plan_legende,,,,
+skos:Concept,ct:000,,colt:voorschrift_subcategorie,000,"onzichtbare afbakeningslijn",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:001,,colt:voorschrift_subcategorie,001,"stedelijke gebieden",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:002,,colt:voorschrift_subcategorie,002,"afbakening zeehavens, luchthaven van Zaventem en logistieke parken",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:003,,colt:voorschrift_subcategorie,003,"gebieden van de natuurlijke structuur",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:004,,colt:voorschrift_subcategorie,004,"elementen en componenten van de landschappelijke structuur",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:006,,colt:voorschrift_subcategorie,006,"projectgebieden",,ct:00,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:011,,colt:voorschrift_subcategorie,011,"woongebieden (in gewestelijke rups)",,ct:01,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:021,,colt:voorschrift_subcategorie,021,"recreatiegebieden (in gewestelijke rups)",,ct:02,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:031,,colt:voorschrift_subcategorie,031,"natuur- en reservaatgebieden (in gewestelijke rups)",,ct:03,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:041,,colt:voorschrift_subcategorie,041,"groengebieden (in gewestelijke rups)",,ct:04,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:042,,colt:voorschrift_subcategorie,042,"buffergebieden (in gewestelijke rups)",,ct:04,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:043,,colt:voorschrift_subcategorie,043,"parkgebieden (in gewestelijke rups)",,ct:04,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:051,,colt:voorschrift_subcategorie,051,"bosgebieden (in gewestelijke rups)",,ct:05,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:061,,colt:voorschrift_subcategorie,061,"landbouwgebieden",,ct:06,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:071,,colt:voorschrift_subcategorie,071,"regionale bedrijventerreinen",,ct:07,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:072,,colt:voorschrift_subcategorie,072,"bedrijventerreinen in zeehavengebieden",,ct:07,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:074,,colt:voorschrift_subcategorie,074,"historisch gegroeid regionaal bedrijventerrein",,ct:07,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:075,,colt:voorschrift_subcategorie,075,"lokale bedrijventerreinen",,ct:07,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:076,,colt:voorschrift_subcategorie,076,"gemengde en lokale bedrijventerreinen",,ct:07,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:081,,colt:voorschrift_subcategorie,081,"openbaar nut",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:082,,colt:voorschrift_subcategorie,082,"militair domein",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:083,,colt:voorschrift_subcategorie,083,"watergevoelige zones",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:084,,colt:voorschrift_subcategorie,084,"waterwinningsgebieden",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:085,,colt:voorschrift_subcategorie,085,"ontginningsgebieden",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:086,,colt:voorschrift_subcategorie,086,"stortgebieden",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:087,,colt:voorschrift_subcategorie,087,"OMGEZET NAAR GROEP 09/13/14/15    DEELGROEP NIET MEER VAN TOEPASSING (overige gebieden)",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:088,,colt:voorschrift_subcategorie,088,"DEELGROEP NIET MEER VAN TOEPASSING (overige lijninfrastructuur (= gemengd, m.a.w niet behorend tot de groepen 09, 10, 11 of 12))",,ct:08,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:091,,colt:voorschrift_subcategorie,091,"reservatiegebieden voor wegen + aan te leggen wegen",,ct:09,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:092,,colt:voorschrift_subcategorie,092,"te schrappen (reservatie)gebieden",,ct:09,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:093,,colt:voorschrift_subcategorie,093,"gebieden voor wegen",,ct:09,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:094,,colt:voorschrift_subcategorie,094,"DEELGROEP BESTAAT NIET MEER (gebundelde lijninfrastructuur)",,ct:09,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:101,,colt:voorschrift_subcategorie,101,"DEELGROEP NIET MEER VAN TOEPASSING (reservatiegebieden voor spoorwegen)",,ct:10,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:103,,colt:voorschrift_subcategorie,103,"gebieden voor spoorwegen",,ct:10,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:111,,colt:voorschrift_subcategorie,111,"reservatiegebieden voor waterwegen",,ct:11,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:112,,colt:voorschrift_subcategorie,112,"te schrappen reservatiegebieden voor waterwegen",,ct:11,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:113,,colt:voorschrift_subcategorie,113,"gebieden voor waterwegen",,ct:11,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:122,,colt:voorschrift_subcategorie,122,"reservatiegebieden voor aan te leggen leiding",,ct:12,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:123,,colt:voorschrift_subcategorie,123,"bestaande leidingen (in rups)",,ct:12,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:131,,colt:voorschrift_subcategorie,131,"gebundelde lijninfrastructuur",,ct:13,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:132,,colt:voorschrift_subcategorie,132,"aanhorigheden",,ct:13,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:141,,colt:voorschrift_subcategorie,141,"tijdsgebonden aspecten",,ct:14,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:151,,colt:voorschrift_subcategorie,151,"inrichting",,ct:15,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:152,,colt:voorschrift_subcategorie,152,"beheer",,ct:15,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:201,,colt:voorschrift_subcategorie,201,"gebouwen",,ct:20,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:202,,colt:voorschrift_subcategorie,202,"knooppunten",,ct:20,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:203,,colt:voorschrift_subcategorie,203,"allerlei",,ct:20,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:211,,colt:voorschrift_subcategorie,211,"ontsluiting",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:212,,colt:voorschrift_subcategorie,212,"langzaam verkeer",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:213,,colt:voorschrift_subcategorie,213,"buffers",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:214,,colt:voorschrift_subcategorie,214,"bouwlijnen",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:215,,colt:voorschrift_subcategorie,215,"lokale wegenis",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:216,,colt:voorschrift_subcategorie,216,"waterinfrastructuur",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:217,,colt:voorschrift_subcategorie,217,"spoorinfrastructuur",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:218,,colt:voorschrift_subcategorie,218,"historische verbinding",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:219,,colt:voorschrift_subcategorie,219,"natuurcorridors",,ct:21,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:221,,colt:voorschrift_subcategorie,221,"wegeninfrastructuur",,ct:22,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:222,,colt:voorschrift_subcategorie,222,"spoorinfratructuur",,ct:22,,,,,,,,,,,,,,,,,,,,,,
+skos:Concept,ct:999,,colt:voorschrift_subcategorie,999,"annotaties",,ct:99,,,,,,,,,,,,,,,,,,,,,,

@@ -1,49 +1,3364 @@
-@prefix cs:    <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
-@prefix ct:    <https://data.omgeving.vlaanderen.be/id/concept/plan_legende/> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix colt:  <https://data.omgeving.vlaanderen.be/id/collection/plan_legende/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
-@prefix xkos:  <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix colt: <https://data.omgeving.vlaanderen.be/id/collection/plan_legende/> .
+@prefix cs:   <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix ct:   <https://data.omgeving.vlaanderen.be/id/concept/plan_legende/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-colt:test_collectie  a  skos:Collection ;
-        dc:identifier   "test_collectie" ;
+ct:08107_02  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
         skos:inScheme   cs:plan_legende ;
-        skos:member     ct:test_concept , ct:test_concept2 , ct:test_topconcept ;
-        skos:prefLabel  "PrefLabel van test_collectie"@nl .
+        skos:notation   "08107_02" ;
+        skos:prefLabel  "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"@nl .
 
-cs:plan_legende  a          skos:ConceptScheme ;
-        dc:identifier       "plan_legende" ;
-        skos:hasTopConcept  ct:test_topconcept ;
-        skos:prefLabel      "PrefLabel van plan_legende"@nl .
-
-ct:test_concept  a      skos:Concept ;
-        dc:identifier   "test_concept" ;
-        skos:broader    ct:test_topconcept ;
-        skos:inScheme   cs:plan_legende ;
-        skos:notation   "code (mnemonic) van test_concept" ;
-        skos:prefLabel  "PrefLabel van test_concept"@nl .
-
-colt:test_collectie2  a  skos:Collection ;
-        dc:identifier   "test_collectie2" ;
-        skos:inScheme   cs:plan_legende ;
-        skos:member     ct:test_concept2 ;
-        skos:prefLabel  "PrefLabel van test_collectie"@nl .
-
-ct:test_topconcept  a      skos:Concept ;
-        dc:identifier      "test_topconcept" ;
+ct:07   rdf:type           skos:Concept ;
         skos:inScheme      cs:plan_legende ;
-        skos:narrower      ct:test_concept , ct:test_concept2 ;
-        skos:notation      "code (mnemonic) van test_topconcept" ;
-        skos:prefLabel     "PrefLabel van test_topconcept"@nl ;
+        skos:narrower      ct:076 , ct:072 , ct:075 , ct:071 , ct:074 ;
+        skos:notation      "07" ;
+        skos:prefLabel     "industriegebieden"@nl ;
         skos:topConceptOf  cs:plan_legende .
 
-ct:test_concept2  a     skos:Concept ;
-        dc:identifier   "test_concept2" ;
-        skos:altLabel   "blablabla"@nl ;
-        skos:broader    ct:test_topconcept ;
+ct:202  rdf:type        skos:Concept ;
+        skos:broader    ct:20 ;
+        skos:narrower   ct:20204_00 , ct:20202_00 , ct:20206_00 , ct:20205_00 , ct:20203_00 , ct:20201_00 ;
+        skos:notation   "202" ;
+        skos:prefLabel  "knooppunten"@nl .
+
+ct:10101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:101 ;
         skos:inScheme   cs:plan_legende ;
-        skos:notation   "code (mnemonic) van test_concept 2" ;
-        skos:prefLabel  "PrefLabel van test_concept 2"@nl .
+        skos:notation   "10101_00" ;
+        skos:prefLabel  "UITDOVEND : reservatiegebied voor aan te leggen hoofdspoorweg (in overdruk) (rup: 2_1)"@nl .
+
+ct:X4   rdf:type        skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X4" ;
+        skos:prefLabel  "gebied voor motocross"@nl .
+
+ct:21801_02  rdf:type   skos:Concept ;
+        skos:broader    ct:218 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21801_02" ;
+        skos:prefLabel  "herstellen historische verbinding"@nl .
+
+ct:02108_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02108_00" ;
+        skos:prefLabel  "recreatieve bebouwing"@nl .
+
+ct:00105_01  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00105_01" ;
+        skos:prefLabel  "grenslijn regionaalstedelijk gebied"@nl .
+
+ct:09109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:091 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09109_00" ;
+        skos:prefLabel  "reservatiegebied voor aan te leggen weg (categorie niet bepaald)"@nl .
+
+ct:093  rdf:type        skos:Concept ;
+        skos:broader    ct:09 ;
+        skos:narrower   ct:X6 , ct:09303_01 , ct:09303_02 , ct:09303_03 , ct:09304_00 , ct:09304_01 , ct:09312_00 , ct:09304_02 , ct:09309_00 , ct:09304_03 , ct:09302_00 , ct:09302_01 , ct:09303_00 , ct:09313_00 , ct:09301_02 , ct:09309_01 , ct:09313_01 , ct:09301_03 , ct:09301_00 ;
+        skos:notation   "093" ;
+        skos:prefLabel  "gebieden voor wegen"@nl .
+
+ct:04201_01  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04201_01" ;
+        skos:prefLabel  "bosbuffer"@nl .
+
+ct:04202_02  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04202_02" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:15114_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15114_00" ;
+        skos:prefLabel  "zone voor toelaatbare bebouwing en infrastructuur"@nl .
+
+ct:15201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15201_00" ;
+        skos:prefLabel  "uitdoofbeleid voor zonevreemde activiteiten"@nl .
+
+ct:03103_02  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03103_02" ;
+        skos:prefLabel  "overstromings- en natuurgebied"@nl .
+
+ct:09303_03  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09303_03" ;
+        skos:prefLabel  "UITDOVEND secundaire weg"@nl .
+
+ct:08501_03  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08501_03" ;
+        skos:prefLabel  "gebied voor de winning van oppervlaktedelfstoffen"@nl .
+
+ct:14103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14103_01" ;
+        skos:prefLabel  "werfzone"@nl .
+
+ct:214  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21402_00 , ct:21401_00 ;
+        skos:notation   "214" ;
+        skos:prefLabel  "bouwlijnen"@nl .
+
+ct:02101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02101_00" ;
+        skos:prefLabel  "randstedelijk groengebied met dagrecreatieve infrastructuur"@nl .
+
+ct:04105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04105_00" ;
+        skos:prefLabel  "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"@nl .
+
+ct:02102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02102_01" ;
+        skos:prefLabel  "recreatiegebied"@nl .
+
+ct:04106_01  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04106_01" ;
+        skos:prefLabel  "gemengd openruimte met cultuurhistorische waarde"@nl .
+
+ct:003  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00304_00 , ct:00303_00 , ct:00303_02 , ct:00302_00 , ct:00301_00 ;
+        skos:notation   "003" ;
+        skos:prefLabel  "gebieden van de natuurlijke structuur"@nl .
+
+ct:20205_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20205_00" ;
+        skos:prefLabel  "toegang voor hulpdiensten"@nl .
+
+ct:15109_03  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15109_03" ;
+        skos:prefLabel  "zone voor specifieke gebouwen en constructies"@nl .
+
+ct:15106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15106_00" ;
+        skos:prefLabel  "toegelaten gebouwen voor gemeenschaps- en openbare nutsvoorzieningen"@nl .
+
+ct:15107_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15107_01" ;
+        skos:prefLabel  "zone voor opslag"@nl .
+
+ct:15108_02  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15108_02" ;
+        skos:prefLabel  "zone voor niet-hinderlijke activiteiten"@nl .
+
+ct:12302_02  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12302_02" ;
+        skos:prefLabel  "enkelvoudige leiding"@nl .
+
+ct:075  rdf:type        skos:Concept ;
+        skos:broader    ct:07 ;
+        skos:narrower   ct:07502_00 , ct:07501_01 , ct:07501_00 ;
+        skos:notation   "075" ;
+        skos:prefLabel  "lokale bedrijventerreinen"@nl .
+
+ct:00201_01  rdf:type   skos:Concept ;
+        skos:broader    ct:002 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00201_01" ;
+        skos:prefLabel  "grenslijn zeehavengebied"@nl .
+
+ct:09205_00  rdf:type   skos:Concept ;
+        skos:broader    ct:092 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09205_00" ;
+        skos:prefLabel  "op te heffen wegenis"@nl .
+
+ct:20   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:203 , ct:202 , ct:201 ;
+        skos:notation      "20" ;
+        skos:prefLabel     "punten indicatieve aanduiding"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:07204_03  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_03" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:21201_03  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_03" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:11201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:112 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11201_00" ;
+        skos:prefLabel  "op te heffen reservatiegebied voor waterweg (in overdruk) (rup: 2_1)"@nl .
+
+ct:01117_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01117_00" ;
+        skos:prefLabel  "sociaal objectief"@nl .
+
+ct:06102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06102_00" ;
+        skos:prefLabel  "bouwvrij agrarisch gebied"@nl .
+
+ct:00402_00  rdf:type   skos:Concept ;
+        skos:broader    ct:004 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00402_00" ;
+        skos:prefLabel  "site met belangrijke erfgoedwaarde"@nl .
+
+ct:99999_07  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_07" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:12205_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12205_00" ;
+        skos:prefLabel  "op te heffen enkelvoudige leiding"@nl .
+
+ct:02110_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02110_00" ;
+        skos:prefLabel  "verblijfsrecreatie"@nl .
+
+ct:07106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07106_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein met watergebonden karakter"@nl .
+
+ct:07107_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07107_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor wetenschapspark"@nl .
+
+ct:04301_01  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04301_01" ;
+        skos:prefLabel  "park"@nl .
+
+ct:087  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08712_00 ;
+        skos:notation   "087" ;
+        skos:prefLabel  "OMGEZET NAAR GROEP 09/13/14/15    DEELGROEP NIET MEER VAN TOEPASSING (overige gebieden)"@nl .
+
+ct:07101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_06" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:21602_00  rdf:type   skos:Concept ;
+        skos:broader    ct:216 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21602_00" ;
+        skos:prefLabel  "indicatieve waterweg"@nl .
+
+ct:15115_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15115_00" ;
+        skos:prefLabel  "zone voor nucleaire sanering"@nl .
+
+ct:13201_03  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13201_03" ;
+        skos:prefLabel  "gebied voor overstap (bv. treinstopplaats)"@nl .
+
+ct:01109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01109_00" ;
+        skos:prefLabel  "Landelijk woongebied met culturele, historische en/of esthetische waarde"@nl .
+
+ct:07210_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07210_00" ;
+        skos:prefLabel  "gebied voor energie"@nl .
+
+ct:02   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:021 ;
+        skos:notation      "02" ;
+        skos:prefLabel     "recreatiegebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:08102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08102_03" ;
+        skos:prefLabel  "gebied voor gemeenschaps- en openbare nutsvoorzieningen"@nl .
+
+ct:09401_01  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09401_01" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)"@nl .
+
+ct:112  rdf:type        skos:Concept ;
+        skos:broader    ct:11 ;
+        skos:narrower   ct:11202_00 , ct:11201_00 ;
+        skos:notation   "112" ;
+        skos:prefLabel  "te schrappen reservatiegebieden voor waterwegen"@nl .
+
+ct:22101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:221 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "22101_05" ;
+        skos:prefLabel  "zone voor landschappelijke inpassing"@nl .
+
+ct:04205_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04205_00" ;
+        skos:prefLabel  "koppelingsgebied"@nl .
+
+ct:08302_01  rdf:type   skos:Concept ;
+        skos:broader    ct:083 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08302_01" ;
+        skos:prefLabel  "waterbeheersgebieden"@nl .
+
+ct:21101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_05" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:15206_00  rdf:type   skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15206_00" ;
+        skos:prefLabel  "waterbeheer"@nl .
+
+ct:13104_01  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13104_01" ;
+        skos:prefLabel  "reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur"@nl .
+
+ct:08801_01  rdf:type   skos:Concept ;
+        skos:broader    ct:088 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08801_01" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))"@nl .
+
+ct:13103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13103_00" ;
+        skos:prefLabel  "bouwvrije strook"@nl .
+
+ct:12304_03  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_03" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:11102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:111 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11102_03" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"@nl .
+
+ct:12303_02  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12303_02" ;
+        skos:prefLabel  "hoogspanningsleiding"@nl .
+
+ct:01102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01102_00" ;
+        skos:prefLabel  "stationsomgeving"@nl .
+
+ct:01103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01103_01" ;
+        skos:prefLabel  "gebied voor gemengde stedelijke aktiviteiten"@nl .
+
+ct:08503_00  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08503_00" ;
+        skos:prefLabel  "gebied voor recuperatie of recyclage"@nl .
+
+ct:14   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:141 ;
+        skos:notation      "14" ;
+        skos:prefLabel     "tijdsgebonden aspecten"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:21301_03  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21301_03" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:11301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:113 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11301_00" ;
+        skos:prefLabel  "bestaande waterweg"@nl .
+
+ct:04102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04102_03" ;
+        skos:prefLabel  "gemengd openruimtegebied"@nl .
+
+ct:21501_01  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21501_01" ;
+        skos:prefLabel  "wegenis"@nl .
+
+ct:21502_02  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21502_02" ;
+        skos:prefLabel  "dreef"@nl .
+
+ct:15101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15101_01" ;
+        skos:prefLabel  "gebied voor personeelsparking"@nl .
+
+ct:05103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05103_00" ;
+        skos:prefLabel  "nabestemming bosgebied [zie rup 10_1 turnhout, art. 16,2]"@nl .
+
+ct:07206_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07206_00" ;
+        skos:prefLabel  "zone voor bestaande productiebedrijvigheid in zeehavengebied"@nl .
+
+ct:03102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03102_03" ;
+        skos:prefLabel  "natuurgebied"@nl .
+
+ct:221  rdf:type        skos:Concept ;
+        skos:broader    ct:22 ;
+        skos:narrower   ct:22101_04 , ct:22101_03 , ct:22101_05 , ct:22101_00 ;
+        skos:notation   "221" ;
+        skos:prefLabel  "wegeninfrastructuur"@nl .
+
+ct:07204_09  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_09" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:99999_02  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_02" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:06107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06107_00" ;
+        skos:prefLabel  "agrarisch gebied met ecologisch belang"@nl .
+
+colt:voorschrift_categorie
+        rdf:type        skos:Collection ;
+        dc:identifier   "voorschrift_categorie" ;
+        skos:member     ct:12 , ct:99 , ct:04 , ct:15 , ct:11 , ct:05 , ct:02 , ct:13 , ct:03 , ct:00 , ct:01 , ct:22 , ct:08 , ct:09 , ct:20 , ct:14 , ct:06 , ct:10 , ct:21 , ct:07 ;
+        skos:prefLabel  "Voorschrift categorie"@nl .
+
+ct:06101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_05" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:12202_03  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12202_03" ;
+        skos:prefLabel  "op te heffen leidingstraat"@nl .
+
+ct:082  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08201_00 ;
+        skos:notation   "082" ;
+        skos:prefLabel  "militair domein"@nl .
+
+ct:07103_03  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07103_03" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kantoren"@nl .
+
+ct:07101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_01" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:07102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07102_02" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"@nl .
+
+ct:08401_00  rdf:type   skos:Concept ;
+        skos:broader    ct:084 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08401_00" ;
+        skos:prefLabel  "waterwinningsgebied"@nl .
+
+ct:20306_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20306_00" ;
+        skos:prefLabel  "bestaand bouwkundig erfgoed primair"@nl .
+
+ct:99999_14  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_14" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:08107_03  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08107_03" ;
+        skos:prefLabel  "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"@nl .
+
+ct:08105_01  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08105_01" ;
+        skos:prefLabel  "gebied van openbaar nut en recreatie"@nl .
+
+ct:08106_02  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08106_02" ;
+        skos:prefLabel  "havenondersteunende gemeenschapsvoorzieningen"@nl .
+
+ct:09405_00  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09405_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg (in overdruk)"@nl .
+
+ct:22101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:221 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "22101_00" ;
+        skos:prefLabel  "zone voor landschappelijke inpassing"@nl .
+
+ct:08   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:088 , ct:083 , ct:085 , ct:082 , ct:084 , ct:087 , ct:081 , ct:086 ;
+        skos:notation      "08" ;
+        skos:prefLabel     "gemeenschapsvoorzieningen en nutsvoorzieningen"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:203  rdf:type        skos:Concept ;
+        skos:broader    ct:20 ;
+        skos:narrower   ct:20301_00 , ct:20307_00 , ct:20304_00 , ct:20305_00 , ct:20309_00 , ct:20302_00 , ct:20306_00 , ct:20311_00 , ct:20310_00 , ct:20308_00 , ct:20303_00 ;
+        skos:notation   "203" ;
+        skos:prefLabel  "allerlei"@nl .
+
+ct:X5   rdf:type        skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X5" ;
+        skos:prefLabel  "gemengd agrarisch gebied"@nl .
+
+ct:00103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00103_00" ;
+        skos:prefLabel  "grenslijn grootstedelijk gebied"@nl .
+
+ct:21101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_00" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:094  rdf:type        skos:Concept ;
+        skos:broader    ct:09 ;
+        skos:narrower   ct:09404_00 , ct:09406_01 , ct:09406_00 , ct:09402_01 , ct:09401_01 , ct:09402_00 , ct:09401_00 , ct:09405_00 ;
+        skos:notation   "094" ;
+        skos:prefLabel  "DEELGROEP BESTAAT NIET MEER (gebundelde lijninfrastructuur)"@nl .
+
+ct:04201_02  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04201_02" ;
+        skos:prefLabel  "bosbuffer"@nl .
+
+ct:04202_03  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04202_03" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:08805_00  rdf:type   skos:Concept ;
+        skos:broader    ct:088 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08805_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (gemengd reservatiegebied (in overdruk))"@nl .
+
+ct:15113_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15113_00" ;
+        skos:prefLabel  "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"@nl .
+
+ct:15114_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15114_01" ;
+        skos:prefLabel  "zone voor toelaatbare bebouwing en infrastructuur"@nl .
+
+ct:01101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01101_05" ;
+        skos:prefLabel  "woongebied"@nl .
+
+ct:09301_02  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09301_02" ;
+        skos:prefLabel  "UITDOVEND hoofdweg"@nl .
+
+ct:14101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_00" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:14103_02  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14103_02" ;
+        skos:prefLabel  "werfzone"@nl .
+
+ct:215  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21501_03 , ct:21501_01 , ct:21502_00 , ct:21502_02 , ct:21502_03 , ct:21501_04 , ct:21502_01 , ct:21501_02 , ct:21501_00 ;
+        skos:notation   "215" ;
+        skos:prefLabel  "lokale wegenis"@nl .
+
+ct:04105_01  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04105_01" ;
+        skos:prefLabel  "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"@nl .
+
+ct:02101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02101_01" ;
+        skos:prefLabel  "randstedelijk groengebied met dagrecreatieve infrastructuur"@nl .
+
+ct:02102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02102_02" ;
+        skos:prefLabel  "recreatiegebied"@nl .
+
+ct:004  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00403_00 , ct:00402_01 , ct:00402_00 , ct:00401_00 ;
+        skos:notation   "004" ;
+        skos:prefLabel  "elementen en componenten van de landschappelijke structuur"@nl .
+
+ct:20204_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20204_00" ;
+        skos:prefLabel  "busstation"@nl .
+
+ct:15105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15105_00" ;
+        skos:prefLabel  "beperkte bouwmogelijkheden"@nl .
+
+ct:12301_02  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12301_02" ;
+        skos:prefLabel  "leidingstraat"@nl .
+
+ct:076  rdf:type        skos:Concept ;
+        skos:broader    ct:07 ;
+        skos:narrower   ct:07604_00 , ct:07602_00 , ct:07601_00 ;
+        skos:notation   "076" ;
+        skos:prefLabel  "gemengde en lokale bedrijventerreinen"@nl .
+
+ct:00201_02  rdf:type   skos:Concept ;
+        skos:broader    ct:002 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00201_02" ;
+        skos:prefLabel  "grenslijn zeehavengebied"@nl .
+
+ct:21   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:213 , ct:215 , ct:217 , ct:214 , ct:219 , ct:216 , ct:211 , ct:218 , ct:212 ;
+        skos:notation      "21" ;
+        skos:prefLabel     "lijnen indicatieve aanduiding"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:09205_01  rdf:type   skos:Concept ;
+        skos:broader    ct:092 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09205_01" ;
+        skos:prefLabel  "op te heffen wegenis"@nl .
+
+ct:05101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05101_04" ;
+        skos:prefLabel  "bosgebied"@nl .
+
+ct:07204_04  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_04" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:131  rdf:type        skos:Concept ;
+        skos:broader    ct:13 ;
+        skos:narrower   ct:13102_01 , ct:13104_01 , ct:13102_00 , ct:13103_00 , ct:13101_02 , ct:13104_00 , ct:13102_02 , ct:13101_01 ;
+        skos:notation   "131" ;
+        skos:prefLabel  "gebundelde lijninfrastructuur"@nl .
+
+ct:21201_04  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_04" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:99999_08  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_08" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:101  rdf:type        skos:Concept ;
+        skos:broader    ct:10 ;
+        skos:narrower   ct:10101_00 ;
+        skos:notation   "101" ;
+        skos:prefLabel  "DEELGROEP NIET MEER VAN TOEPASSING (reservatiegebieden voor spoorwegen)"@nl .
+
+ct:00401_00  rdf:type   skos:Concept ;
+        skos:broader    ct:004 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00401_00" ;
+        skos:prefLabel  "erfgoedlandschap"@nl .
+
+ct:06101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_00" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:06102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06102_01" ;
+        skos:prefLabel  "bouwvrij agrarisch gebied"@nl .
+
+ct:00402_01  rdf:type   skos:Concept ;
+        skos:broader    ct:004 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00402_01" ;
+        skos:prefLabel  "site met belangrijke erfgoedwaarde"@nl .
+
+ct:07402_00  rdf:type   skos:Concept ;
+        skos:broader    ct:074 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07402_00" ;
+        skos:prefLabel  "bedrijventerrein voor historisch gegroeid bedrijf met voorbestemming woongebied"@nl .
+
+ct:09406_00  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09406_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)"@nl .
+
+ct:22201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:222 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "22201_00" ;
+        skos:prefLabel  "zone voor landschappelijke inpassing"@nl .
+
+ct:12204_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12204_00" ;
+        skos:prefLabel  "reservatiegebied voor hoogspanningsleiding"@nl .
+
+ct:07107_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07107_02" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor wetenschapspark"@nl .
+
+ct:09110_00  rdf:type   skos:Concept ;
+        skos:broader    ct:091 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09110_00" ;
+        skos:prefLabel  "aslijn wegenis"@nl .
+
+ct:07105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07105_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor luchthavengebonden bedrijven"@nl .
+
+ct:07106_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07106_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein met watergebonden karakter"@nl .
+
+ct:04301_02  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04301_02" ;
+        skos:prefLabel  "park"@nl .
+
+ct:00603_00  rdf:type   skos:Concept ;
+        skos:broader    ct:006 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00603_00" ;
+        skos:prefLabel  "groenpool"@nl .
+
+ct:088  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08805_00 , ct:08801_00 , ct:08801_01 ;
+        skos:notation   "088" ;
+        skos:prefLabel  "DEELGROEP NIET MEER VAN TOEPASSING (overige lijninfrastructuur (= gemengd, m.a.w niet behorend tot de groepen 09, 10, 11 of 12))"@nl .
+
+ct:07604_00  rdf:type   skos:Concept ;
+        skos:broader    ct:076 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07604_00" ;
+        skos:prefLabel  "grootschalige kleinhandel en/of lokaal bedrijventerrein"@nl .
+
+ct:21601_00  rdf:type   skos:Concept ;
+        skos:broader    ct:216 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21601_00" ;
+        skos:prefLabel  "waterweg"@nl .
+
+ct:21602_01  rdf:type   skos:Concept ;
+        skos:broader    ct:216 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21602_01" ;
+        skos:prefLabel  "indicatieve waterweg"@nl .
+
+ct:13201_04  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13201_04" ;
+        skos:prefLabel  "gebied voor overstap (bv. treinstopplaats)"@nl .
+
+ct:01108_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01108_00" ;
+        skos:prefLabel  "gebied voor wonen en landbouw"@nl .
+
+ct:01109_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01109_01" ;
+        skos:prefLabel  "Landelijk woongebied met culturele, historische en/of esthetische waarde"@nl .
+
+ct:08109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08109_00" ;
+        skos:prefLabel  "gebied voor infrastructuur voor duurzame watervoorziening"@nl .
+
+ct:07210_01  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07210_01" ;
+        skos:prefLabel  "gebied voor energie"@nl .
+
+ct:20102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:201 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20102_00" ;
+        skos:prefLabel  "toren"@nl .
+
+ct:03   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:031 ;
+        skos:notation      "03" ;
+        skos:prefLabel     "natuur- en reservaatgebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:08102_04  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08102_04" ;
+        skos:prefLabel  "gebied voor gemeenschaps- en openbare nutsvoorzieningen"@nl .
+
+ct:113  rdf:type        skos:Concept ;
+        skos:broader    ct:11 ;
+        skos:narrower   ct:11303_00 , ct:11302_00 , ct:11301_00 ;
+        skos:notation   "113" ;
+        skos:prefLabel  "gebieden voor waterwegen"@nl .
+
+ct:999  rdf:type        skos:Concept ;
+        skos:broader    ct:99 ;
+        skos:narrower   ct:99999_07 , ct:99999_13 , ct:99999_02 , ct:99999_01 , ct:99999_08 , ct:99999_16 , ct:99999_03 , ct:99999_04 , ct:99999_18 , ct:99999_15 , ct:99999_09 , ct:99999_17 , ct:99999_06 , ct:99999_10 , ct:99999_12 , ct:99999_11 , ct:99999_05 , ct:99999_00 , ct:99999_14 ;
+        skos:notation   "999" ;
+        skos:prefLabel  "annotaties"@nl .
+
+ct:04205_01  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04205_01" ;
+        skos:prefLabel  "koppelingsgebied"@nl .
+
+ct:04204_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04204_00" ;
+        skos:prefLabel  "gemengd buffergebied"@nl .
+
+ct:09102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:091 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09102_00" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van wegeninfrastructuur"@nl .
+
+ct:08712_00  rdf:type   skos:Concept ;
+        skos:broader    ct:087 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08712_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (vista)"@nl .
+
+ct:21101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_06" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:13102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13102_00" ;
+        skos:prefLabel  "verkeers- of vervoersinfrastructuur"@nl .
+
+ct:12303_03  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12303_03" ;
+        skos:prefLabel  "hoogspanningsleiding"@nl .
+
+ct:01101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01101_00" ;
+        skos:prefLabel  "woongebied"@nl .
+
+ct:01102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01102_01" ;
+        skos:prefLabel  "stationsomgeving"@nl .
+
+ct:12304_04  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_04" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:09304_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09304_00" ;
+        skos:prefLabel  "UITDOVEND lokale weg"@nl .
+
+ct:08502_00  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08502_00" ;
+        skos:prefLabel  "gebied voor verwerking van oppervlaktedelfstoffen"@nl .
+
+ct:15   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:152 , ct:151 ;
+        skos:notation      "15" ;
+        skos:prefLabel     "inrichting en beheersaspecten"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:21301_04  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21301_04" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:14101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_06" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:04102_04  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04102_04" ;
+        skos:prefLabel  "gemengd openruimtegebied"@nl .
+
+ct:21502_03  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21502_03" ;
+        skos:prefLabel  "dreef"@nl .
+
+ct:21501_02  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21501_02" ;
+        skos:prefLabel  "wegenis"@nl .
+
+ct:071  rdf:type        skos:Concept ;
+        skos:broader    ct:07 ;
+        skos:narrower   ct:07107_00 , ct:07103_03 , ct:07104_00 , ct:07103_01 , ct:07102_01 , ct:07107_02 , ct:07103_00 , ct:07104_02 , ct:07101_03 , ct:07106_01 , ct:07102_00 , ct:07101_02 , ct:07108_00 , ct:07106_03 , ct:07106_00 , ct:07101_01 , ct:07103_02 , ct:07101_05 , ct:07102_02 , ct:07101_00 , ct:07101_04 , ct:07106_02 , ct:07105_00 , ct:07108_01 , ct:07106_04 , ct:07110_00 , ct:07101_06 , ct:07107_01 , ct:07104_01 , ct:07103_04 , ct:07109_00 , ct:07111_00 ;
+        skos:notation   "071" ;
+        skos:prefLabel  "regionale bedrijventerreinen"@nl .
+
+ct:15101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15101_02" ;
+        skos:prefLabel  "gebied voor personeelsparking"@nl .
+
+ct:07205_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07205_00" ;
+        skos:prefLabel  "zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]"@nl .
+
+ct:07206_01  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07206_01" ;
+        skos:prefLabel  "zone voor bestaande productiebedrijvigheid in zeehavengebied"@nl .
+
+ct:03102_04  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03102_04" ;
+        skos:prefLabel  "natuurgebied"@nl .
+
+ct:041  rdf:type        skos:Concept ;
+        skos:broader    ct:04 ;
+        skos:narrower   ct:04106_00 , ct:04102_00 , ct:04105_03 , ct:04102_03 , ct:04105_01 , ct:04105_00 , ct:04105_02 , ct:04107_00 , ct:04101_00 , ct:04102_02 , ct:04106_01 , ct:04102_04 , ct:04102_01 ;
+        skos:notation   "041" ;
+        skos:prefLabel  "groengebieden (in gewestelijke rups)"@nl .
+
+ct:21701_00  rdf:type   skos:Concept ;
+        skos:broader    ct:217 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21701_00" ;
+        skos:prefLabel  "spoorinfrastructuur"@nl .
+
+ct:222  rdf:type        skos:Concept ;
+        skos:broader    ct:22 ;
+        skos:narrower   ct:22201_00 ;
+        skos:notation   "222" ;
+        skos:prefLabel  "spoorinfratructuur"@nl .
+
+ct:99999_03  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_03" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:06106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06106_00" ;
+        skos:prefLabel  "agrarisch gebied met landschappelijke kenmerken"@nl .
+
+ct:08111_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08111_00" ;
+        skos:prefLabel  "Gebied voor zorginfrastructuur"@nl .
+
+ct:08112_01  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08112_01" ;
+        skos:prefLabel  "Infrastructuurlandschap"@nl .
+
+ct:011  rdf:type        skos:Concept ;
+        skos:broader    ct:01 ;
+        skos:narrower   ct:01102_01 , ct:01110_02 , ct:01110_01 , ct:01112_00 , ct:01101_02 , ct:01113_00 , ct:01109_00 , ct:01107_00 , ct:01101_03 , ct:01109_01 , ct:01115_00 , ct:01114_00 , ct:01101_05 , ct:01108_01 , ct:01103_00 , ct:01104_00 , ct:01108_02 , ct:01103_01 , ct:01102_00 , ct:01101_06 , ct:X2 , ct:X1 , ct:01101_00 , ct:X3 , ct:01117_00 , ct:01106_01 , ct:01108_00 , ct:01106_00 ;
+        skos:notation   "011" ;
+        skos:prefLabel  "woongebieden (in gewestelijke rups)"@nl .
+
+ct:09313_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09313_00" ;
+        skos:prefLabel  "zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]"@nl .
+
+ct:06101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_06" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:99   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:999 ;
+        skos:notation      "99" ;
+        skos:prefLabel     "annotatie"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:083  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08302_01 , ct:08302_00 ;
+        skos:notation   "083" ;
+        skos:prefLabel  "watergevoelige zones"@nl .
+
+ct:07101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_02" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:07103_04  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07103_04" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kantoren"@nl .
+
+ct:08401_01  rdf:type   skos:Concept ;
+        skos:broader    ct:084 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08401_01" ;
+        skos:prefLabel  "waterwinningsgebied"@nl .
+
+ct:20305_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20305_00" ;
+        skos:prefLabel  "gebouw"@nl .
+
+ct:13202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13202_00" ;
+        skos:prefLabel  "gebied voor overslag"@nl .
+
+ct:10308_00  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10308_00" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur"@nl .
+
+ct:08103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08103_00" ;
+        skos:prefLabel  "gebied voor publiek wegenonderhoud en beheer"@nl .
+
+ct:99999_15  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_15" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:09404_00  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09404_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs lokale weg)"@nl .
+
+ct:08602_00  rdf:type   skos:Concept ;
+        skos:broader    ct:086 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08602_00" ;
+        skos:prefLabel  "gebied voor specieberging"@nl .
+
+ct:09   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:094 , ct:093 , ct:092 , ct:091 ;
+        skos:notation      "09" ;
+        skos:prefLabel     "lijninfrastructuren - autowegen"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:X6   rdf:type        skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X6" ;
+        skos:prefLabel  "gebied voor diensten bij wegeninfrastructuur"@nl .
+
+ct:02106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02106_00" ;
+        skos:prefLabel  "watergebonden recreatie [131_1]"@nl .
+
+colt:voorschrift_subcategorie
+        rdf:type        skos:Collection ;
+        dc:identifier   "voorschrift_subcategorie" ;
+        skos:member     ct:086 , ct:217 , ct:215 , ct:006 , ct:000 , ct:021 , ct:031 , ct:076 , ct:103 , ct:082 , ct:092 , ct:202 , ct:152 , ct:042 , ct:072 , ct:087 , ct:218 , ct:201 , ct:216 , ct:111 , ct:001 , ct:011 , ct:084 , ct:213 , ct:083 , ct:093 , ct:212 , ct:074 , ct:132 , ct:203 , ct:043 , ct:219 , ct:221 , ct:112 , ct:122 , ct:002 , ct:085 , ct:214 , ct:211 , ct:101 , ct:094 , ct:999 , ct:075 , ct:131 , ct:141 , ct:081 , ct:091 , ct:004 , ct:222 , ct:113 , ct:123 , ct:003 , ct:151 , ct:088 , ct:041 , ct:051 , ct:061 , ct:071 ;
+        skos:prefLabel  "Voorschrift subcategorie"@nl .
+
+ct:00102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00102_00" ;
+        skos:prefLabel  "opheffing afbakening stedelijk gebied"@nl .
+
+ct:00103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00103_01" ;
+        skos:prefLabel  "grenslijn grootstedelijk gebied"@nl .
+
+ct:21101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_01" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:04202_04  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04202_04" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:15114_02  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15114_02" ;
+        skos:prefLabel  "zone voor toelaatbare bebouwing en infrastructuur"@nl .
+
+ct:15112_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15112_00" ;
+        skos:prefLabel  "tuinen"@nl .
+
+ct:15113_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15113_01" ;
+        skos:prefLabel  "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"@nl .
+
+ct:10301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10301_00" ;
+        skos:prefLabel  "zone voor hoofdspoorweg type 1"@nl .
+
+ct:00304_00  rdf:type   skos:Concept ;
+        skos:broader    ct:003 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00304_00" ;
+        skos:prefLabel  "natuurverbindingsgebied"@nl .
+
+ct:10   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:103 , ct:101 ;
+        skos:notation      "10" ;
+        skos:prefLabel     "lijninfrastructuren - spoorwegen"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:09309_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09309_00" ;
+        skos:prefLabel  "wegeninfrastructuur"@nl .
+
+ct:01101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01101_06" ;
+        skos:prefLabel  "woongebied"@nl .
+
+ct:21302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21302_00" ;
+        skos:prefLabel  "geluidscherm"@nl .
+
+ct:09301_03  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09301_03" ;
+        skos:prefLabel  "UITDOVEND hoofdweg"@nl .
+
+ct:14101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_01" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:216  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21602_01 , ct:21602_00 , ct:21602_02 , ct:21601_01 , ct:21601_00 ;
+        skos:notation   "216" ;
+        skos:prefLabel  "waterinfrastructuur"@nl .
+
+ct:02102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02102_03" ;
+        skos:prefLabel  "recreatiegebied"@nl .
+
+ct:04105_02  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04105_02" ;
+        skos:prefLabel  "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"@nl .
+
+ct:20203_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20203_00" ;
+        skos:prefLabel  "brug"@nl .
+
+ct:15104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15104_00" ;
+        skos:prefLabel  "landschappelijke inpassing"@nl .
+
+ct:13101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13101_01" ;
+        skos:prefLabel  "gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)"@nl .
+
+ct:15105_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15105_01" ;
+        skos:prefLabel  "beperkte bouwmogelijkheden"@nl .
+
+ct:15108_04  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15108_04" ;
+        skos:prefLabel  "zone voor niet-hinderlijke activiteiten"@nl .
+
+ct:22   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:222 , ct:221 ;
+        skos:notation      "22" ;
+        skos:prefLabel     "vlakken indicatieve aanduiding"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:05101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05101_05" ;
+        skos:prefLabel  "bosgebied"@nl .
+
+ct:07204_05  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_05" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:132  rdf:type        skos:Concept ;
+        skos:broader    ct:13 ;
+        skos:narrower   ct:13201_03 , ct:13201_05 , ct:13201_01 , ct:13202_00 , ct:13201_02 , ct:13202_01 , ct:13201_04 ;
+        skos:notation   "132" ;
+        skos:prefLabel  "aanhorigheden"@nl .
+
+ct:21201_05  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_05" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:01115_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01115_00" ;
+        skos:prefLabel  "gemengde aktiviteiten"@nl .
+
+cs:plan_legende  rdf:type   skos:ConceptScheme ;
+        dc:identifier       "plan_legende" ;
+        skos:hasTopConcept  ct:09 , ct:00 , ct:21 , ct:06 , ct:11 , ct:03 , ct:08 , ct:14 , ct:05 , ct:99 , ct:20 , ct:02 , ct:13 , ct:22 , ct:04 , ct:10 , ct:01 , ct:12 , ct:15 , ct:07 ;
+        skos:prefLabel      "Legendecodes"@nl .
+
+ct:06101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_01" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:06102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06102_02" ;
+        skos:prefLabel  "bouwvrij agrarisch gebied"@nl .
+
+ct:07401_00  rdf:type   skos:Concept ;
+        skos:broader    ct:074 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07401_00" ;
+        skos:prefLabel  "bedrijventerrein voor historisch gegroeid bedrijf"@nl .
+
+ct:09406_01  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09406_01" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)"@nl .
+
+ct:99999_09  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_09" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:12203_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12203_00" ;
+        skos:prefLabel  "op te heffen hoogspanningsleiding"@nl .
+
+ct:07104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07104_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kleinhandel"@nl .
+
+ct:07106_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07106_02" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein met watergebonden karakter"@nl .
+
+ct:04301_03  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04301_03" ;
+        skos:prefLabel  "park"@nl .
+
+ct:21601_01  rdf:type   skos:Concept ;
+        skos:broader    ct:216 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21601_01" ;
+        skos:prefLabel  "waterweg"@nl .
+
+ct:21602_02  rdf:type   skos:Concept ;
+        skos:broader    ct:216 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21602_02" ;
+        skos:prefLabel  "indicatieve waterweg"@nl .
+
+ct:99999_10  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_10" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:13201_05  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13201_05" ;
+        skos:prefLabel  "gebied voor overstap (bv. treinstopplaats)"@nl .
+
+ct:01107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01107_00" ;
+        skos:prefLabel  "strategisch woonproject"@nl .
+
+ct:01108_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01108_01" ;
+        skos:prefLabel  "gebied voor wonen en landbouw"@nl .
+
+ct:08108_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08108_00" ;
+        skos:prefLabel  "zone voor transformatorpark"@nl .
+
+ct:20101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:201 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20101_00" ;
+        skos:prefLabel  "gebouw"@nl .
+
+ct:04   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:043 , ct:042 , ct:041 ;
+        skos:notation      "04" ;
+        skos:prefLabel     "overige groengebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:X1   rdf:type        skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X1" ;
+        skos:prefLabel  "terrein voor doortrekkers"@nl .
+
+ct:04203_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04203_00" ;
+        skos:prefLabel  "natuurbuffer"@nl .
+
+ct:09101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:091 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09101_00" ;
+        skos:prefLabel  "reservatiegebied voor hoofdweg"@nl .
+
+ct:20303_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20303_00" ;
+        skos:prefLabel  "meerpalen, pompgemaal"@nl .
+
+ct:21101_07  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_07" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:13102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13102_01" ;
+        skos:prefLabel  "verkeers- of vervoersinfrastructuur"@nl .
+
+ct:03104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03104_00" ;
+        skos:prefLabel  "ecologische infrastructuur"@nl .
+
+ct:12303_04  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12303_04" ;
+        skos:prefLabel  "hoogspanningsleiding"@nl .
+
+ct:12304_05  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_05" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:09303_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09303_00" ;
+        skos:prefLabel  "UITDOVEND secundaire weg"@nl .
+
+ct:09304_01  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09304_01" ;
+        skos:prefLabel  "UITDOVEND lokale weg"@nl .
+
+ct:08501_00  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08501_00" ;
+        skos:prefLabel  "gebied voor de winning van oppervlaktedelfstoffen"@nl .
+
+ct:211  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21101_05 , ct:21101_03 , ct:21101_07 , ct:21101_02 , ct:21101_06 , ct:21101_01 , ct:21101_04 , ct:21101_00 , ct:21101_08 ;
+        skos:notation   "211" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:14105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14105_00" ;
+        skos:prefLabel  "tijdelijke aanleg"@nl .
+
+ct:02104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02104_00" ;
+        skos:prefLabel  "gebied voor recreatie vliegen"@nl .
+
+ct:000  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00000_01 , ct:00000_00 ;
+        skos:notation   "000" ;
+        skos:prefLabel  "onzichtbare afbakeningslijn"@nl .
+
+ct:15109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15109_00" ;
+        skos:prefLabel  "zone voor specifieke gebouwen en constructies"@nl .
+
+ct:21501_03  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21501_03" ;
+        skos:prefLabel  "wegenis"@nl .
+
+ct:072  rdf:type        skos:Concept ;
+        skos:broader    ct:07 ;
+        skos:narrower   ct:07204_01 , ct:07204_08 , ct:07207_00 , ct:07204_03 , ct:07204_00 , ct:07210_00 , ct:07204_02 , ct:07206_01 , ct:07205_01 , ct:07209_00 , ct:07204_05 , ct:07204_04 , ct:07206_00 , ct:07210_01 , ct:07204_07 , ct:07204_09 , ct:07204_06 , ct:07205_00 ;
+        skos:notation   "072" ;
+        skos:prefLabel  "bedrijventerreinen in zeehavengebieden"@nl .
+
+ct:00203_00  rdf:type   skos:Concept ;
+        skos:broader    ct:002 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00203_00" ;
+        skos:prefLabel  "grens luchthaven (niet poort)"@nl .
+
+ct:05101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05101_00" ;
+        skos:prefLabel  "bosgebied"@nl .
+
+ct:07204_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_00" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:07205_01  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07205_01" ;
+        skos:prefLabel  "zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]"@nl .
+
+ct:21201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_00" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:042  rdf:type        skos:Concept ;
+        skos:broader    ct:04 ;
+        skos:narrower   ct:04207_00 , ct:04202_02 , ct:04201_02 , ct:04202_01 , ct:04202_00 , ct:04205_01 , ct:04201_01 , ct:04203_02 , ct:04203_01 , ct:04208_00 , ct:04205_00 , ct:04201_00 , ct:04203_00 , ct:04202_04 , ct:04202_03 , ct:04204_00 , ct:04207_01 ;
+        skos:notation   "042" ;
+        skos:prefLabel  "buffergebieden (in gewestelijke rups)"@nl .
+
+ct:21701_01  rdf:type   skos:Concept ;
+        skos:broader    ct:217 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21701_01" ;
+        skos:prefLabel  "spoorinfrastructuur"@nl .
+
+ct:08110_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08110_00" ;
+        skos:prefLabel  "gebied voor telecommunicatie-infrastructuur"@nl .
+
+ct:01110_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01110_01" ;
+        skos:prefLabel  "randstedelijk wonen"@nl .
+
+ct:04101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04101_00" ;
+        skos:prefLabel  "randstedelijk groengebied"@nl .
+
+ct:06105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06105_00" ;
+        skos:prefLabel  "perimeter voor glastuinbouwbedrijven"@nl .
+
+ct:99999_04  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_04" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:09312_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09312_00" ;
+        skos:prefLabel  "zone voor primaire weg II [131_1]"@nl .
+
+ct:09313_01  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09313_01" ;
+        skos:prefLabel  "zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]"@nl .
+
+ct:084  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08402_00 , ct:08401_01 , ct:08401_00 ;
+        skos:notation   "084" ;
+        skos:prefLabel  "waterwinningsgebieden"@nl .
+
+ct:07109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07109_00" ;
+        skos:prefLabel  "regionaal bedrijventerrein voor agro-industrie"@nl .
+
+ct:09201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:092 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09201_00" ;
+        skos:prefLabel  "op te heffen reservatiestrook"@nl .
+
+ct:07101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_03" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:20304_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20304_00" ;
+        skos:prefLabel  "hoekbomen"@nl .
+
+ct:15118_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15118_00" ;
+        skos:prefLabel  "Erfdienstbaarheidsgebied"@nl .
+
+ct:13202_01  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13202_01" ;
+        skos:prefLabel  "gebied voor overslag"@nl .
+
+ct:10307_00  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10307_00" ;
+        skos:prefLabel  "gebied voor diensten bij spoorweginfrastructuur en aanhorigheden"@nl .
+
+ct:10308_01  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10308_01" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur"@nl .
+
+ct:08102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08102_00" ;
+        skos:prefLabel  "gebied voor gemeenschaps- en openbare nutsvoorzieningen"@nl .
+
+ct:08103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08103_01" ;
+        skos:prefLabel  "gebied voor publiek wegenonderhoud en beheer"@nl .
+
+ct:99999_16  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_16" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:08601_00  rdf:type   skos:Concept ;
+        skos:broader    ct:086 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08601_00" ;
+        skos:prefLabel  "stortgebied"@nl .
+
+ct:X7   rdf:type        skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X7" ;
+        skos:prefLabel  "vloeiweiden"@nl .
+
+ct:04208_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04208_00" ;
+        skos:prefLabel  "buffer overgangsgebieden"@nl .
+
+ct:00101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00101_00" ;
+        skos:prefLabel  "grenslijn Vlaams stedelijk gebied rond Brussel"@nl .
+
+ct:02105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02105_00" ;
+        skos:prefLabel  "gebied voor golfterrein"@nl .
+
+ct:02106_01  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02106_01" ;
+        skos:prefLabel  "watergebonden recreatie [131_1]"@nl .
+
+ct:21101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_02" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:07502_00  rdf:type   skos:Concept ;
+        skos:broader    ct:075 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07502_00" ;
+        skos:prefLabel  "bestaand industriegebied"@nl .
+
+ct:15113_02  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15113_02" ;
+        skos:prefLabel  "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"@nl .
+
+ct:15112_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15112_01" ;
+        skos:prefLabel  "tuinen"@nl .
+
+ct:15111_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15111_00" ;
+        skos:prefLabel  "vista"@nl .
+
+ct:11102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:111 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11102_00" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"@nl .
+
+ct:151  rdf:type        skos:Concept ;
+        skos:broader    ct:15 ;
+        skos:narrower   ct:15113_00 , ct:15108_02 , ct:15110_00 , ct:15107_01 , ct:15108_01 , ct:15108_00 , ct:15116_00 , ct:15106_00 , ct:15114_02 , ct:15107_00 , ct:15105_01 , ct:15101_00 , ct:15109_00 , ct:15115_00 , ct:15112_01 , ct:15114_01 , ct:15118_00 , ct:15114_00 , ct:15113_02 , ct:15103_01 , ct:15108_04 , ct:15105_00 , ct:15109_03 , ct:15102_01 , ct:15102_00 , ct:15103_00 , ct:15104_00 , ct:15112_00 , ct:15101_02 , ct:15109_02 , ct:15117_00 , ct:15101_01 , ct:15109_01 , ct:15113_01 , ct:15111_00 ;
+        skos:notation   "151" ;
+        skos:prefLabel  "inrichting"@nl .
+
+ct:12304_00  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_00" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:10301_01  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10301_01" ;
+        skos:prefLabel  "zone voor hoofdspoorweg type 1"@nl .
+
+ct:00303_00  rdf:type   skos:Concept ;
+        skos:broader    ct:003 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00303_00" ;
+        skos:prefLabel  "natuurverwevingsgebied"@nl .
+
+ct:11   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:113 , ct:112 , ct:111 ;
+        skos:notation      "11" ;
+        skos:prefLabel     "lijninfrastructuren - waterwegen"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:09309_01  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09309_01" ;
+        skos:prefLabel  "wegeninfrastructuur"@nl .
+
+ct:03103_05  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03103_05" ;
+        skos:prefLabel  "overstromings- en natuurgebied"@nl .
+
+ct:21301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21301_00" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:14101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_02" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:217  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21701_00 , ct:21701_01 ;
+        skos:notation   "217" ;
+        skos:prefLabel  "spoorinfrastructuur"@nl .
+
+ct:04102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04102_00" ;
+        skos:prefLabel  "gemengd openruimtegebied"@nl .
+
+ct:04105_03  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04105_03" ;
+        skos:prefLabel  "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"@nl .
+
+ct:20202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20202_00" ;
+        skos:prefLabel  "ov_kn2 (openbaar vervoer knooppunt)"@nl .
+
+ct:006  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00603_00 , ct:00601_00 ;
+        skos:notation   "006" ;
+        skos:prefLabel  "projectgebieden"@nl .
+
+ct:15103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15103_00" ;
+        skos:prefLabel  "op te heffen verkavelingen"@nl .
+
+ct:13101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13101_02" ;
+        skos:prefLabel  "gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)"@nl .
+
+ct:07111_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07111_00" ;
+        skos:prefLabel  "bedrijventerrein voor bestaand regionaal bedrijf"@nl .
+
+ct:03102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03102_00" ;
+        skos:prefLabel  "natuurgebied"@nl .
+
+ct:05101_06  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05101_06" ;
+        skos:prefLabel  "bosgebied"@nl .
+
+ct:07204_06  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_06" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:21201_06  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_06" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:01114_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01114_00" ;
+        skos:prefLabel  "bouwvrij wonen"@nl .
+
+ct:06101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_02" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:06102_03  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06102_03" ;
+        skos:prefLabel  "bouwvrij agrarisch gebied"@nl .
+
+ct:07401_01  rdf:type   skos:Concept ;
+        skos:broader    ct:074 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07401_01" ;
+        skos:prefLabel  "bedrijventerrein voor historisch gegroeid bedrijf"@nl .
+
+ct:103  rdf:type        skos:Concept ;
+        skos:broader    ct:10 ;
+        skos:narrower   ct:10308_01 , ct:10307_01 , ct:10301_01 , ct:10308_00 , ct:10307_00 , ct:10301_00 , ct:10306_00 ;
+        skos:notation   "103" ;
+        skos:prefLabel  "gebieden voor spoorwegen"@nl .
+
+ct:12202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12202_00" ;
+        skos:prefLabel  "op te heffen leidingstraat"@nl .
+
+ct:07103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07103_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kantoren"@nl .
+
+ct:07104_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07104_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kleinhandel"@nl .
+
+ct:07106_03  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07106_03" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein met watergebonden karakter"@nl .
+
+ct:00601_00  rdf:type   skos:Concept ;
+        skos:broader    ct:006 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00601_00" ;
+        skos:prefLabel  "projectgebied (in overdruk)"@nl .
+
+ct:20309_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20309_00" ;
+        skos:prefLabel  "ondergronds historisch monument"@nl .
+
+ct:07602_00  rdf:type   skos:Concept ;
+        skos:broader    ct:076 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07602_00" ;
+        skos:prefLabel  "bedrijventerrein voor kantoren en katoorachtigen en lokale bedrijvigheid"@nl .
+
+ct:99999_11  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_11" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:01106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01106_00" ;
+        skos:prefLabel  "reservegebied voor wonen"@nl .
+
+ct:08107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08107_00" ;
+        skos:prefLabel  "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"@nl .
+
+ct:01108_02  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01108_02" ;
+        skos:prefLabel  "gebied voor wonen en landbouw"@nl .
+
+ct:20101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:201 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20101_01" ;
+        skos:prefLabel  "gebouw"@nl .
+
+ct:05   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:051 ;
+        skos:notation      "05" ;
+        skos:prefLabel     "bosgebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:X2   rdf:type        skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X2" ;
+        skos:prefLabel  "bestaande woningen"@nl .
+
+ct:21801_00  rdf:type   skos:Concept ;
+        skos:broader    ct:218 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21801_00" ;
+        skos:prefLabel  "herstellen historische verbinding"@nl .
+
+ct:00106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00106_00" ;
+        skos:prefLabel  "inkrimping afbakeningslijn"@nl .
+
+ct:091  rdf:type        skos:Concept ;
+        skos:broader    ct:09 ;
+        skos:narrower   ct:09110_00 , ct:09109_00 , ct:09102_00 , ct:09101_01 , ct:09101_00 ;
+        skos:notation   "091" ;
+        skos:prefLabel  "reservatiegebieden voor wegen + aan te leggen wegen"@nl .
+
+ct:04202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04202_00" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:04203_01  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04203_01" ;
+        skos:prefLabel  "natuurbuffer"@nl .
+
+ct:09101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:091 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09101_01" ;
+        skos:prefLabel  "reservatiegebied voor hoofdweg"@nl .
+
+ct:20302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20302_00" ;
+        skos:prefLabel  "puntpijl"@nl .
+
+ct:061  rdf:type        skos:Concept ;
+        skos:broader    ct:06 ;
+        skos:narrower   ct:06102_02 , ct:06101_00 , ct:06102_01 , ct:06106_00 , ct:06102_03 , ct:06101_04 , ct:06101_01 , ct:06104_00 , ct:06101_06 , ct:06101_03 , ct:06107_00 , ct:06101_02 , ct:06101_05 , ct:X5 , ct:06105_00 , ct:06102_00 ;
+        skos:notation   "061" ;
+        skos:prefLabel  "landbouwgebieden"@nl .
+
+ct:21101_08  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_08" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:15203_00  rdf:type   skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15203_00" ;
+        skos:prefLabel  "cultuurhistorische waarde, historische relicten, landschapsbeheer"@nl .
+
+ct:13102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13102_02" ;
+        skos:prefLabel  "verkeers- of vervoersinfrastructuur"@nl .
+
+ct:01101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01101_02" ;
+        skos:prefLabel  "woongebied"@nl .
+
+ct:03103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03103_00" ;
+        skos:prefLabel  "overstromings- en natuurgebied"@nl .
+
+ct:03104_01  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03104_01" ;
+        skos:prefLabel  "ecologische infrastructuur"@nl .
+
+ct:12304_06  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_06" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:09303_01  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09303_01" ;
+        skos:prefLabel  "UITDOVEND secundaire weg"@nl .
+
+ct:09302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09302_00" ;
+        skos:prefLabel  "UITDOVEND primaire weg I"@nl .
+
+ct:031  rdf:type        skos:Concept ;
+        skos:broader    ct:03 ;
+        skos:narrower   ct:03103_02 , ct:03102_03 , ct:03103_01 , ct:03103_00 , ct:03102_02 , ct:03102_01 , ct:03103_05 , ct:03102_00 , ct:03104_02 , ct:03104_00 , ct:03104_01 , ct:03102_04 ;
+        skos:notation   "031" ;
+        skos:prefLabel  "natuur- en reservaatgebieden (in gewestelijke rups)"@nl .
+
+ct:09304_02  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09304_02" ;
+        skos:prefLabel  "UITDOVEND lokale weg"@nl .
+
+ct:212  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21201_06 , ct:21201_03 , ct:21201_04 , ct:21201_01 , ct:21201_02 , ct:21201_00 , ct:21201_05 ;
+        skos:notation   "212" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:04107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04107_00" ;
+        skos:prefLabel  "watergevoelig openruimtegebied"@nl .
+
+ct:00000_00  rdf:type   skos:Concept ;
+        skos:broader    ct:000 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00000_00" ;
+        skos:prefLabel  "onzichtbare afbakeningslijn (voor identificeerbaarheid)"@nl .
+
+ct:02103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02103_00" ;
+        skos:prefLabel  "gebied voor dagrecreatie"@nl .
+
+ct:001  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00103_01 , ct:00100_00 , ct:00105_01 , ct:00101_00 , ct:00105_00 , ct:00102_00 , ct:00106_00 , ct:00103_00 ;
+        skos:notation   "001" ;
+        skos:prefLabel  "stedelijke gebieden"@nl .
+
+ct:15109_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15109_01" ;
+        skos:prefLabel  "zone voor specifieke gebouwen en constructies"@nl .
+
+ct:15108_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15108_00" ;
+        skos:prefLabel  "zone voor niet-hinderlijke activiteiten"@nl .
+
+ct:12302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12302_00" ;
+        skos:prefLabel  "enkelvoudige leiding"@nl .
+
+ct:21501_04  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21501_04" ;
+        skos:prefLabel  "wegenis"@nl .
+
+ct:00202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:002 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00202_00" ;
+        skos:prefLabel  "opheffing grenslijn zeehavengebied"@nl .
+
+ct:05101_01  rdf:type   skos:Concept ;
+        skos:broader    ct:051 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "05101_01" ;
+        skos:prefLabel  "bosgebied"@nl .
+
+ct:07204_01  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_01" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:20311_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20311_00" ;
+        skos:prefLabel  "infrastructuur"@nl .
+
+ct:21201_01  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_01" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:043  rdf:type        skos:Concept ;
+        skos:broader    ct:04 ;
+        skos:narrower   ct:04301_00 , ct:04302_01 , ct:04301_03 , ct:04302_00 , ct:04301_02 , ct:04301_01 ;
+        skos:notation   "043" ;
+        skos:prefLabel  "parkgebieden (in gewestelijke rups)"@nl .
+
+ct:01110_02  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01110_02" ;
+        skos:prefLabel  "randstedelijk wonen"@nl .
+
+ct:06104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06104_00" ;
+        skos:prefLabel  "agrarische bedrijvenzone"@nl .
+
+ct:99999_05  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_05" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:21402_00  rdf:type   skos:Concept ;
+        skos:broader    ct:214 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21402_00" ;
+        skos:prefLabel  "bouwlijnen"@nl .
+
+ct:12207_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12207_00" ;
+        skos:prefLabel  "reservatiegebied voor aan te leggen leidingstraat"@nl .
+
+ct:21901_00  rdf:type   skos:Concept ;
+        skos:broader    ct:219 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21901_00" ;
+        skos:prefLabel  "natuurcorridors"@nl .
+
+ct:07108_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07108_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage"@nl .
+
+ct:04302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04302_00" ;
+        skos:prefLabel  "zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]"@nl .
+
+ct:085  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08501_03 , ct:08501_00 , ct:08503_00 , ct:08501_02 , ct:08502_00 , ct:08504_00 ;
+        skos:notation   "085" ;
+        skos:prefLabel  "ontginningsgebieden"@nl .
+
+ct:09201_01  rdf:type   skos:Concept ;
+        skos:broader    ct:092 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09201_01" ;
+        skos:prefLabel  "op te heffen reservatiestrook"@nl .
+
+ct:07101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_04" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:15117_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15117_00" ;
+        skos:prefLabel  "speelvrije zone"@nl .
+
+ct:13201_01  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13201_01" ;
+        skos:prefLabel  "gebied voor overstap (bv. treinstopplaats)"@nl .
+
+ct:10306_00  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10306_00" ;
+        skos:prefLabel  "spoorinfrastructuur"@nl .
+
+ct:10307_01  rdf:type   skos:Concept ;
+        skos:broader    ct:103 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "10307_01" ;
+        skos:prefLabel  "gebied voor diensten bij spoorweginfrastructuur en aanhorigheden"@nl .
+
+ct:00   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:004 , ct:003 , ct:001 , ct:002 , ct:000 , ct:006 ;
+        skos:notation      "00" ;
+        skos:prefLabel     "afbakeningen in overdruk, geen onderliggende bestemming"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:08101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08101_00" ;
+        skos:prefLabel  "gebied voor hernieuwbare energie"@nl .
+
+ct:08102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08102_01" ;
+        skos:prefLabel  "gebied voor gemeenschaps- en openbare nutsvoorzieningen"@nl .
+
+ct:09402_00  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09402_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)"@nl .
+
+ct:99999_17  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_17" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:08601_01  rdf:type   skos:Concept ;
+        skos:broader    ct:086 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08601_01" ;
+        skos:prefLabel  "stortgebied"@nl .
+
+ct:22101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:221 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "22101_03" ;
+        skos:prefLabel  "zone voor landschappelijke inpassing"@nl .
+
+ct:00100_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00100_00" ;
+        skos:prefLabel  "wijziging afbakeningslijnen"@nl .
+
+ct:04207_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04207_00" ;
+        skos:prefLabel  "overige buffergebieden (vb dijk)"@nl .
+
+ct:07501_00  rdf:type   skos:Concept ;
+        skos:broader    ct:075 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07501_00" ;
+        skos:prefLabel  "lokaal bedrijventerrein"@nl .
+
+ct:21101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_03" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:15110_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15110_00" ;
+        skos:prefLabel  "portaal"@nl .
+
+ct:11102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:111 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11102_01" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"@nl .
+
+ct:152  rdf:type        skos:Concept ;
+        skos:broader    ct:15 ;
+        skos:narrower   ct:15203_00 , ct:15201_00 , ct:15202_00 , ct:X7 , ct:15206_00 , ct:15203_01 ;
+        skos:notation   "152" ;
+        skos:prefLabel  "beheer"@nl .
+
+ct:12303_00  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12303_00" ;
+        skos:prefLabel  "hoogspanningsleiding"@nl .
+
+ct:12304_01  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_01" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:01104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01104_00" ;
+        skos:prefLabel  "cultuurhistorisch woongebied"@nl .
+
+ct:00302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:003 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00302_00" ;
+        skos:prefLabel  "grote eenheid natuur in ontwikkeling"@nl .
+
+ct:12   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:123 , ct:122 ;
+        skos:notation      "12" ;
+        skos:prefLabel     "lijninfrastructuren - leidingen"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:21301_01  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21301_01" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:122  rdf:type        skos:Concept ;
+        skos:broader    ct:12 ;
+        skos:narrower   ct:12203_00 , ct:12202_03 , ct:12204_00 , ct:12202_00 , ct:12202_01 , ct:12205_00 , ct:12201_00 , ct:12207_00 , ct:12202_02 ;
+        skos:notation   "122" ;
+        skos:prefLabel  "reservatiegebieden voor aan te leggen leiding"@nl .
+
+ct:11303_00  rdf:type   skos:Concept ;
+        skos:broader    ct:113 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11303_00" ;
+        skos:prefLabel  "gebied voor diensten bij waterinfrasructuur"@nl .
+
+ct:14101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_03" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:218  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21801_02 , ct:21801_00 ;
+        skos:notation   "218" ;
+        skos:prefLabel  "historische verbinding"@nl .
+
+ct:04102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04102_01" ;
+        skos:prefLabel  "gemengd openruimtegebied"@nl .
+
+ct:20201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20201_00" ;
+        skos:prefLabel  "HC (hollands complex)"@nl .
+
+ct:21502_00  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21502_00" ;
+        skos:prefLabel  "dreef"@nl .
+
+ct:15102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15102_00" ;
+        skos:prefLabel  "bouwvrije zone ifv inrichting"@nl .
+
+ct:15103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15103_01" ;
+        skos:prefLabel  "op te heffen verkavelingen"@nl .
+
+ct:07110_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07110_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor spoorweggebonden bedrijven"@nl .
+
+ct:03102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03102_01" ;
+        skos:prefLabel  "natuurgebied"@nl .
+
+ct:07204_07  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_07" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:99999_00  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_00" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:01113_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01113_00" ;
+        skos:prefLabel  "woonwagenpark"@nl .
+
+ct:08201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:082 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08201_00" ;
+        skos:prefLabel  "militair domein"@nl .
+
+ct:06101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_03" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:07401_02  rdf:type   skos:Concept ;
+        skos:broader    ct:074 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07401_02" ;
+        skos:prefLabel  "bedrijventerrein voor historisch gegroeid bedrijf"@nl .
+
+ct:12201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12201_00" ;
+        skos:prefLabel  "te schrappen reservatiegebied voor aan te leggen leiding"@nl .
+
+ct:12202_01  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12202_01" ;
+        skos:prefLabel  "op te heffen leidingstraat"@nl .
+
+ct:07102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07102_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"@nl .
+
+ct:07103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07103_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kantoren"@nl .
+
+ct:07104_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07104_02" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kleinhandel"@nl .
+
+ct:20308_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20308_00" ;
+        skos:prefLabel  "zichtrelatie"@nl .
+
+ct:07106_04  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07106_04" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein met watergebonden karakter"@nl .
+
+ct:07601_00  rdf:type   skos:Concept ;
+        skos:broader    ct:076 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07601_00" ;
+        skos:prefLabel  "zone voor commerciële aktiviteiten"@nl .
+
+ct:99999_12  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_12" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:01106_01  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01106_01" ;
+        skos:prefLabel  "reservegebied voor wonen"@nl .
+
+ct:08106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08106_00" ;
+        skos:prefLabel  "havenondersteunende gemeenschapsvoorzieningen"@nl .
+
+ct:08107_01  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08107_01" ;
+        skos:prefLabel  "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"@nl .
+
+ct:06   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:061 ;
+        skos:notation      "06" ;
+        skos:prefLabel     "landbouwgebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:20101_02  rdf:type   skos:Concept ;
+        skos:broader    ct:201 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20101_02" ;
+        skos:prefLabel  "gebouw"@nl .
+
+ct:201  rdf:type        skos:Concept ;
+        skos:broader    ct:20 ;
+        skos:narrower   ct:20102_00 , ct:20101_00 , ct:20101_01 , ct:20101_02 ;
+        skos:notation   "201" ;
+        skos:prefLabel  "gebouwen"@nl .
+
+ct:X3   rdf:type        skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "X3" ;
+        skos:prefLabel  "zone voor wonen en park"@nl .
+
+ct:00105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:001 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00105_00" ;
+        skos:prefLabel  "grenslijn regionaalstedelijk gebied"@nl .
+
+ct:02109_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02109_00" ;
+        skos:prefLabel  "verblijfsrecreatie in groepen"@nl .
+
+ct:092  rdf:type        skos:Concept ;
+        skos:broader    ct:09 ;
+        skos:narrower   ct:09205_01 , ct:09205_00 , ct:09201_01 , ct:09201_00 ;
+        skos:notation   "092" ;
+        skos:prefLabel  "te schrappen (reservatie)gebieden"@nl .
+
+ct:04201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04201_00" ;
+        skos:prefLabel  "bosbuffer"@nl .
+
+ct:04202_01  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04202_01" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:04203_02  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04203_02" ;
+        skos:prefLabel  "natuurbuffer"@nl .
+
+ct:20301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20301_00" ;
+        skos:prefLabel  "heuvel"@nl .
+
+ct:15202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15202_00" ;
+        skos:prefLabel  "recht van voorkoop"@nl .
+
+ct:15203_01  rdf:type   skos:Concept ;
+        skos:broader    ct:152 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15203_01" ;
+        skos:prefLabel  "cultuurhistorische waarde, historische relicten, landschapsbeheer"@nl .
+
+ct:03104_02  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03104_02" ;
+        skos:prefLabel  "ecologische infrastructuur"@nl .
+
+ct:03103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03103_01" ;
+        skos:prefLabel  "overstromings- en natuurgebied"@nl .
+
+ct:07209_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07209_00" ;
+        skos:prefLabel  "zone voor zeehavenondersteunende regionale bedrijvigheid [131_1]"@nl .
+
+ct:01101_03  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01101_03" ;
+        skos:prefLabel  "woongebied"@nl .
+
+ct:12304_07  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_07" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:09301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09301_00" ;
+        skos:prefLabel  "UITDOVEND hoofdweg"@nl .
+
+ct:09302_01  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09302_01" ;
+        skos:prefLabel  "UITDOVEND primaire weg I"@nl .
+
+ct:09303_02  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09303_02" ;
+        skos:prefLabel  "UITDOVEND secundaire weg"@nl .
+
+ct:09304_03  rdf:type   skos:Concept ;
+        skos:broader    ct:093 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09304_03" ;
+        skos:prefLabel  "UITDOVEND lokale weg"@nl .
+
+ct:08501_02  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08501_02" ;
+        skos:prefLabel  "gebied voor de winning van oppervlaktedelfstoffen"@nl .
+
+ct:14103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14103_00" ;
+        skos:prefLabel  "werfzone"@nl .
+
+ct:213  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21301_01 , ct:21301_04 , ct:21301_00 , ct:21301_02 , ct:21301_03 , ct:21302_00 ;
+        skos:notation   "213" ;
+        skos:prefLabel  "buffers"@nl .
+
+ct:02103_01  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02103_01" ;
+        skos:prefLabel  "gebied voor dagrecreatie"@nl .
+
+ct:02102_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02102_00" ;
+        skos:prefLabel  "recreatiegebied"@nl .
+
+ct:00000_01  rdf:type   skos:Concept ;
+        skos:broader    ct:000 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00000_01" ;
+        skos:prefLabel  "onzichtbare afbakeningslijn (voor identificeerbaarheid)"@nl .
+
+ct:04106_00  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04106_00" ;
+        skos:prefLabel  "gemengd openruimte met cultuurhistorische waarde"@nl .
+
+ct:002  rdf:type        skos:Concept ;
+        skos:broader    ct:00 ;
+        skos:narrower   ct:00203_00 , ct:00202_00 , ct:00201_00 , ct:00201_01 , ct:00201_02 ;
+        skos:notation   "002" ;
+        skos:prefLabel  "afbakening zeehavens, luchthaven van Zaventem en logistieke parken"@nl .
+
+ct:20206_00  rdf:type   skos:Concept ;
+        skos:broader    ct:202 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20206_00" ;
+        skos:prefLabel  "stadsdistributie"@nl .
+
+ct:15109_02  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15109_02" ;
+        skos:prefLabel  "zone voor specifieke gebouwen en constructies"@nl .
+
+ct:15108_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15108_01" ;
+        skos:prefLabel  "zone voor niet-hinderlijke activiteiten"@nl .
+
+ct:15107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15107_00" ;
+        skos:prefLabel  "zone voor opslag"@nl .
+
+ct:12301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12301_00" ;
+        skos:prefLabel  "leidingstraat"@nl .
+
+ct:12302_01  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12302_01" ;
+        skos:prefLabel  "enkelvoudige leiding"@nl .
+
+ct:074  rdf:type        skos:Concept ;
+        skos:broader    ct:07 ;
+        skos:narrower   ct:07402_00 , ct:07401_02 , ct:07401_01 , ct:07401_00 ;
+        skos:notation   "074" ;
+        skos:prefLabel  "historisch gegroeid regionaal bedrijventerrein"@nl .
+
+ct:00201_00  rdf:type   skos:Concept ;
+        skos:broader    ct:002 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00201_00" ;
+        skos:prefLabel  "grenslijn zeehavengebied"@nl .
+
+ct:07204_02  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_02" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:20310_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20310_00" ;
+        skos:prefLabel  "openbaar nut"@nl .
+
+ct:21201_02  rdf:type   skos:Concept ;
+        skos:broader    ct:212 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21201_02" ;
+        skos:prefLabel  "langzaam verkeer"@nl .
+
+ct:11202_00  rdf:type   skos:Concept ;
+        skos:broader    ct:112 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11202_00" ;
+        skos:prefLabel  "op te heffen alternatief reservatiegebied (in overdruk) (rup: 2_1)"@nl .
+
+ct:00403_00  rdf:type   skos:Concept ;
+        skos:broader    ct:004 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00403_00" ;
+        skos:prefLabel  "karakteristieke landschapselementen van gemeentelijk niveau (landschappelijk waardevol gebied)"@nl .
+
+ct:99999_06  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_06" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:21401_00  rdf:type   skos:Concept ;
+        skos:broader    ct:214 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21401_00" ;
+        skos:prefLabel  "maatbepaling"@nl .
+
+ct:21901_01  rdf:type   skos:Concept ;
+        skos:broader    ct:219 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21901_01" ;
+        skos:prefLabel  "natuurcorridors"@nl .
+
+ct:02111_00  rdf:type   skos:Concept ;
+        skos:broader    ct:021 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "02111_00" ;
+        skos:prefLabel  "recreatiebuffer"@nl .
+
+ct:04302_01  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04302_01" ;
+        skos:prefLabel  "zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]"@nl .
+
+ct:04301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:043 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04301_00" ;
+        skos:prefLabel  "park"@nl .
+
+ct:07107_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07107_00" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor wetenschapspark"@nl .
+
+ct:07108_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07108_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage"@nl .
+
+ct:086  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08602_00 , ct:08601_00 , ct:08601_01 ;
+        skos:notation   "086" ;
+        skos:prefLabel  "stortgebieden"@nl .
+
+ct:07101_05  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_05" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:15116_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15116_00" ;
+        skos:prefLabel  "veiligheidszone nucleaire activiteit"@nl .
+
+ct:141  rdf:type        skos:Concept ;
+        skos:broader    ct:14 ;
+        skos:narrower   ct:14103_02 , ct:14101_04 , ct:14101_03 , ct:14103_01 , ct:14101_02 , ct:14103_00 , ct:14101_01 , ct:14101_06 , ct:14105_00 , ct:14101_00 ;
+        skos:notation   "141" ;
+        skos:prefLabel  "tijdsgebonden aspecten"@nl .
+
+ct:13201_02  rdf:type   skos:Concept ;
+        skos:broader    ct:132 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13201_02" ;
+        skos:prefLabel  "gebied voor overstap (bv. treinstopplaats)"@nl .
+
+ct:01   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:011 ;
+        skos:notation      "01" ;
+        skos:prefLabel     "woongebieden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:111  rdf:type        skos:Concept ;
+        skos:broader    ct:11 ;
+        skos:narrower   ct:11102_01 , ct:11102_02 , ct:11102_03 , ct:11102_00 ;
+        skos:notation   "111" ;
+        skos:prefLabel  "reservatiegebieden voor waterwegen"@nl .
+
+ct:09401_00  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09401_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)"@nl .
+
+ct:09402_01  rdf:type   skos:Concept ;
+        skos:broader    ct:094 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "09402_01" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)"@nl .
+
+ct:99999_18  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_18" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:22101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:221 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "22101_04" ;
+        skos:prefLabel  "zone voor landschappelijke inpassing"@nl .
+
+ct:04207_01  rdf:type   skos:Concept ;
+        skos:broader    ct:042 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04207_01" ;
+        skos:prefLabel  "overige buffergebieden (vb dijk)"@nl .
+
+ct:08302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:083 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08302_00" ;
+        skos:prefLabel  "waterbeheersgebieden"@nl .
+
+ct:07501_01  rdf:type   skos:Concept ;
+        skos:broader    ct:075 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07501_01" ;
+        skos:prefLabel  "lokaal bedrijventerrein"@nl .
+
+ct:21101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:211 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21101_04" ;
+        skos:prefLabel  "ontsluiting"@nl .
+
+ct:08801_00  rdf:type   skos:Concept ;
+        skos:broader    ct:088 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08801_00" ;
+        skos:prefLabel  "CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))"@nl .
+
+ct:13104_00  rdf:type   skos:Concept ;
+        skos:broader    ct:131 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "13104_00" ;
+        skos:prefLabel  "reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur"@nl .
+
+ct:11102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:111 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11102_02" ;
+        skos:prefLabel  "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"@nl .
+
+ct:12304_02  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12304_02" ;
+        skos:prefLabel  "leidingstrook"@nl .
+
+ct:12303_01  rdf:type   skos:Concept ;
+        skos:broader    ct:123 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12303_01" ;
+        skos:prefLabel  "hoogspanningsleiding"@nl .
+
+ct:01103_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01103_00" ;
+        skos:prefLabel  "gebied voor gemengde stedelijke aktiviteiten"@nl .
+
+ct:00301_00  rdf:type   skos:Concept ;
+        skos:broader    ct:003 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00301_00" ;
+        skos:prefLabel  "grote eenheid natuur"@nl .
+
+ct:00303_02  rdf:type   skos:Concept ;
+        skos:broader    ct:003 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "00303_02" ;
+        skos:prefLabel  "natuurverwevingsgebied"@nl .
+
+ct:08504_00  rdf:type   skos:Concept ;
+        skos:broader    ct:085 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08504_00" ;
+        skos:prefLabel  "gebied voor projectgrindwinning"@nl .
+
+ct:13   rdf:type           skos:Concept ;
+        skos:inScheme      cs:plan_legende ;
+        skos:narrower      ct:132 , ct:131 ;
+        skos:notation      "13" ;
+        skos:prefLabel     "gebundelde lijninfrastructuur en/of aanhorigheden"@nl ;
+        skos:topConceptOf  cs:plan_legende .
+
+ct:21301_02  rdf:type   skos:Concept ;
+        skos:broader    ct:213 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21301_02" ;
+        skos:prefLabel  "buffer"@nl .
+
+ct:123  rdf:type        skos:Concept ;
+        skos:broader    ct:12 ;
+        skos:narrower   ct:12302_01 , ct:12304_07 , ct:12301_00 , ct:12304_00 , ct:12304_02 , ct:12303_01 , ct:12303_02 , ct:12304_01 , ct:12303_04 , ct:12304_04 , ct:12302_00 , ct:12304_06 , ct:12303_03 , ct:12304_03 , ct:12304_05 , ct:12301_02 , ct:12302_02 , ct:12303_00 ;
+        skos:notation   "123" ;
+        skos:prefLabel  "bestaande leidingen (in rups)"@nl .
+
+ct:11302_00  rdf:type   skos:Concept ;
+        skos:broader    ct:113 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "11302_00" ;
+        skos:prefLabel  "waterinfrastructuur"@nl .
+
+ct:14101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:141 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "14101_04" ;
+        skos:prefLabel  "fasering eerste fase ( in tweede fase dubbele schuine arcering)"@nl .
+
+ct:219  rdf:type        skos:Concept ;
+        skos:broader    ct:21 ;
+        skos:narrower   ct:21901_00 , ct:21901_01 ;
+        skos:notation   "219" ;
+        skos:prefLabel  "natuurcorridors"@nl .
+
+ct:04102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:041 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "04102_02" ;
+        skos:prefLabel  "gemengd openruimtegebied"@nl .
+
+ct:21501_00  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21501_00" ;
+        skos:prefLabel  "wegenis"@nl .
+
+ct:21502_01  rdf:type   skos:Concept ;
+        skos:broader    ct:215 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "21502_01" ;
+        skos:prefLabel  "dreef"@nl .
+
+ct:15101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15101_00" ;
+        skos:prefLabel  "gebied voor personeelsparking"@nl .
+
+ct:15102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:151 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "15102_01" ;
+        skos:prefLabel  "bouwvrije zone ifv inrichting"@nl .
+
+ct:03102_02  rdf:type   skos:Concept ;
+        skos:broader    ct:031 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "03102_02" ;
+        skos:prefLabel  "natuurgebied"@nl .
+
+ct:07207_00  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07207_00" ;
+        skos:prefLabel  "zone voor zeehavengebonden opslag- en verpakkingsactiviteit [131_1]"@nl .
+
+ct:07204_08  rdf:type   skos:Concept ;
+        skos:broader    ct:072 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07204_08" ;
+        skos:prefLabel  "gebied voor zeehaven- en watergebonden bedrijven"@nl .
+
+ct:01112_00  rdf:type   skos:Concept ;
+        skos:broader    ct:011 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "01112_00" ;
+        skos:prefLabel  "stationsplein"@nl .
+
+ct:99999_01  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_01" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:06101_04  rdf:type   skos:Concept ;
+        skos:broader    ct:061 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "06101_04" ;
+        skos:prefLabel  "agrarisch gebied"@nl .
+
+ct:12202_02  rdf:type   skos:Concept ;
+        skos:broader    ct:122 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "12202_02" ;
+        skos:prefLabel  "op te heffen leidingstraat"@nl .
+
+ct:081  rdf:type        skos:Concept ;
+        skos:broader    ct:08 ;
+        skos:narrower   ct:08107_00 , ct:08110_00 , ct:08103_01 , ct:08102_03 , ct:08102_04 , ct:08111_00 , ct:08107_01 , ct:08107_02 , ct:08102_00 , ct:08106_00 , ct:08107_03 , ct:08102_01 , ct:08109_00 , ct:08106_02 , ct:08101_00 , ct:08105_00 , ct:08105_01 , ct:08112_01 , ct:08108_00 , ct:08103_00 ;
+        skos:notation   "081" ;
+        skos:prefLabel  "openbaar nut"@nl .
+
+ct:07101_00  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07101_00" ;
+        skos:prefLabel  "gemengd regionaal bedrijventerrein"@nl .
+
+ct:07102_01  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07102_01" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"@nl .
+
+ct:07103_02  rdf:type   skos:Concept ;
+        skos:broader    ct:071 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "07103_02" ;
+        skos:prefLabel  "specifiek regionaal bedrijventerrein voor kantoren"@nl .
+
+ct:08402_00  rdf:type   skos:Concept ;
+        skos:broader    ct:084 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08402_00" ;
+        skos:prefLabel  "waterberging"@nl .
+
+ct:20307_00  rdf:type   skos:Concept ;
+        skos:broader    ct:203 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "20307_00" ;
+        skos:prefLabel  "bestaand bouwkundig erfgoed tweede rangorde"@nl .
+
+ct:051  rdf:type        skos:Concept ;
+        skos:broader    ct:05 ;
+        skos:narrower   ct:05101_04 , ct:05101_00 , ct:05101_05 , ct:05103_00 , ct:05101_01 , ct:05101_06 ;
+        skos:notation   "051" ;
+        skos:prefLabel  "bosgebieden (in gewestelijke rups)"@nl .
+
+ct:99999_13  rdf:type   skos:Concept ;
+        skos:broader    ct:999 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "99999_13" ;
+        skos:prefLabel  "annotatie"@nl .
+
+ct:08105_00  rdf:type   skos:Concept ;
+        skos:broader    ct:081 ;
+        skos:inScheme   cs:plan_legende ;
+        skos:notation   "08105_00" ;
+        skos:prefLabel  "gebied van openbaar nut en recreatie"@nl .
+
+ct:021  rdf:type        skos:Concept ;
+        skos:broader    ct:02 ;
+        skos:narrower   ct:02104_00 , ct:02108_00 , ct:X4 , ct:02102_01 , ct:02101_01 , ct:02102_00 , ct:02101_00 , ct:02106_01 , ct:02103_00 , ct:02111_00 , ct:02106_00 , ct:02103_01 , ct:02102_03 , ct:02102_02 , ct:02110_00 , ct:02105_00 , ct:02109_00 ;
+        skos:notation   "021" ;
+        skos:prefLabel  "recreatiegebieden (in gewestelijke rups)"@nl .

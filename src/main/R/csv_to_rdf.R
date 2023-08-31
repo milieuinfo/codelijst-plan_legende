@@ -8,6 +8,7 @@ library(yaml)
 
 #setwd('/home/gehau/git/codelijst-testrepo/src/main/R')
 #setwd('/Users/pieter/work/svn/codelijst-testrepo/src/main/R')
+setwd('/Users/stijngoedertier/git/codelijst-plan_legende/src/main/R')
 
 to_jsonld <- function(dataframe) {
   # lees context
@@ -131,7 +132,7 @@ df <- expand_df_on_pipe(df)%>%
 
 # write volledig geexpandeerde csv, ter controle, deze wordt niet aan versiebeheer toegevoegd
 test_distributie <- paste(dataset_distributie_pad, "temp_test_separate_rows.csv", sep="")
-write.csv(df,test_distributie, row.names = FALSE, row.names = FALSE, na='', fileEncoding='UTF-8')
+write.csv(df,test_distributie, row.names = FALSE, na='', fileEncoding='UTF-8')
 
 # bewaar jsonld
 tmp_file <- tempfile(fileext = ".jsonld")

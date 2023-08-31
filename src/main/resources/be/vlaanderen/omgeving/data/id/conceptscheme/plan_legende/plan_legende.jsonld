@@ -1,82 +1,5607 @@
 {
   "@graph" : [ {
-    "@id" : "colt:test_collectie",
+    "@id" : "colt:voorschrift_categorie",
     "@type" : "skos:Collection",
-    "identifier" : "test_collectie",
-    "inScheme" : "cs:plan_legende",
-    "member" : [ "ct:test_topconcept", "ct:test_concept2", "ct:test_concept" ],
+    "identifier" : "voorschrift_categorie",
+    "member" : [ "ct:12", "ct:99", "ct:04", "ct:15", "ct:11", "ct:05", "ct:02", "ct:13", "ct:03", "ct:00", "ct:01", "ct:22", "ct:08", "ct:09", "ct:20", "ct:14", "ct:06", "ct:10", "ct:21", "ct:07" ],
     "prefLabel" : {
       "@language" : "nl",
-      "@value" : "PrefLabel van test_collectie"
+      "@value" : "Voorschrift categorie"
     }
   }, {
-    "@id" : "colt:test_collectie2",
+    "@id" : "colt:voorschrift_subcategorie",
     "@type" : "skos:Collection",
-    "identifier" : "test_collectie2",
-    "inScheme" : "cs:plan_legende",
-    "member" : "ct:test_concept2",
+    "identifier" : "voorschrift_subcategorie",
+    "member" : [ "ct:086", "ct:217", "ct:215", "ct:006", "ct:000", "ct:021", "ct:031", "ct:076", "ct:103", "ct:082", "ct:092", "ct:202", "ct:152", "ct:042", "ct:072", "ct:087", "ct:218", "ct:201", "ct:216", "ct:111", "ct:001", "ct:011", "ct:084", "ct:213", "ct:083", "ct:093", "ct:212", "ct:074", "ct:132", "ct:203", "ct:043", "ct:219", "ct:221", "ct:112", "ct:122", "ct:002", "ct:085", "ct:214", "ct:211", "ct:101", "ct:094", "ct:999", "ct:075", "ct:131", "ct:141", "ct:081", "ct:091", "ct:004", "ct:222", "ct:113", "ct:123", "ct:003", "ct:151", "ct:061", "ct:041", "ct:051", "ct:088", "ct:071" ],
     "prefLabel" : {
       "@language" : "nl",
-      "@value" : "PrefLabel van test_collectie"
+      "@value" : "Voorschrift subcategorie"
     }
   }, {
-    "@id" : "ct:test_concept",
+    "@id" : "ct:00",
     "@type" : "skos:Concept",
-    "identifier" : "test_concept",
-    "broader" : "ct:test_topconcept",
     "inScheme" : "cs:plan_legende",
-    "notation" : "code (mnemonic) van test_concept",
+    "narrower" : [ "ct:004", "ct:003", "ct:001", "ct:002", "ct:000", "ct:006" ],
+    "notation" : "00",
     "prefLabel" : {
       "@language" : "nl",
-      "@value" : "PrefLabel van test_concept"
-    }
-  }, {
-    "@id" : "ct:test_concept2",
-    "@type" : "skos:Concept",
-    "identifier" : "test_concept2",
-    "altLabel" : {
-      "@language" : "nl",
-      "@value" : "blablabla"
-    },
-    "broader" : "ct:test_topconcept",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "code (mnemonic) van test_concept 2",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_concept 2"
-    }
-  }, {
-    "@id" : "ct:test_topconcept",
-    "@type" : "skos:Concept",
-    "identifier" : "test_topconcept",
-    "inScheme" : "cs:plan_legende",
-    "narrower" : [ "ct:test_concept2", "ct:test_concept" ],
-    "notation" : "code (mnemonic) van test_topconcept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_topconcept"
+      "@value" : "afbakeningen in overdruk, geen onderliggende bestemming"
     },
     "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:000",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00000_00", "ct:00000_01" ],
+    "notation" : "000",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "onzichtbare afbakeningslijn"
+    }
+  }, {
+    "@id" : "ct:00000_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:000",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00000_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "onzichtbare afbakeningslijn (voor identificeerbaarheid)"
+    }
+  }, {
+    "@id" : "ct:00000_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:000",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00000_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "onzichtbare afbakeningslijn (voor identificeerbaarheid)"
+    }
+  }, {
+    "@id" : "ct:001",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00100_00", "ct:00103_01", "ct:00105_01", "ct:00101_00", "ct:00105_00", "ct:00102_00", "ct:00106_00", "ct:00103_00" ],
+    "notation" : "001",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stedelijke gebieden"
+    }
+  }, {
+    "@id" : "ct:00100_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00100_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wijziging afbakeningslijnen"
+    }
+  }, {
+    "@id" : "ct:00101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn Vlaams stedelijk gebied rond Brussel"
+    }
+  }, {
+    "@id" : "ct:00102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "opheffing afbakening stedelijk gebied"
+    }
+  }, {
+    "@id" : "ct:00103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn grootstedelijk gebied"
+    }
+  }, {
+    "@id" : "ct:00103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn grootstedelijk gebied"
+    }
+  }, {
+    "@id" : "ct:00105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn regionaalstedelijk gebied"
+    }
+  }, {
+    "@id" : "ct:00105_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00105_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn regionaalstedelijk gebied"
+    }
+  }, {
+    "@id" : "ct:00106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:001",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "inkrimping afbakeningslijn"
+    }
+  }, {
+    "@id" : "ct:002",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00201_02", "ct:00201_01", "ct:00201_00", "ct:00202_00", "ct:00203_00" ],
+    "notation" : "002",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "afbakening zeehavens, luchthaven van Zaventem en logistieke parken"
+    }
+  }, {
+    "@id" : "ct:00201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:002",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:00201_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:002",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00201_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:00201_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:002",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00201_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grenslijn zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:00202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:002",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "opheffing grenslijn zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:00203_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:002",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00203_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grens luchthaven (niet poort)"
+    }
+  }, {
+    "@id" : "ct:003",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00301_00", "ct:00302_00", "ct:00303_02", "ct:00303_00", "ct:00304_00" ],
+    "notation" : "003",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebieden van de natuurlijke structuur"
+    }
+  }, {
+    "@id" : "ct:00301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:003",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grote eenheid natuur"
+    }
+  }, {
+    "@id" : "ct:00302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:003",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grote eenheid natuur in ontwikkeling"
+    }
+  }, {
+    "@id" : "ct:00303_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:003",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00303_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurverwevingsgebied"
+    }
+  }, {
+    "@id" : "ct:00303_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:003",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00303_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurverwevingsgebied"
+    }
+  }, {
+    "@id" : "ct:00304_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:003",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00304_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurverbindingsgebied"
+    }
+  }, {
+    "@id" : "ct:004",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00401_00", "ct:00402_00", "ct:00402_01", "ct:00403_00" ],
+    "notation" : "004",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "elementen en componenten van de landschappelijke structuur"
+    }
+  }, {
+    "@id" : "ct:00401_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:004",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00401_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "erfgoedlandschap"
+    }
+  }, {
+    "@id" : "ct:00402_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:004",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00402_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "site met belangrijke erfgoedwaarde"
+    }
+  }, {
+    "@id" : "ct:00402_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:004",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00402_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "site met belangrijke erfgoedwaarde"
+    }
+  }, {
+    "@id" : "ct:00403_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:004",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00403_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "karakteristieke landschapselementen van gemeentelijk niveau (landschappelijk waardevol gebied)"
+    }
+  }, {
+    "@id" : "ct:006",
+    "@type" : "skos:Concept",
+    "broader" : "ct:00",
+    "narrower" : [ "ct:00601_00", "ct:00603_00" ],
+    "notation" : "006",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "projectgebieden"
+    }
+  }, {
+    "@id" : "ct:00601_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:006",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00601_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "projectgebied (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:00603_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:006",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "00603_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "groenpool"
+    }
+  }, {
+    "@id" : "ct:01",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:011",
+    "notation" : "01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:011",
+    "@type" : "skos:Concept",
+    "broader" : "ct:01",
+    "narrower" : [ "ct:01102_01", "ct:01110_02", "ct:01110_01", "ct:01112_00", "ct:01101_02", "ct:01109_00", "ct:01113_00", "ct:01107_00", "ct:01101_03", "ct:01109_01", "ct:01115_00", "ct:01101_05", "ct:01114_00", "ct:01103_00", "ct:01108_01", "ct:01104_00", "ct:01103_01", "ct:01108_02", "ct:01102_00", "ct:01101_06", "ct:X2", "ct:X1", "ct:01101_00", "ct:X3", "ct:01108_00", "ct:01106_01", "ct:01117_00", "ct:01106_00" ],
+    "notation" : "011",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:01101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebied"
+    }
+  }, {
+    "@id" : "ct:01101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebied"
+    }
+  }, {
+    "@id" : "ct:01101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebied"
+    }
+  }, {
+    "@id" : "ct:01101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebied"
+    }
+  }, {
+    "@id" : "ct:01101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woongebied"
+    }
+  }, {
+    "@id" : "ct:01102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stationsomgeving"
+    }
+  }, {
+    "@id" : "ct:01102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stationsomgeving"
+    }
+  }, {
+    "@id" : "ct:01103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemengde stedelijke aktiviteiten"
+    }
+  }, {
+    "@id" : "ct:01103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemengde stedelijke aktiviteiten"
+    }
+  }, {
+    "@id" : "ct:01104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "cultuurhistorisch woongebied"
+    }
+  }, {
+    "@id" : "ct:01106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservegebied voor wonen"
+    }
+  }, {
+    "@id" : "ct:01106_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01106_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservegebied voor wonen"
+    }
+  }, {
+    "@id" : "ct:01107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "strategisch woonproject"
+    }
+  }, {
+    "@id" : "ct:01108_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01108_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor wonen en landbouw"
+    }
+  }, {
+    "@id" : "ct:01108_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01108_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor wonen en landbouw"
+    }
+  }, {
+    "@id" : "ct:01108_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01108_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor wonen en landbouw"
+    }
+  }, {
+    "@id" : "ct:01109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Landelijk woongebied met culturele, historische en/of esthetische waarde"
+    }
+  }, {
+    "@id" : "ct:01109_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01109_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Landelijk woongebied met culturele, historische en/of esthetische waarde"
+    }
+  }, {
+    "@id" : "ct:01110_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01110_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "randstedelijk wonen"
+    }
+  }, {
+    "@id" : "ct:01110_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01110_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "randstedelijk wonen"
+    }
+  }, {
+    "@id" : "ct:01112_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01112_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stationsplein"
+    }
+  }, {
+    "@id" : "ct:01113_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01113_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "woonwagenpark"
+    }
+  }, {
+    "@id" : "ct:01114_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01114_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrij wonen"
+    }
+  }, {
+    "@id" : "ct:01115_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01115_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengde aktiviteiten"
+    }
+  }, {
+    "@id" : "ct:01117_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01117_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "sociaal objectief"
+    }
+  }, {
+    "@id" : "ct:02",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:021",
+    "notation" : "02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:021",
+    "@type" : "skos:Concept",
+    "broader" : "ct:02",
+    "narrower" : [ "ct:02104_00", "ct:X4", "ct:02108_00", "ct:02102_01", "ct:02101_01", "ct:02102_00", "ct:02101_00", "ct:02106_01", "ct:02103_00", "ct:02106_00", "ct:02111_00", "ct:02103_01", "ct:02102_03", "ct:02102_02", "ct:02110_00", "ct:02105_00", "ct:02109_00" ],
+    "notation" : "021",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:02101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "randstedelijk groengebied met dagrecreatieve infrastructuur"
+    }
+  }, {
+    "@id" : "ct:02101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "randstedelijk groengebied met dagrecreatieve infrastructuur"
+    }
+  }, {
+    "@id" : "ct:02102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebied"
+    }
+  }, {
+    "@id" : "ct:02102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebied"
+    }
+  }, {
+    "@id" : "ct:02102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebied"
+    }
+  }, {
+    "@id" : "ct:02102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiegebied"
+    }
+  }, {
+    "@id" : "ct:02103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor dagrecreatie"
+    }
+  }, {
+    "@id" : "ct:02103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor dagrecreatie"
+    }
+  }, {
+    "@id" : "ct:02104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor recreatie vliegen"
+    }
+  }, {
+    "@id" : "ct:02105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor golfterrein"
+    }
+  }, {
+    "@id" : "ct:02106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "watergebonden recreatie [131_1]"
+    }
+  }, {
+    "@id" : "ct:02106_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02106_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "watergebonden recreatie [131_1]"
+    }
+  }, {
+    "@id" : "ct:02108_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02108_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatieve bebouwing"
+    }
+  }, {
+    "@id" : "ct:02109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "verblijfsrecreatie in groepen"
+    }
+  }, {
+    "@id" : "ct:02110_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02110_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "verblijfsrecreatie"
+    }
+  }, {
+    "@id" : "ct:02111_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02111_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recreatiebuffer"
+    }
+  }, {
+    "@id" : "ct:03",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:031",
+    "notation" : "03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuur- en reservaatgebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:031",
+    "@type" : "skos:Concept",
+    "broader" : "ct:03",
+    "narrower" : [ "ct:03103_02", "ct:03102_03", "ct:03103_01", "ct:03103_00", "ct:03102_02", "ct:03102_01", "ct:03103_05", "ct:03102_00", "ct:03104_02", "ct:03104_00", "ct:03104_01", "ct:03102_04" ],
+    "notation" : "031",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuur- en reservaatgebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:03102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03102_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03102_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overstromings- en natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overstromings- en natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03103_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03103_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overstromings- en natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03103_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03103_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overstromings- en natuurgebied"
+    }
+  }, {
+    "@id" : "ct:03104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ecologische infrastructuur"
+    }
+  }, {
+    "@id" : "ct:03104_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03104_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ecologische infrastructuur"
+    }
+  }, {
+    "@id" : "ct:03104_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:031",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "03104_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ecologische infrastructuur"
+    }
+  }, {
+    "@id" : "ct:04",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:041", "ct:042", "ct:043" ],
+    "notation" : "04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overige groengebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:041",
+    "@type" : "skos:Concept",
+    "broader" : "ct:04",
+    "narrower" : [ "ct:04106_00", "ct:04102_00", "ct:04105_03", "ct:04102_03", "ct:04105_01", "ct:04105_00", "ct:04105_02", "ct:04107_00", "ct:04101_00", "ct:04102_02", "ct:04106_01", "ct:04102_04", "ct:04102_01" ],
+    "notation" : "041",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "groengebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:04101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "randstedelijk groengebied"
+    }
+  }, {
+    "@id" : "ct:04102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:04102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:04102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:04102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:04102_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04102_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:04105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"
+    }
+  }, {
+    "@id" : "ct:04105_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04105_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"
+    }
+  }, {
+    "@id" : "ct:04105_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04105_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"
+    }
+  }, {
+    "@id" : "ct:04105_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04105_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "structurerend groengebied (deze code komt ook voor met legende donkerblauwe arcering = beekvallei)"
+    }
+  }, {
+    "@id" : "ct:04106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimte met cultuurhistorische waarde"
+    }
+  }, {
+    "@id" : "ct:04106_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04106_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd openruimte met cultuurhistorische waarde"
+    }
+  }, {
+    "@id" : "ct:04107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:041",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "watergevoelig openruimtegebied"
+    }
+  }, {
+    "@id" : "ct:042",
+    "@type" : "skos:Concept",
+    "broader" : "ct:04",
+    "narrower" : [ "ct:04207_00", "ct:04202_02", "ct:04201_02", "ct:04202_01", "ct:04202_00", "ct:04205_01", "ct:04201_01", "ct:04203_02", "ct:04203_01", "ct:04205_00", "ct:04208_00", "ct:04201_00", "ct:04203_00", "ct:04202_04", "ct:04202_03", "ct:04204_00", "ct:04207_01" ],
+    "notation" : "042",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffergebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:04201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosbuffer"
+    }
+  }, {
+    "@id" : "ct:04201_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04201_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosbuffer"
+    }
+  }, {
+    "@id" : "ct:04201_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04201_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosbuffer"
+    }
+  }, {
+    "@id" : "ct:04202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:04202_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04202_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:04202_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04202_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:04202_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04202_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:04202_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04202_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:04203_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04203_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurbuffer"
+    }
+  }, {
+    "@id" : "ct:04203_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04203_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurbuffer"
+    }
+  }, {
+    "@id" : "ct:04203_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04203_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurbuffer"
+    }
+  }, {
+    "@id" : "ct:04204_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04204_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd buffergebied"
+    }
+  }, {
+    "@id" : "ct:04205_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04205_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "koppelingsgebied"
+    }
+  }, {
+    "@id" : "ct:04205_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04205_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "koppelingsgebied"
+    }
+  }, {
+    "@id" : "ct:04207_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04207_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overige buffergebieden (vb dijk)"
+    }
+  }, {
+    "@id" : "ct:04207_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04207_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "overige buffergebieden (vb dijk)"
+    }
+  }, {
+    "@id" : "ct:04208_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:042",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04208_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer overgangsgebieden"
+    }
+  }, {
+    "@id" : "ct:043",
+    "@type" : "skos:Concept",
+    "broader" : "ct:04",
+    "narrower" : [ "ct:04301_00", "ct:04302_01", "ct:04301_03", "ct:04302_00", "ct:04301_02", "ct:04301_01" ],
+    "notation" : "043",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "parkgebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:04301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "park"
+    }
+  }, {
+    "@id" : "ct:04301_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04301_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "park"
+    }
+  }, {
+    "@id" : "ct:04301_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04301_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "park"
+    }
+  }, {
+    "@id" : "ct:04301_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04301_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "park"
+    }
+  }, {
+    "@id" : "ct:04302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]"
+    }
+  }, {
+    "@id" : "ct:04302_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:043",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "04302_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor park (natuureducatieve en laagdynamische recreatie) [131_1 ]"
+    }
+  }, {
+    "@id" : "ct:05",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:051",
+    "notation" : "05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:051",
+    "@type" : "skos:Concept",
+    "broader" : "ct:05",
+    "narrower" : [ "ct:05101_04", "ct:05101_00", "ct:05101_05", "ct:05103_00", "ct:05101_01", "ct:05101_06" ],
+    "notation" : "051",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebieden (in gewestelijke rups)"
+    }
+  }, {
+    "@id" : "ct:05101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebied"
+    }
+  }, {
+    "@id" : "ct:05101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebied"
+    }
+  }, {
+    "@id" : "ct:05101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebied"
+    }
+  }, {
+    "@id" : "ct:05101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebied"
+    }
+  }, {
+    "@id" : "ct:05101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bosgebied"
+    }
+  }, {
+    "@id" : "ct:05103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:051",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "05103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "nabestemming bosgebied [zie rup 10_1 turnhout, art. 16,2]"
+    }
+  }, {
+    "@id" : "ct:06",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:061",
+    "notation" : "06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "landbouwgebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:061",
+    "@type" : "skos:Concept",
+    "broader" : "ct:06",
+    "narrower" : [ "ct:06102_02", "ct:06101_00", "ct:06102_01", "ct:06106_00", "ct:06102_03", "ct:06101_04", "ct:06101_01", "ct:06104_00", "ct:06101_06", "ct:06101_03", "ct:06107_00", "ct:06101_02", "ct:06101_05", "ct:X5", "ct:06105_00", "ct:06102_00" ],
+    "notation" : "061",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "landbouwgebieden"
+    }
+  }, {
+    "@id" : "ct:06101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrij agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrij agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrij agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrij agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:06104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarische bedrijvenzone"
+    }
+  }, {
+    "@id" : "ct:06105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "perimeter voor glastuinbouwbedrijven"
+    }
+  }, {
+    "@id" : "ct:06106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied met landschappelijke kenmerken"
+    }
+  }, {
+    "@id" : "ct:06107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "06107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "agrarisch gebied met ecologisch belang"
+    }
+  }, {
+    "@id" : "ct:07",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:076", "ct:072", "ct:075", "ct:071", "ct:074" ],
+    "notation" : "07",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "industriegebieden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:071",
+    "@type" : "skos:Concept",
+    "broader" : "ct:07",
+    "narrower" : [ "ct:07107_00", "ct:07103_03", "ct:07104_00", "ct:07103_01", "ct:07102_01", "ct:07107_02", "ct:07103_00", "ct:07101_03", "ct:07104_02", "ct:07106_01", "ct:07101_02", "ct:07102_00", "ct:07108_00", "ct:07106_03", "ct:07106_00", "ct:07101_01", "ct:07103_02", "ct:07101_05", "ct:07102_02", "ct:07101_00", "ct:07101_04", "ct:07106_02", "ct:07105_00", "ct:07108_01", "ct:07106_04", "ct:07110_00", "ct:07101_06", "ct:07107_01", "ct:07103_04", "ct:07104_01", "ct:07109_00", "ct:07111_00" ],
+    "notation" : "071",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "regionale bedrijventerreinen"
+    }
+  }, {
+    "@id" : "ct:07101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"
+    }
+  }, {
+    "@id" : "ct:07102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"
+    }
+  }, {
+    "@id" : "ct:07102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor transport, distributie en logistiek"
+    }
+  }, {
+    "@id" : "ct:07103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kantoren"
+    }
+  }, {
+    "@id" : "ct:07103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kantoren"
+    }
+  }, {
+    "@id" : "ct:07103_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07103_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kantoren"
+    }
+  }, {
+    "@id" : "ct:07103_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07103_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kantoren"
+    }
+  }, {
+    "@id" : "ct:07103_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07103_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kantoren"
+    }
+  }, {
+    "@id" : "ct:07104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kleinhandel"
+    }
+  }, {
+    "@id" : "ct:07104_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07104_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kleinhandel"
+    }
+  }, {
+    "@id" : "ct:07104_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07104_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor kleinhandel"
+    }
+  }, {
+    "@id" : "ct:07105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor luchthavengebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein met watergebonden karakter"
+    }
+  }, {
+    "@id" : "ct:07106_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07106_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein met watergebonden karakter"
+    }
+  }, {
+    "@id" : "ct:07106_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07106_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein met watergebonden karakter"
+    }
+  }, {
+    "@id" : "ct:07106_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07106_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein met watergebonden karakter"
+    }
+  }, {
+    "@id" : "ct:07106_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07106_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein met watergebonden karakter"
+    }
+  }, {
+    "@id" : "ct:07107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor wetenschapspark"
+    }
+  }, {
+    "@id" : "ct:07107_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07107_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor wetenschapspark"
+    }
+  }, {
+    "@id" : "ct:07107_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07107_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor wetenschapspark"
+    }
+  }, {
+    "@id" : "ct:07108_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07108_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage"
+    }
+  }, {
+    "@id" : "ct:07108_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07108_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor afvalverwerking en recyclage"
+    }
+  }, {
+    "@id" : "ct:07109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "regionaal bedrijventerrein voor agro-industrie"
+    }
+  }, {
+    "@id" : "ct:07110_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07110_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "specifiek regionaal bedrijventerrein voor spoorweggebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07111_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:071",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07111_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor bestaand regionaal bedrijf"
+    }
+  }, {
+    "@id" : "ct:072",
+    "@type" : "skos:Concept",
+    "broader" : "ct:07",
+    "narrower" : [ "ct:07204_01", "ct:07204_08", "ct:07207_00", "ct:07204_03", "ct:07204_00", "ct:07210_00", "ct:07204_02", "ct:07206_01", "ct:07205_01", "ct:07209_00", "ct:07204_05", "ct:07204_04", "ct:07206_00", "ct:07210_01", "ct:07204_07", "ct:07204_09", "ct:07204_06", "ct:07205_00" ],
+    "notation" : "072",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerreinen in zeehavengebieden"
+    }
+  }, {
+    "@id" : "ct:07204_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_07",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_07",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_08",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_08",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07204_09",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07204_09",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zeehaven- en watergebonden bedrijven"
+    }
+  }, {
+    "@id" : "ct:07205_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07205_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]"
+    }
+  }, {
+    "@id" : "ct:07205_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07205_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone met zeehavengebonden kantoren en dienstverlenende bedrijven [131_1]"
+    }
+  }, {
+    "@id" : "ct:07206_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07206_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor bestaande productiebedrijvigheid in zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:07206_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07206_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor bestaande productiebedrijvigheid in zeehavengebied"
+    }
+  }, {
+    "@id" : "ct:07207_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07207_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor zeehavengebonden opslag- en verpakkingsactiviteit [131_1]"
+    }
+  }, {
+    "@id" : "ct:07209_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07209_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor zeehavenondersteunende regionale bedrijvigheid [131_1]"
+    }
+  }, {
+    "@id" : "ct:07210_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07210_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor energie"
+    }
+  }, {
+    "@id" : "ct:07210_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:072",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07210_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor energie"
+    }
+  }, {
+    "@id" : "ct:074",
+    "@type" : "skos:Concept",
+    "broader" : "ct:07",
+    "narrower" : [ "ct:07401_00", "ct:07401_01", "ct:07401_02", "ct:07402_00" ],
+    "notation" : "074",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "historisch gegroeid regionaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07401_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:074",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07401_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor historisch gegroeid bedrijf"
+    }
+  }, {
+    "@id" : "ct:07401_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:074",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07401_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor historisch gegroeid bedrijf"
+    }
+  }, {
+    "@id" : "ct:07401_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:074",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07401_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor historisch gegroeid bedrijf"
+    }
+  }, {
+    "@id" : "ct:07402_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:074",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07402_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor historisch gegroeid bedrijf met voorbestemming woongebied"
+    }
+  }, {
+    "@id" : "ct:075",
+    "@type" : "skos:Concept",
+    "broader" : "ct:07",
+    "narrower" : [ "ct:07501_00", "ct:07501_01", "ct:07502_00" ],
+    "notation" : "075",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lokale bedrijventerreinen"
+    }
+  }, {
+    "@id" : "ct:07501_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:075",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07501_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lokaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07501_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:075",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07501_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lokaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:07502_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:075",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07502_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaand industriegebied"
+    }
+  }, {
+    "@id" : "ct:076",
+    "@type" : "skos:Concept",
+    "broader" : "ct:07",
+    "narrower" : [ "ct:07601_00", "ct:07602_00", "ct:07604_00" ],
+    "notation" : "076",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengde en lokale bedrijventerreinen"
+    }
+  }, {
+    "@id" : "ct:07601_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:076",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07601_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor commerciële aktiviteiten"
+    }
+  }, {
+    "@id" : "ct:07602_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:076",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07602_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bedrijventerrein voor kantoren en katoorachtigen en lokale bedrijvigheid"
+    }
+  }, {
+    "@id" : "ct:07604_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:076",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "07604_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "grootschalige kleinhandel en/of lokaal bedrijventerrein"
+    }
+  }, {
+    "@id" : "ct:08",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:088", "ct:083", "ct:085", "ct:082", "ct:084", "ct:087", "ct:081", "ct:086" ],
+    "notation" : "08",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemeenschapsvoorzieningen en nutsvoorzieningen"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:081",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08107_00", "ct:08103_01", "ct:08110_00", "ct:08102_03", "ct:08102_04", "ct:08111_00", "ct:08107_01", "ct:08102_00", "ct:08107_02", "ct:08106_00", "ct:08102_01", "ct:08107_03", "ct:08109_00", "ct:08101_00", "ct:08106_02", "ct:08105_00", "ct:08105_01", "ct:08112_01", "ct:08108_00", "ct:08103_00" ],
+    "notation" : "081",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "openbaar nut"
+    }
+  }, {
+    "@id" : "ct:08101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor hernieuwbare energie"
+    }
+  }, {
+    "@id" : "ct:08102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemeenschaps- en openbare nutsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemeenschaps- en openbare nutsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemeenschaps- en openbare nutsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08102_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08102_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor gemeenschaps- en openbare nutsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor publiek wegenonderhoud en beheer"
+    }
+  }, {
+    "@id" : "ct:08103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor publiek wegenonderhoud en beheer"
+    }
+  }, {
+    "@id" : "ct:08105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied van openbaar nut en recreatie"
+    }
+  }, {
+    "@id" : "ct:08105_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08105_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied van openbaar nut en recreatie"
+    }
+  }, {
+    "@id" : "ct:08106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "havenondersteunende gemeenschapsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08106_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08106_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "havenondersteunende gemeenschapsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:08107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"
+    }
+  }, {
+    "@id" : "ct:08107_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08107_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"
+    }
+  }, {
+    "@id" : "ct:08107_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08107_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"
+    }
+  }, {
+    "@id" : "ct:08107_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08107_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor zuiveringsinfrastructuur voor afvalwater [5_1 /131_1]"
+    }
+  }, {
+    "@id" : "ct:08108_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08108_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor transformatorpark"
+    }
+  }, {
+    "@id" : "ct:08109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor infrastructuur voor duurzame watervoorziening"
+    }
+  }, {
+    "@id" : "ct:08110_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08110_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor telecommunicatie-infrastructuur"
+    }
+  }, {
+    "@id" : "ct:08111_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08111_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Gebied voor zorginfrastructuur"
+    }
+  }, {
+    "@id" : "ct:08112_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:081",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08112_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Infrastructuurlandschap"
+    }
+  }, {
+    "@id" : "ct:082",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : "ct:08201_00",
+    "notation" : "082",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "militair domein"
+    }
+  }, {
+    "@id" : "ct:08201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:082",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "militair domein"
+    }
+  }, {
+    "@id" : "ct:083",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08302_00", "ct:08302_01" ],
+    "notation" : "083",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "watergevoelige zones"
+    }
+  }, {
+    "@id" : "ct:08302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:083",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterbeheersgebieden"
+    }
+  }, {
+    "@id" : "ct:08302_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:083",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08302_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterbeheersgebieden"
+    }
+  }, {
+    "@id" : "ct:084",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08401_00", "ct:08401_01", "ct:08402_00" ],
+    "notation" : "084",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterwinningsgebieden"
+    }
+  }, {
+    "@id" : "ct:08401_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:084",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08401_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterwinningsgebied"
+    }
+  }, {
+    "@id" : "ct:08401_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:084",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08401_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterwinningsgebied"
+    }
+  }, {
+    "@id" : "ct:08402_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:084",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08402_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterberging"
+    }
+  }, {
+    "@id" : "ct:085",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08501_03", "ct:08501_00", "ct:08503_00", "ct:08501_02", "ct:08502_00", "ct:08504_00" ],
+    "notation" : "085",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontginningsgebieden"
+    }
+  }, {
+    "@id" : "ct:08501_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08501_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor de winning van oppervlaktedelfstoffen"
+    }
+  }, {
+    "@id" : "ct:08501_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08501_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor de winning van oppervlaktedelfstoffen"
+    }
+  }, {
+    "@id" : "ct:08501_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08501_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor de winning van oppervlaktedelfstoffen"
+    }
+  }, {
+    "@id" : "ct:08502_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08502_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor verwerking van oppervlaktedelfstoffen"
+    }
+  }, {
+    "@id" : "ct:08503_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08503_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor recuperatie of recyclage"
+    }
+  }, {
+    "@id" : "ct:08504_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:085",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08504_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor projectgrindwinning"
+    }
+  }, {
+    "@id" : "ct:086",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08601_01", "ct:08601_00", "ct:08602_00" ],
+    "notation" : "086",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stortgebieden"
+    }
+  }, {
+    "@id" : "ct:08601_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:086",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08601_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stortgebied"
+    }
+  }, {
+    "@id" : "ct:08601_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:086",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08601_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stortgebied"
+    }
+  }, {
+    "@id" : "ct:08602_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:086",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08602_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor specieberging"
+    }
+  }, {
+    "@id" : "ct:087",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : "ct:08712_00",
+    "notation" : "087",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "OMGEZET NAAR GROEP 09/13/14/15    DEELGROEP NIET MEER VAN TOEPASSING (overige gebieden)"
+    }
+  }, {
+    "@id" : "ct:08712_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:087",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08712_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (vista)"
+    }
+  }, {
+    "@id" : "ct:088",
+    "@type" : "skos:Concept",
+    "broader" : "ct:08",
+    "narrower" : [ "ct:08801_01", "ct:08801_00", "ct:08805_00" ],
+    "notation" : "088",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "DEELGROEP NIET MEER VAN TOEPASSING (overige lijninfrastructuur (= gemengd, m.a.w niet behorend tot de groepen 09, 10, 11 of 12))"
+    }
+  }, {
+    "@id" : "ct:08801_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:088",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08801_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))"
+    }
+  }, {
+    "@id" : "ct:08801_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:088",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08801_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (gebied voor aanpassing van kruisende infrastructuur (in overdruk) (rup: 2_1))"
+    }
+  }, {
+    "@id" : "ct:08805_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:088",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "08805_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (gemengd reservatiegebied (in overdruk))"
+    }
+  }, {
+    "@id" : "ct:09",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:091", "ct:092", "ct:093", "ct:094" ],
+    "notation" : "09",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lijninfrastructuren - autowegen"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:091",
+    "@type" : "skos:Concept",
+    "broader" : "ct:09",
+    "narrower" : [ "ct:09101_00", "ct:09101_01", "ct:09102_00", "ct:09109_00", "ct:09110_00" ],
+    "notation" : "091",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebieden voor wegen + aan te leggen wegen"
+    }
+  }, {
+    "@id" : "ct:09101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:091",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor hoofdweg"
+    }
+  }, {
+    "@id" : "ct:09101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:091",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor hoofdweg"
+    }
+  }, {
+    "@id" : "ct:09102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:091",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van wegeninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:09109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:091",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor aan te leggen weg (categorie niet bepaald)"
+    }
+  }, {
+    "@id" : "ct:09110_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:091",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09110_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "aslijn wegenis"
+    }
+  }, {
+    "@id" : "ct:092",
+    "@type" : "skos:Concept",
+    "broader" : "ct:09",
+    "narrower" : [ "ct:09201_00", "ct:09201_01", "ct:09205_00", "ct:09205_01" ],
+    "notation" : "092",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "te schrappen (reservatie)gebieden"
+    }
+  }, {
+    "@id" : "ct:09201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:092",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen reservatiestrook"
+    }
+  }, {
+    "@id" : "ct:09201_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:092",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09201_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen reservatiestrook"
+    }
+  }, {
+    "@id" : "ct:09205_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:092",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09205_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen wegenis"
+    }
+  }, {
+    "@id" : "ct:09205_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:092",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09205_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen wegenis"
+    }
+  }, {
+    "@id" : "ct:093",
+    "@type" : "skos:Concept",
+    "broader" : "ct:09",
+    "narrower" : [ "ct:09303_01", "ct:X6", "ct:09303_02", "ct:09303_03", "ct:09304_00", "ct:09304_01", "ct:09312_00", "ct:09304_02", "ct:09309_00", "ct:09302_01", "ct:09302_00", "ct:09304_03", "ct:09303_00", "ct:09313_00", "ct:09301_02", "ct:09309_01", "ct:09313_01", "ct:09301_03", "ct:09301_00" ],
+    "notation" : "093",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebieden voor wegen"
+    }
+  }, {
+    "@id" : "ct:09301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND hoofdweg"
+    }
+  }, {
+    "@id" : "ct:09301_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09301_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND hoofdweg"
+    }
+  }, {
+    "@id" : "ct:09301_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09301_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND hoofdweg"
+    }
+  }, {
+    "@id" : "ct:09302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND primaire weg I"
+    }
+  }, {
+    "@id" : "ct:09302_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09302_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND primaire weg I"
+    }
+  }, {
+    "@id" : "ct:09303_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09303_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND secundaire weg"
+    }
+  }, {
+    "@id" : "ct:09303_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09303_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND secundaire weg"
+    }
+  }, {
+    "@id" : "ct:09303_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09303_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND secundaire weg"
+    }
+  }, {
+    "@id" : "ct:09303_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09303_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND secundaire weg"
+    }
+  }, {
+    "@id" : "ct:09304_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09304_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND lokale weg"
+    }
+  }, {
+    "@id" : "ct:09304_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09304_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND lokale weg"
+    }
+  }, {
+    "@id" : "ct:09304_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09304_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND lokale weg"
+    }
+  }, {
+    "@id" : "ct:09304_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09304_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND lokale weg"
+    }
+  }, {
+    "@id" : "ct:09309_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09309_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegeninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:09309_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09309_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegeninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:09312_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09312_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor primaire weg II [131_1]"
+    }
+  }, {
+    "@id" : "ct:09313_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09313_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]"
+    }
+  }, {
+    "@id" : "ct:09313_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09313_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor knooppunt [131_1 legendvb type 1 / types variëren met gebiedsnrs ]"
+    }
+  }, {
+    "@id" : "ct:094",
+    "@type" : "skos:Concept",
+    "broader" : "ct:09",
+    "narrower" : [ "ct:09404_00", "ct:09406_01", "ct:09406_00", "ct:09402_01", "ct:09401_01", "ct:09402_00", "ct:09401_00", "ct:09405_00" ],
+    "notation" : "094",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "DEELGROEP BESTAAT NIET MEER (gebundelde lijninfrastructuur)"
+    }
+  }, {
+    "@id" : "ct:09401_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09401_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)"
+    }
+  }, {
+    "@id" : "ct:09401_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09401_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg)"
+    }
+  }, {
+    "@id" : "ct:09402_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09402_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)"
+    }
+  }, {
+    "@id" : "ct:09402_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09402_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg)"
+    }
+  }, {
+    "@id" : "ct:09404_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09404_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs lokale weg)"
+    }
+  }, {
+    "@id" : "ct:09405_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09405_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs hoofdweg (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:09406_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09406_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:09406_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:094",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09406_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "CODE NIET MEER VAN TOEPASSING (voorheen : bouwvrij gebied langs primaire weg (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:10",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:101", "ct:103" ],
+    "notation" : "10",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lijninfrastructuren - spoorwegen"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:101",
+    "@type" : "skos:Concept",
+    "broader" : "ct:10",
+    "narrower" : "ct:10101_00",
+    "notation" : "101",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "DEELGROEP NIET MEER VAN TOEPASSING (reservatiegebieden voor spoorwegen)"
+    }
+  }, {
+    "@id" : "ct:10101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:101",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "UITDOVEND : reservatiegebied voor aan te leggen hoofdspoorweg (in overdruk) (rup: 2_1)"
+    }
+  }, {
+    "@id" : "ct:103",
+    "@type" : "skos:Concept",
+    "broader" : "ct:10",
+    "narrower" : [ "ct:10308_01", "ct:10307_01", "ct:10301_01", "ct:10308_00", "ct:10307_00", "ct:10301_00", "ct:10306_00" ],
+    "notation" : "103",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebieden voor spoorwegen"
+    }
+  }, {
+    "@id" : "ct:10301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor hoofdspoorweg type 1"
+    }
+  }, {
+    "@id" : "ct:10301_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10301_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor hoofdspoorweg type 1"
+    }
+  }, {
+    "@id" : "ct:10306_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10306_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:10307_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10307_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor diensten bij spoorweginfrastructuur en aanhorigheden"
+    }
+  }, {
+    "@id" : "ct:10307_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10307_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor diensten bij spoorweginfrastructuur en aanhorigheden"
+    }
+  }, {
+    "@id" : "ct:10308_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10308_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:10308_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:103",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "10308_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:11",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:111", "ct:112", "ct:113" ],
+    "notation" : "11",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lijninfrastructuren - waterwegen"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:111",
+    "@type" : "skos:Concept",
+    "broader" : "ct:11",
+    "narrower" : [ "ct:11102_00", "ct:11102_03", "ct:11102_02", "ct:11102_01" ],
+    "notation" : "111",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebieden voor waterwegen"
+    }
+  }, {
+    "@id" : "ct:11102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:111",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"
+    }
+  }, {
+    "@id" : "ct:11102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:111",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"
+    }
+  }, {
+    "@id" : "ct:11102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:111",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"
+    }
+  }, {
+    "@id" : "ct:11102_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:111",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11102_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor aanleg, beheer en exploitatie van waterinfrastrucutuur"
+    }
+  }, {
+    "@id" : "ct:112",
+    "@type" : "skos:Concept",
+    "broader" : "ct:11",
+    "narrower" : [ "ct:11201_00", "ct:11202_00" ],
+    "notation" : "112",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "te schrappen reservatiegebieden voor waterwegen"
+    }
+  }, {
+    "@id" : "ct:11201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:112",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen reservatiegebied voor waterweg (in overdruk) (rup: 2_1)"
+    }
+  }, {
+    "@id" : "ct:11202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:112",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen alternatief reservatiegebied (in overdruk) (rup: 2_1)"
+    }
+  }, {
+    "@id" : "ct:113",
+    "@type" : "skos:Concept",
+    "broader" : "ct:11",
+    "narrower" : [ "ct:11301_00", "ct:11302_00", "ct:11303_00" ],
+    "notation" : "113",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebieden voor waterwegen"
+    }
+  }, {
+    "@id" : "ct:11301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:113",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaande waterweg"
+    }
+  }, {
+    "@id" : "ct:11302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:113",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:11303_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:113",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "11303_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor diensten bij waterinfrasructuur"
+    }
+  }, {
+    "@id" : "ct:12",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:122", "ct:123" ],
+    "notation" : "12",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lijninfrastructuren - leidingen"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:122",
+    "@type" : "skos:Concept",
+    "broader" : "ct:12",
+    "narrower" : [ "ct:12203_00", "ct:12202_03", "ct:12204_00", "ct:12202_00", "ct:12202_01", "ct:12205_00", "ct:12201_00", "ct:12207_00", "ct:12202_02" ],
+    "notation" : "122",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebieden voor aan te leggen leiding"
+    }
+  }, {
+    "@id" : "ct:12201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "te schrappen reservatiegebied voor aan te leggen leiding"
+    }
+  }, {
+    "@id" : "ct:12202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12202_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12202_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12202_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12202_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12202_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12202_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12203_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12203_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12204_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12204_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12205_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12205_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen enkelvoudige leiding"
+    }
+  }, {
+    "@id" : "ct:12207_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:122",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12207_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor aan te leggen leidingstraat"
+    }
+  }, {
+    "@id" : "ct:123",
+    "@type" : "skos:Concept",
+    "broader" : "ct:12",
+    "narrower" : [ "ct:12302_01", "ct:12304_07", "ct:12301_00", "ct:12304_00", "ct:12304_02", "ct:12303_01", "ct:12303_02", "ct:12304_01", "ct:12303_04", "ct:12304_04", "ct:12302_00", "ct:12304_06", "ct:12303_03", "ct:12304_03", "ct:12304_05", "ct:12301_02", "ct:12302_02", "ct:12303_00" ],
+    "notation" : "123",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaande leidingen (in rups)"
+    }
+  }, {
+    "@id" : "ct:12301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12301_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12301_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstraat"
+    }
+  }, {
+    "@id" : "ct:12302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "enkelvoudige leiding"
+    }
+  }, {
+    "@id" : "ct:12302_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12302_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "enkelvoudige leiding"
+    }
+  }, {
+    "@id" : "ct:12302_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12302_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "enkelvoudige leiding"
+    }
+  }, {
+    "@id" : "ct:12303_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12303_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12303_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12303_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12303_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12303_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12303_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12303_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12303_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12303_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoogspanningsleiding"
+    }
+  }, {
+    "@id" : "ct:12304_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:12304_07",
+    "@type" : "skos:Concept",
+    "broader" : "ct:123",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "12304_07",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "leidingstrook"
+    }
+  }, {
+    "@id" : "ct:13",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:131", "ct:132" ],
+    "notation" : "13",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebundelde lijninfrastructuur en/of aanhorigheden"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:131",
+    "@type" : "skos:Concept",
+    "broader" : "ct:13",
+    "narrower" : [ "ct:13102_01", "ct:13104_01", "ct:13102_00", "ct:13103_00", "ct:13101_02", "ct:13104_00", "ct:13102_02", "ct:13101_01" ],
+    "notation" : "131",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebundelde lijninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:13101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:13101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor ongelijkvloerse verkeers- en vervoersinfrastructuur (in overdruk)"
+    }
+  }, {
+    "@id" : "ct:13102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "verkeers- of vervoersinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:13102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "verkeers- of vervoersinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:13102_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13102_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "verkeers- of vervoersinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:13103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrije strook"
+    }
+  }, {
+    "@id" : "ct:13104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:13104_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:131",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13104_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "reservatiegebied voor aanleg, beheer en exploitatie van verkeers- of vervoersinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:132",
+    "@type" : "skos:Concept",
+    "broader" : "ct:13",
+    "narrower" : [ "ct:13201_03", "ct:13201_05", "ct:13201_01", "ct:13202_00", "ct:13201_02", "ct:13202_01", "ct:13201_04" ],
+    "notation" : "132",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "aanhorigheden"
+    }
+  }, {
+    "@id" : "ct:13201_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13201_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overstap (bv. treinstopplaats)"
+    }
+  }, {
+    "@id" : "ct:13201_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13201_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overstap (bv. treinstopplaats)"
+    }
+  }, {
+    "@id" : "ct:13201_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13201_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overstap (bv. treinstopplaats)"
+    }
+  }, {
+    "@id" : "ct:13201_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13201_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overstap (bv. treinstopplaats)"
+    }
+  }, {
+    "@id" : "ct:13201_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13201_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overstap (bv. treinstopplaats)"
+    }
+  }, {
+    "@id" : "ct:13202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overslag"
+    }
+  }, {
+    "@id" : "ct:13202_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:132",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "13202_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor overslag"
+    }
+  }, {
+    "@id" : "ct:14",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:141",
+    "notation" : "14",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "tijdsgebonden aspecten"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:141",
+    "@type" : "skos:Concept",
+    "broader" : "ct:14",
+    "narrower" : [ "ct:14103_02", "ct:14101_04", "ct:14101_03", "ct:14103_01", "ct:14101_02", "ct:14103_00", "ct:14101_01", "ct:14101_06", "ct:14105_00", "ct:14101_00" ],
+    "notation" : "141",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "tijdsgebonden aspecten"
+    }
+  }, {
+    "@id" : "ct:14101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "fasering eerste fase ( in tweede fase dubbele schuine arcering)"
+    }
+  }, {
+    "@id" : "ct:14103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "werfzone"
+    }
+  }, {
+    "@id" : "ct:14103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "werfzone"
+    }
+  }, {
+    "@id" : "ct:14103_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14103_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "werfzone"
+    }
+  }, {
+    "@id" : "ct:14105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:141",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "14105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "tijdelijke aanleg"
+    }
+  }, {
+    "@id" : "ct:15",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:151", "ct:152" ],
+    "notation" : "15",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "inrichting en beheersaspecten"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:151",
+    "@type" : "skos:Concept",
+    "broader" : "ct:15",
+    "narrower" : [ "ct:15113_00", "ct:15108_02", "ct:15110_00", "ct:15107_01", "ct:15108_01", "ct:15108_00", "ct:15116_00", "ct:15106_00", "ct:15107_00", "ct:15114_02", "ct:15105_01", "ct:15101_00", "ct:15109_00", "ct:15115_00", "ct:15112_01", "ct:15114_01", "ct:15114_00", "ct:15118_00", "ct:15103_01", "ct:15113_02", "ct:15108_04", "ct:15105_00", "ct:15102_01", "ct:15109_03", "ct:15102_00", "ct:15103_00", "ct:15104_00", "ct:15101_02", "ct:15112_00", "ct:15109_02", "ct:15117_00", "ct:15101_01", "ct:15109_01", "ct:15113_01", "ct:15111_00" ],
+    "notation" : "151",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "inrichting"
+    }
+  }, {
+    "@id" : "ct:15101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor personeelsparking"
+    }
+  }, {
+    "@id" : "ct:15101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor personeelsparking"
+    }
+  }, {
+    "@id" : "ct:15101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor personeelsparking"
+    }
+  }, {
+    "@id" : "ct:15102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrije zone ifv inrichting"
+    }
+  }, {
+    "@id" : "ct:15102_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15102_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwvrije zone ifv inrichting"
+    }
+  }, {
+    "@id" : "ct:15103_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15103_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen verkavelingen"
+    }
+  }, {
+    "@id" : "ct:15103_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15103_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "op te heffen verkavelingen"
+    }
+  }, {
+    "@id" : "ct:15104_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15104_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:15105_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15105_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "beperkte bouwmogelijkheden"
+    }
+  }, {
+    "@id" : "ct:15105_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15105_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "beperkte bouwmogelijkheden"
+    }
+  }, {
+    "@id" : "ct:15106_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15106_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "toegelaten gebouwen voor gemeenschaps- en openbare nutsvoorzieningen"
+    }
+  }, {
+    "@id" : "ct:15107_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15107_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor opslag"
+    }
+  }, {
+    "@id" : "ct:15107_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15107_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor opslag"
+    }
+  }, {
+    "@id" : "ct:15108_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15108_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor niet-hinderlijke activiteiten"
+    }
+  }, {
+    "@id" : "ct:15108_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15108_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor niet-hinderlijke activiteiten"
+    }
+  }, {
+    "@id" : "ct:15108_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15108_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor niet-hinderlijke activiteiten"
+    }
+  }, {
+    "@id" : "ct:15108_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15108_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor niet-hinderlijke activiteiten"
+    }
+  }, {
+    "@id" : "ct:15109_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15109_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor specifieke gebouwen en constructies"
+    }
+  }, {
+    "@id" : "ct:15109_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15109_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor specifieke gebouwen en constructies"
+    }
+  }, {
+    "@id" : "ct:15109_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15109_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor specifieke gebouwen en constructies"
+    }
+  }, {
+    "@id" : "ct:15109_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15109_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor specifieke gebouwen en constructies"
+    }
+  }, {
+    "@id" : "ct:15110_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15110_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "portaal"
+    }
+  }, {
+    "@id" : "ct:15111_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15111_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "vista"
+    }
+  }, {
+    "@id" : "ct:15112_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15112_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "tuinen"
+    }
+  }, {
+    "@id" : "ct:15112_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15112_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "tuinen"
+    }
+  }, {
+    "@id" : "ct:15113_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15113_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"
+    }
+  }, {
+    "@id" : "ct:15113_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15113_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"
+    }
+  }, {
+    "@id" : "ct:15113_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15113_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor ondersteunende en dienstverlenende bedrijven / gemeenschappelijke en complementaire voorzieningen"
+    }
+  }, {
+    "@id" : "ct:15114_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15114_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor toelaatbare bebouwing en infrastructuur"
+    }
+  }, {
+    "@id" : "ct:15114_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15114_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor toelaatbare bebouwing en infrastructuur"
+    }
+  }, {
+    "@id" : "ct:15114_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15114_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor toelaatbare bebouwing en infrastructuur"
+    }
+  }, {
+    "@id" : "ct:15115_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15115_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor nucleaire sanering"
+    }
+  }, {
+    "@id" : "ct:15116_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15116_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "veiligheidszone nucleaire activiteit"
+    }
+  }, {
+    "@id" : "ct:15117_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15117_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "speelvrije zone"
+    }
+  }, {
+    "@id" : "ct:15118_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:151",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15118_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Erfdienstbaarheidsgebied"
+    }
+  }, {
+    "@id" : "ct:152",
+    "@type" : "skos:Concept",
+    "broader" : "ct:15",
+    "narrower" : [ "ct:15203_00", "ct:15201_00", "ct:15202_00", "ct:X7", "ct:15206_00", "ct:15203_01" ],
+    "notation" : "152",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "beheer"
+    }
+  }, {
+    "@id" : "ct:15201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "uitdoofbeleid voor zonevreemde activiteiten"
+    }
+  }, {
+    "@id" : "ct:15202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "recht van voorkoop"
+    }
+  }, {
+    "@id" : "ct:15203_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15203_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "cultuurhistorische waarde, historische relicten, landschapsbeheer"
+    }
+  }, {
+    "@id" : "ct:15203_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15203_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "cultuurhistorische waarde, historische relicten, landschapsbeheer"
+    }
+  }, {
+    "@id" : "ct:15206_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15206_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterbeheer"
+    }
+  }, {
+    "@id" : "ct:20",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:201", "ct:202", "ct:203" ],
+    "notation" : "20",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "punten indicatieve aanduiding"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:201",
+    "@type" : "skos:Concept",
+    "broader" : "ct:20",
+    "narrower" : [ "ct:20101_02", "ct:20101_01", "ct:20101_00", "ct:20102_00" ],
+    "notation" : "201",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebouwen"
+    }
+  }, {
+    "@id" : "ct:20101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:201",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebouw"
+    }
+  }, {
+    "@id" : "ct:20101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:201",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebouw"
+    }
+  }, {
+    "@id" : "ct:20101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:201",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebouw"
+    }
+  }, {
+    "@id" : "ct:20102_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:201",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20102_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "toren"
+    }
+  }, {
+    "@id" : "ct:202",
+    "@type" : "skos:Concept",
+    "broader" : "ct:20",
+    "narrower" : [ "ct:20204_00", "ct:20202_00", "ct:20206_00", "ct:20205_00", "ct:20203_00", "ct:20201_00" ],
+    "notation" : "202",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "knooppunten"
+    }
+  }, {
+    "@id" : "ct:20201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "HC (hollands complex)"
+    }
+  }, {
+    "@id" : "ct:20202_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20202_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ov_kn2 (openbaar vervoer knooppunt)"
+    }
+  }, {
+    "@id" : "ct:20203_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20203_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "brug"
+    }
+  }, {
+    "@id" : "ct:20204_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20204_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "busstation"
+    }
+  }, {
+    "@id" : "ct:20205_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20205_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "toegang voor hulpdiensten"
+    }
+  }, {
+    "@id" : "ct:20206_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:202",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20206_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "stadsdistributie"
+    }
+  }, {
+    "@id" : "ct:203",
+    "@type" : "skos:Concept",
+    "broader" : "ct:20",
+    "narrower" : [ "ct:20301_00", "ct:20307_00", "ct:20304_00", "ct:20305_00", "ct:20302_00", "ct:20309_00", "ct:20306_00", "ct:20311_00", "ct:20310_00", "ct:20308_00", "ct:20303_00" ],
+    "notation" : "203",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "allerlei"
+    }
+  }, {
+    "@id" : "ct:20301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "heuvel"
+    }
+  }, {
+    "@id" : "ct:20302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "puntpijl"
+    }
+  }, {
+    "@id" : "ct:20303_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20303_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "meerpalen, pompgemaal"
+    }
+  }, {
+    "@id" : "ct:20304_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20304_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "hoekbomen"
+    }
+  }, {
+    "@id" : "ct:20305_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20305_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebouw"
+    }
+  }, {
+    "@id" : "ct:20306_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20306_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaand bouwkundig erfgoed primair"
+    }
+  }, {
+    "@id" : "ct:20307_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20307_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaand bouwkundig erfgoed tweede rangorde"
+    }
+  }, {
+    "@id" : "ct:20308_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20308_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zichtrelatie"
+    }
+  }, {
+    "@id" : "ct:20309_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20309_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ondergronds historisch monument"
+    }
+  }, {
+    "@id" : "ct:20310_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20310_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "openbaar nut"
+    }
+  }, {
+    "@id" : "ct:20311_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:203",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "20311_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "infrastructuur"
+    }
+  }, {
+    "@id" : "ct:21",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:213", "ct:215", "ct:217", "ct:214", "ct:219", "ct:216", "ct:211", "ct:218", "ct:212" ],
+    "notation" : "21",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lijnen indicatieve aanduiding"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:211",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21101_05", "ct:21101_03", "ct:21101_07", "ct:21101_02", "ct:21101_06", "ct:21101_01", "ct:21101_04", "ct:21101_00", "ct:21101_08" ],
+    "notation" : "211",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_07",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_07",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:21101_08",
+    "@type" : "skos:Concept",
+    "broader" : "ct:211",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21101_08",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "ontsluiting"
+    }
+  }, {
+    "@id" : "ct:212",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21201_06", "ct:21201_03", "ct:21201_04", "ct:21201_01", "ct:21201_02", "ct:21201_00", "ct:21201_05" ],
+    "notation" : "212",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:21201_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:212",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21201_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "langzaam verkeer"
+    }
+  }, {
+    "@id" : "ct:213",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21301_01", "ct:21301_04", "ct:21301_00", "ct:21301_02", "ct:21301_03", "ct:21302_00" ],
+    "notation" : "213",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffers"
+    }
+  }, {
+    "@id" : "ct:21301_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21301_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:21301_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21301_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:21301_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21301_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:21301_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21301_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:21301_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21301_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "buffer"
+    }
+  }, {
+    "@id" : "ct:21302_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:213",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21302_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "geluidscherm"
+    }
+  }, {
+    "@id" : "ct:214",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21401_00", "ct:21402_00" ],
+    "notation" : "214",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwlijnen"
+    }
+  }, {
+    "@id" : "ct:21401_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:214",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21401_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "maatbepaling"
+    }
+  }, {
+    "@id" : "ct:21402_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:214",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21402_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bouwlijnen"
+    }
+  }, {
+    "@id" : "ct:215",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21501_03", "ct:21501_01", "ct:21502_00", "ct:21502_02", "ct:21502_03", "ct:21501_04", "ct:21502_01", "ct:21501_02", "ct:21501_00" ],
+    "notation" : "215",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "lokale wegenis"
+    }
+  }, {
+    "@id" : "ct:21501_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21501_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegenis"
+    }
+  }, {
+    "@id" : "ct:21501_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21501_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegenis"
+    }
+  }, {
+    "@id" : "ct:21501_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21501_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegenis"
+    }
+  }, {
+    "@id" : "ct:21501_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21501_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegenis"
+    }
+  }, {
+    "@id" : "ct:21501_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21501_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegenis"
+    }
+  }, {
+    "@id" : "ct:21502_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21502_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "dreef"
+    }
+  }, {
+    "@id" : "ct:21502_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21502_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "dreef"
+    }
+  }, {
+    "@id" : "ct:21502_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21502_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "dreef"
+    }
+  }, {
+    "@id" : "ct:21502_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:215",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21502_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "dreef"
+    }
+  }, {
+    "@id" : "ct:216",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21601_00", "ct:21601_01", "ct:21602_02", "ct:21602_00", "ct:21602_01" ],
+    "notation" : "216",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:21601_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:216",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21601_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterweg"
+    }
+  }, {
+    "@id" : "ct:21601_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:216",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21601_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "waterweg"
+    }
+  }, {
+    "@id" : "ct:21602_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:216",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21602_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "indicatieve waterweg"
+    }
+  }, {
+    "@id" : "ct:21602_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:216",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21602_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "indicatieve waterweg"
+    }
+  }, {
+    "@id" : "ct:21602_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:216",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21602_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "indicatieve waterweg"
+    }
+  }, {
+    "@id" : "ct:217",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21701_01", "ct:21701_00" ],
+    "notation" : "217",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:21701_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:217",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21701_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:21701_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:217",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21701_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "spoorinfrastructuur"
+    }
+  }, {
+    "@id" : "ct:218",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21801_00", "ct:21801_02" ],
+    "notation" : "218",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "historische verbinding"
+    }
+  }, {
+    "@id" : "ct:21801_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:218",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21801_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "herstellen historische verbinding"
+    }
+  }, {
+    "@id" : "ct:21801_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:218",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21801_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "herstellen historische verbinding"
+    }
+  }, {
+    "@id" : "ct:219",
+    "@type" : "skos:Concept",
+    "broader" : "ct:21",
+    "narrower" : [ "ct:21901_01", "ct:21901_00" ],
+    "notation" : "219",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurcorridors"
+    }
+  }, {
+    "@id" : "ct:21901_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:219",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21901_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurcorridors"
+    }
+  }, {
+    "@id" : "ct:21901_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:219",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "21901_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "natuurcorridors"
+    }
+  }, {
+    "@id" : "ct:22",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : [ "ct:221", "ct:222" ],
+    "notation" : "22",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "vlakken indicatieve aanduiding"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:221",
+    "@type" : "skos:Concept",
+    "broader" : "ct:22",
+    "narrower" : [ "ct:22101_00", "ct:22101_05", "ct:22101_03", "ct:22101_04" ],
+    "notation" : "221",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "wegeninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:22101_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:221",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "22101_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:22101_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:221",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "22101_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:22101_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:221",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "22101_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:22101_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:221",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "22101_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:222",
+    "@type" : "skos:Concept",
+    "broader" : "ct:22",
+    "narrower" : "ct:22201_00",
+    "notation" : "222",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "spoorinfratructuur"
+    }
+  }, {
+    "@id" : "ct:22201_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:222",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "22201_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor landschappelijke inpassing"
+    }
+  }, {
+    "@id" : "ct:99",
+    "@type" : "skos:Concept",
+    "inScheme" : "cs:plan_legende",
+    "narrower" : "ct:999",
+    "notation" : "99",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    },
+    "topConceptOf" : "cs:plan_legende"
+  }, {
+    "@id" : "ct:999",
+    "@type" : "skos:Concept",
+    "broader" : "ct:99",
+    "narrower" : [ "ct:99999_07", "ct:99999_13", "ct:99999_02", "ct:99999_01", "ct:99999_08", "ct:99999_16", "ct:99999_03", "ct:99999_04", "ct:99999_18", "ct:99999_15", "ct:99999_17", "ct:99999_09", "ct:99999_06", "ct:99999_10", "ct:99999_12", "ct:99999_11", "ct:99999_05", "ct:99999_00", "ct:99999_14" ],
+    "notation" : "999",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotaties"
+    }
+  }, {
+    "@id" : "ct:99999_00",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_00",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_01",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_01",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_02",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_02",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_03",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_03",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_04",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_04",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_05",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_05",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_06",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_06",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_07",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_07",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_08",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_08",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_09",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_09",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_10",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_10",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_11",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_11",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_12",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_12",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_13",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_13",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_14",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_14",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_15",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_15",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_16",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_16",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_17",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_17",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:99999_18",
+    "@type" : "skos:Concept",
+    "broader" : "ct:999",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "99999_18",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "annotatie"
+    }
+  }, {
+    "@id" : "ct:X1",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X1",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "terrein voor doortrekkers"
+    }
+  }, {
+    "@id" : "ct:X2",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X2",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaande woningen"
+    }
+  }, {
+    "@id" : "ct:X3",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X3",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor wonen en park"
+    }
+  }, {
+    "@id" : "ct:X4",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X4",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor motocross"
+    }
+  }, {
+    "@id" : "ct:X5",
+    "@type" : "skos:Concept",
+    "broader" : "ct:061",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X5",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gemengd agrarisch gebied"
+    }
+  }, {
+    "@id" : "ct:X6",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X6",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor diensten bij wegeninfrastructuur"
+    }
+  }, {
+    "@id" : "ct:X7",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "X7",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "vloeiweiden"
+    }
   }, {
     "@id" : "cs:plan_legende",
     "@type" : "skos:ConceptScheme",
     "identifier" : "plan_legende",
-    "hasTopConcept" : "ct:test_topconcept",
+    "hasTopConcept" : [ "ct:09", "ct:00", "ct:06", "ct:21", "ct:11", "ct:03", "ct:08", "ct:14", "ct:05", "ct:99", "ct:20", "ct:02", "ct:13", "ct:10", "ct:04", "ct:22", "ct:01", "ct:12", "ct:15", "ct:07" ],
     "prefLabel" : {
       "@language" : "nl",
-      "@value" : "PrefLabel van plan_legende"
+      "@value" : "Legendecodes"
     }
   } ],
   "@context" : {
     "prefLabel" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
     },
-    "member" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#member",
-      "@type" : "@id"
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
     },
     "inScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+      "@type" : "@id"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type" : "@id"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
       "@type" : "@id"
     },
     "identifier" : {
@@ -86,32 +5611,14 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
       "@type" : "@id"
     },
-    "notation" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
-    },
-    "broader" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
-      "@type" : "@id"
-    },
-    "topConceptOf" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
-      "@type" : "@id"
-    },
-    "narrower" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
-      "@type" : "@id"
-    },
-    "altLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
-    },
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#",
     "cs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
     "ct" : "https://data.omgeving.vlaanderen.be/id/concept/plan_legende/",
     "dct" : "http://purl.org/dc/terms/",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
     "colt" : "https://data.omgeving.vlaanderen.be/id/collection/plan_legende/",
-    "dc" : "http://purl.org/dc/elements/1.1/",
-    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#"
+    "dc" : "http://purl.org/dc/elements/1.1/"
   }
 }
