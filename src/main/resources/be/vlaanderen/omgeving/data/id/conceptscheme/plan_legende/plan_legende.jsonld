@@ -363,7 +363,7 @@
     "@id" : "ct:011",
     "@type" : "skos:Concept",
     "broader" : "ct:01",
-    "narrower" : [ "ct:01102_01", "ct:01110_02", "ct:01110_01", "ct:01112_00", "ct:01101_02", "ct:01109_00", "ct:01113_00", "ct:01107_00", "ct:01101_03", "ct:01109_01", "ct:01115_00", "ct:01101_05", "ct:01114_00", "ct:01103_00", "ct:01108_01", "ct:01104_00", "ct:01103_01", "ct:01108_02", "ct:01102_00", "ct:01101_06", "ct:X2", "ct:X1", "ct:01101_00", "ct:X3", "ct:01108_00", "ct:01106_01", "ct:01117_00", "ct:01106_00" ],
+    "narrower" : [ "ct:01102_01", "ct:01110_02", "ct:01110_01", "ct:01112_00", "ct:01105_xx", "ct:01101_02", "ct:01109_00", "ct:01113_00", "ct:01107_00", "ct:01101_03", "ct:01109_01", "ct:01111_xx", "ct:01115_00", "ct:01101_05", "ct:01114_00", "ct:01103_00", "ct:01108_01", "ct:01104_00", "ct:01103_01", "ct:01108_02", "ct:01102_00", "ct:01101_06", "ct:01116_xx", "ct:01101_00", "ct:01108_00", "ct:01106_01", "ct:01117_00", "ct:01106_00" ],
     "notation" : "011",
     "prefLabel" : {
       "@language" : "nl",
@@ -470,6 +470,16 @@
       "@value" : "cultuurhistorisch woongebied"
     }
   }, {
+    "@id" : "ct:01105_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01105_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "terrein voor doortrekkers"
+    }
+  }, {
     "@id" : "ct:01106_00",
     "@type" : "skos:Concept",
     "broader" : "ct:011",
@@ -570,6 +580,16 @@
       "@value" : "randstedelijk wonen"
     }
   }, {
+    "@id" : "ct:01111_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01111_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "bestaande woningen"
+    }
+  }, {
     "@id" : "ct:01112_00",
     "@type" : "skos:Concept",
     "broader" : "ct:011",
@@ -610,6 +630,16 @@
       "@value" : "gemengde aktiviteiten"
     }
   }, {
+    "@id" : "ct:01116_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:011",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "01116_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "zone voor wonen en park"
+    }
+  }, {
     "@id" : "ct:01117_00",
     "@type" : "skos:Concept",
     "broader" : "ct:011",
@@ -634,7 +664,7 @@
     "@id" : "ct:021",
     "@type" : "skos:Concept",
     "broader" : "ct:02",
-    "narrower" : [ "ct:02104_00", "ct:X4", "ct:02108_00", "ct:02102_01", "ct:02101_01", "ct:02102_00", "ct:02101_00", "ct:02106_01", "ct:02103_00", "ct:02106_00", "ct:02111_00", "ct:02103_01", "ct:02102_03", "ct:02102_02", "ct:02110_00", "ct:02105_00", "ct:02109_00" ],
+    "narrower" : [ "ct:02104_00", "ct:02108_00", "ct:02102_01", "ct:02101_01", "ct:02102_00", "ct:02101_00", "ct:02106_01", "ct:02103_00", "ct:02106_00", "ct:02111_00", "ct:02103_01", "ct:02102_03", "ct:02102_02", "ct:02107_xx", "ct:02110_00", "ct:02105_00", "ct:02109_00" ],
     "notation" : "021",
     "prefLabel" : {
       "@language" : "nl",
@@ -759,6 +789,16 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "watergebonden recreatie [131_1]"
+    }
+  }, {
+    "@id" : "ct:02107_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:021",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "02107_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor motocross"
     }
   }, {
     "@id" : "ct:02108_00",
@@ -2861,7 +2901,7 @@
     "@id" : "ct:093",
     "@type" : "skos:Concept",
     "broader" : "ct:09",
-    "narrower" : [ "ct:09303_01", "ct:X6", "ct:09303_02", "ct:09303_03", "ct:09304_00", "ct:09304_01", "ct:09312_00", "ct:09304_02", "ct:09309_00", "ct:09302_01", "ct:09302_00", "ct:09304_03", "ct:09303_00", "ct:09313_00", "ct:09301_02", "ct:09309_01", "ct:09313_01", "ct:09301_03", "ct:09301_00" ],
+    "narrower" : [ "ct:09305_xx", "ct:09303_01", "ct:09303_02", "ct:09303_03", "ct:09304_00", "ct:09304_01", "ct:09312_00", "ct:09304_02", "ct:09309_00", "ct:09302_01", "ct:09302_00", "ct:09304_03", "ct:09303_00", "ct:09313_00", "ct:09301_02", "ct:09309_01", "ct:09313_01", "ct:09301_03", "ct:09301_00" ],
     "notation" : "093",
     "prefLabel" : {
       "@language" : "nl",
@@ -2996,6 +3036,16 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "UITDOVEND lokale weg"
+    }
+  }, {
+    "@id" : "ct:09305_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:093",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "09305_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "gebied voor diensten bij wegeninfrastructuur"
     }
   }, {
     "@id" : "ct:09309_00",
@@ -4357,7 +4407,7 @@
     "@id" : "ct:152",
     "@type" : "skos:Concept",
     "broader" : "ct:15",
-    "narrower" : [ "ct:15203_00", "ct:15201_00", "ct:15202_00", "ct:X7", "ct:15206_00", "ct:15203_01" ],
+    "narrower" : [ "ct:15203_00", "ct:15201_00", "ct:15202_00", "ct:15205_xx", "ct:15206_00", "ct:15203_01" ],
     "notation" : "152",
     "prefLabel" : {
       "@language" : "nl",
@@ -4402,6 +4452,16 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "cultuurhistorische waarde, historische relicten, landschapsbeheer"
+    }
+  }, {
+    "@id" : "ct:15205_xx",
+    "@type" : "skos:Concept",
+    "broader" : "ct:152",
+    "inScheme" : "cs:plan_legende",
+    "notation" : "15205_xx",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "vloeiweiden"
     }
   }, {
     "@id" : "ct:15206_00",
@@ -5498,46 +5558,6 @@
       "@value" : "annotatie"
     }
   }, {
-    "@id" : "ct:X1",
-    "@type" : "skos:Concept",
-    "broader" : "ct:011",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X1",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "terrein voor doortrekkers"
-    }
-  }, {
-    "@id" : "ct:X2",
-    "@type" : "skos:Concept",
-    "broader" : "ct:011",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X2",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "bestaande woningen"
-    }
-  }, {
-    "@id" : "ct:X3",
-    "@type" : "skos:Concept",
-    "broader" : "ct:011",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X3",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "zone voor wonen en park"
-    }
-  }, {
-    "@id" : "ct:X4",
-    "@type" : "skos:Concept",
-    "broader" : "ct:021",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X4",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "gebied voor motocross"
-    }
-  }, {
     "@id" : "ct:X5",
     "@type" : "skos:Concept",
     "broader" : "ct:061",
@@ -5546,26 +5566,6 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "gemengd agrarisch gebied"
-    }
-  }, {
-    "@id" : "ct:X6",
-    "@type" : "skos:Concept",
-    "broader" : "ct:093",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X6",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "gebied voor diensten bij wegeninfrastructuur"
-    }
-  }, {
-    "@id" : "ct:X7",
-    "@type" : "skos:Concept",
-    "broader" : "ct:152",
-    "inScheme" : "cs:plan_legende",
-    "notation" : "X7",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "vloeiweiden"
     }
   }, {
     "@id" : "cs:plan_legende",

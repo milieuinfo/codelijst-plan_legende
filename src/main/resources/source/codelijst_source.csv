@@ -38,7 +38,7 @@ skos:Concept,ct:01102_01,,,01102_01,"stationsomgeving",,ct:011,,,,,,,,,,,cs:plan
 skos:Concept,ct:01103_00,,,01103_00,"gebied voor gemengde stedelijke aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
 skos:Concept,ct:01103_01,,,01103_01,"gebied voor gemengde stedelijke aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,WAAR,ONWAAR
 skos:Concept,ct:01104_00,,,01104_00,"cultuurhistorisch woongebied",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
-skos:Concept,ct:X1,,,X1,"terrein voor doortrekkers",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:01105_xx,,,01105_xx,"terrein voor doortrekkers",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
 skos:Concept,ct:01106_01,,,01106_01,"reservegebied voor wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:01106_00,,,01106_00,"reservegebied voor wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:01107_00,,,01107_00,"strategisch woonproject",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
@@ -49,12 +49,12 @@ skos:Concept,ct:01109_00,,,01109_00,"Landelijk woongebied met culturele, histori
 skos:Concept,ct:01109_01,,,01109_01,"Landelijk woongebied met culturele, historische en/of esthetische waarde",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
 skos:Concept,ct:01110_01,,,01110_01,"randstedelijk wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,L,ov,ONWAAR,ONWAAR
 skos:Concept,ct:01110_02,,,01110_02,"randstedelijk wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,ONWAAR,ONWAAR
-skos:Concept,ct:X2,,,X2,"bestaande woningen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,/,,ONWAAR,ONWAAR
+skos:Concept,ct:01111_xx,,,01111_xx,"bestaande woningen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,/,,ONWAAR,ONWAAR
 skos:Concept,ct:01112_00,,,01112_00,"stationsplein",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
 skos:Concept,ct:01113_00,,,01113_00,"woonwagenpark",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
 skos:Concept,ct:01114_00,,,01114_00,"bouwvrij wonen",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
 skos:Concept,ct:01115_00,,,01115_00,"gemengde aktiviteiten",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
-skos:Concept,ct:X3,,,X3,"zone voor wonen en park",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:01116_xx,,,01116_xx,"zone voor wonen en park",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
 skos:Concept,ct:01117_00,,,01117_00,"sociaal objectief",,ct:011,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
 skos:Concept,ct:02101_00,,,02101_00,"randstedelijk groengebied met dagrecreatieve infrastructuur",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:02101_01,,,02101_01,"randstedelijk groengebied met dagrecreatieve infrastructuur",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
@@ -68,7 +68,7 @@ skos:Concept,ct:02104_00,,,02104_00,"gebied voor recreatie vliegen",,ct:021,,,,,
 skos:Concept,ct:02105_00,,,02105_00,"gebied voor golfterrein",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,L,gv,WAAR,ONWAAR
 skos:Concept,ct:02106_00,,,02106_00,"watergebonden recreatie [131_1]",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:02106_01,,,02106_01,"watergebonden recreatie [131_1]",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,d,detail,ONWAAR,ONWAAR
-skos:Concept,ct:X4,,,X4,"gebied voor motocross",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:02107_xx,,,02107_xx,"gebied voor motocross",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
 skos:Concept,ct:02108_00,,,02108_00,"recreatieve bebouwing",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,detail,ONWAAR,ONWAAR
 skos:Concept,ct:02109_00,,,02109_00,"verblijfsrecreatie in groepen",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
 skos:Concept,ct:02110_00,,,02110_00,"verblijfsrecreatie",,ct:021,,,,,,,,,,,cs:plan_legende,,,,,,,,,gv,ONWAAR,ONWAAR
@@ -265,7 +265,7 @@ skos:Concept,ct:09304_03,,,09304_03,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:
 skos:Concept,ct:09304_02,,,09304_02,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:09304_01,,,09304_01,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
 skos:Concept,ct:09304_00,,,09304_00,"UITDOVEND lokale weg",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
-skos:Concept,ct:X6,,,X6,"gebied voor diensten bij wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:09305_xx,,,09305_xx,"gebied voor diensten bij wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
 skos:Concept,ct:09309_00,,,09309_00,"wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
 skos:Concept,ct:09309_01,,,09309_01,"wegeninfrastructuur",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,/,gv,WAAR,ONWAAR
 skos:Concept,ct:09312_00,,,09312_00,"zone voor primaire weg II [131_1]",,ct:093,,,,,,,,,,,cs:plan_legende,,,,,,,,d,gv,ONWAAR,ONWAAR
@@ -390,7 +390,7 @@ skos:Concept,ct:15201_00,,,15201_00,"uitdoofbeleid voor zonevreemde activiteiten
 skos:Concept,ct:15202_00,,,15202_00,"recht van voorkoop",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
 skos:Concept,ct:15203_00,,,15203_00,"cultuurhistorische waarde, historische relicten, landschapsbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
 skos:Concept,ct:15203_01,,,15203_01,"cultuurhistorische waarde, historische relicten, landschapsbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
-skos:Concept,ct:X7,,,X7,"vloeiweiden",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
+skos:Concept,ct:15205_xx,,,15205_xx,"vloeiweiden",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,,ONWAAR,ONWAAR
 skos:Concept,ct:15206_00,,,15206_00,"waterbeheer",,ct:152,,,,,,,,,,,cs:plan_legende,,,,,,,,,ov,ONWAAR,ONWAAR
 skos:Concept,ct:20101_02,,,20101_02,"gebouw",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
 skos:Concept,ct:20101_01,,,20101_01,"gebouw",,ct:201,,,,,,,,,,,cs:plan_legende,,,,,,,,,pt_ia,ONWAAR,ONWAAR
